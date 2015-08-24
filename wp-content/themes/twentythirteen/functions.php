@@ -146,7 +146,7 @@ function twentythirteen_fonts_url() {
 			'family' => urlencode( implode( '|', $font_families ) ),
 			'subset' => urlencode( 'latin,latin-ext' ),
 		);
-		$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
+		$fonts_url = add_query_arg( $query_args, 'https://fonts.useso.com/css' );
 	}
 
 	return $fonts_url;
