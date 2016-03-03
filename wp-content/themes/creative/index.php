@@ -46,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">君桐</a>
+                <a class="navbar-brand page-scroll" href="#page-top">君桐资本</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
