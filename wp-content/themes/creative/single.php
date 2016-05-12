@@ -1,3 +1,4 @@
+<?php the_post(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title><?php bloginfo('sitename'); ?></title>
+    <title><?php the_title(); ?> - <?php bloginfo('sitename'); ?></title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="<?=get_stylesheet_directory_uri()?>/css/bootstrap.min.css" type="text/css">
@@ -53,16 +54,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">关于我们</a>
+                        <a class="page-scroll" href="<?=site_url()?>/#about">关于我们</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">业务领域</a>
+                        <a class="page-scroll" href="<?=site_url()?>/#services">业务领域</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">项目概览</a>
+                        <a class="page-scroll" href="<?=site_url()?>/#portfolio">项目概览</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">联系我们</a>
+                        <a class="page-scroll" href="<?=site_url()?>/#contact">联系我们</a>
                     </li>
                 </ul>
             </div>
@@ -74,48 +75,19 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1><?php bloginfo('sitename'); ?></h1>
+                <h1><?php the_title(); ?></h1>
                 <hr>
-                <p><?php bloginfo('description'); ?></p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">了解更多</a>
+                <p><?php the_excerpt(); ?></p>
             </div>
         </div>
     </header>
-
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <?php $about = get_posts('post_type=page&name=about')[0]; ?>
-                    <h2 class="section-heading"><?=$about->post_title?></h2>
-                    <hr class="light">
-                    <?=$about->post_content?>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading"><?=get_category_by_slug('services')->cat_name?></h2>
-                    <hr class="primary">
+                    <?php the_content(); ?>
                 </div>
-            </div>
-        </div>
-        <div class="container">
-            <?php $icons = array('diamond', 'paper-plane', 'newspaper-o'); ?>
-            <?php foreach(get_posts('category_name=services') as $index => $service){ ?>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-<?=$icons[$index]?> wow bounceIn text-primary"></i>
-                        <h3><?=$service->post_title?></h3>
-                        <p class="text-muted"></p>
-                    </div>
-                </div>
-                <?php } ?>
             </div>
         </div>
     </section>
