@@ -160,7 +160,7 @@
                     <p><a href="mailto:<?=$segments[2]?>"><?=$segments[2]?></a></p>
                 </div>
                 <div class="col-lg-12 text-center" style="margin-top: 50px">
-                    <p><a href="mailto:juntong@jt-capital.cn">沪ICP备15029885号-1</a></p>
+                    <p><a href="http://www.miibeian.gov.cn/">沪ICP备15029885号-1</a></p>
                 </div>
             </div>
         </div>
