@@ -159,6 +159,9 @@
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                     <p><a href="mailto:<?=$segments[2]?>"><?=$segments[2]?></a></p>
                 </div>
+                <div class="col-lg-12 text-center" style="margin-top: 50px">
+                    <p><a href="mailto:juntong@jt-capital.cn">沪ICP备15029885号-1</a></p>
+                </div>
             </div>
         </div>
     </section>
