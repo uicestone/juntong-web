@@ -3,14 +3,14 @@
 	<article>
 		<section class="fw-section section-no-gap bg-parallax padding-top-10x padding-bottom-10x"
 				 data-parallax-speed="0.4" data-parallax-type="scroll-opacity"
-				 style="background-image: url(assets/img/fin-bg-11.jpg);">
+				 style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-bg-11.jpg);">
 		</section>
 
 		<section class="fw-section padding-top-3x padding-bottom-3x">
 			<div class="container">
 				<div class="row padding-botom-2x">
 					<div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-						<img alt="" src="assets/img/fin-portfolio-single-1.jpg">
+						<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-single-1.jpg">
 					</div>
 				</div>
 
@@ -112,7 +112,7 @@
 				<div class="testimonials-slider carousel-dark text-left text-dark carousel-dots-inside carousel-dots-left carousel-effect-slide carousel-autoplay-disable"
 					 data-slick='{"arrows":false,"dots":true,"infinite":false,"fade":false,"autoplay":false,"autoplaySpeed":3000}'>
 					<div class="testimonial-slide padding-top-3x padding-bottom-5x"
-						 style="background-image: url(assets/img/fin-testim-slider-3.jpg);">
+						 style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-testim-slider-3.jpg);">
 						<div class="container">
 							<div class="inner">
 								<h3 class="h2">
@@ -198,7 +198,7 @@
 											</p>
 										</div>
 										<img alt="" class="single-image attachment-thumbnail size-thumbnail"
-											 src="assets/img/fin-timeline-1-150x150.png">
+											 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-timeline-1-150x150.png">
 									</div>
 								</section>
 							</div>
@@ -269,7 +269,7 @@
 
 								<section class="fw-section">
 									<div class="container">
-										<img alt="" src="assets/img/fin-blog-post-1.jpg">
+										<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-1.jpg">
 										<div class="text-block">
 											<p>
 												Nulla finibus sit amet turpis et ullamcorper. Proin sit amet accumsan
@@ -316,7 +316,7 @@
 		</section>
 
 		<section class="fw-section with-overlay bg-parallax padding-top-6x padding-bottom-6x" data-parallax-speed="0.4"
-				 data-parallax-type="scroll" style="background-image: url(assets/img/fin-bg-12.jpg);">
+				 data-parallax-type="scroll" style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-bg-12.jpg);">
 			<span class="overlay" style="opacity: 0.25; background-color: #000000;"></span>
 			<div class="container">
 				<div class="text-block">
@@ -349,37 +349,37 @@
 
 					<div class="grid-item devices media">
 						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="#"><img alt="" src="assets/img/fin-portfolio-1.jpg"></a>
+							<a class="portfolio-thumb" href="#"><img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-1.jpg"></a>
 						</article>
 					</div>
 
 					<div class="grid-item devices financial media">
 						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="#"><img alt="" src="assets/img/fin-portfolio-2.jpg"></a>
+							<a class="portfolio-thumb" href="#"><img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-2.jpg"></a>
 						</article>
 					</div>
 
 					<div class="grid-item media">
 						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="#"><img alt="" src="assets/img/fin-portfolio-3.jpg"></a>
+							<a class="portfolio-thumb" href="#"><img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-3.jpg"></a>
 						</article>
 					</div>
 
 					<div class="grid-item media">
 						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="#"><img alt="" src="assets/img/fin-portfolio-4.jpg"></a>
+							<a class="portfolio-thumb" href="#"><img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-4.jpg"></a>
 						</article>
 					</div>
 
 					<div class="grid-item marketplace">
 						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="#"><img alt="" src="assets/img/fin-portfolio-5.jpg"></a>
+							<a class="portfolio-thumb" href="#"><img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-5.jpg"></a>
 						</article>
 					</div>
 
 					<div class="grid-item marketplace">
 						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="#"><img alt="" src="assets/img/fin-portfolio-6.jpg"></a>
+							<a class="portfolio-thumb" href="#"><img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-6.jpg"></a>
 						</article>
 					</div>
 				</div>

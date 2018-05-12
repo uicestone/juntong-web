@@ -25,7 +25,7 @@
 									data-rotate="0"
 									data-saveperformance="off"
 									data-slotamount="default"
-									data-thumb="assets/img/fin-slider-control-1.jpg"
+									data-thumb="<?=get_stylesheet_directory_uri()?>/assets/img/fin-slider-control-1.jpg"
 									data-title="Slide"
 									data-transition="fade">
 								<!-- MAIN IMAGE -->
@@ -45,7 +45,7 @@
 										data-scaleend="110"
 										data-scalestart="100"
 										height="816"
-										src="assets/img/fin-slider-main-1.jpg"
+										src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-slider-main-1.jpg"
 										title="fin-slider-main-1"
 										width="1920">
 
@@ -102,7 +102,7 @@
 											data-no-retina=""
 											data-ww="['466px','466px','466px','430px']"
 											height="53"
-											src="assets/img/fin-slider-logo-2.png"
+											src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-slider-logo-2.png"
 											width="466">
 								</div>
 
@@ -145,7 +145,7 @@
 									data-rotate="0"
 									data-saveperformance="off"
 									data-slotamount="default"
-									data-thumb="assets/img/fin-slider-control-2.jpg"
+									data-thumb="<?=get_stylesheet_directory_uri()?>/assets/img/fin-slider-control-2.jpg"
 									data-title="Slide"
 									data-transition="fade">
 								<!-- MAIN IMAGE -->
@@ -165,7 +165,7 @@
 										data-scaleend="110"
 										data-scalestart="100"
 										height="816"
-										src="assets/img/fin-slider-main-2.jpg"
+										src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-slider-main-2.jpg"
 										title="fin-slider-main-2"
 										width="1920">
 
@@ -221,7 +221,7 @@
 											data-no-retina=""
 											data-ww="['220px','220px','220px','220px']"
 											height="53"
-											src="assets/img/fin-slider-logo-1.png"
+											src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-slider-logo-1.png"
 											width="220">
 								</div>
 
@@ -268,7 +268,7 @@
 
 							<div class="icon-box-icon">
 								<img alt="" class="attachment-full size-full" height="144"
-									 src="assets/img/fin-icon-1.png" width="144">
+									 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-icon-1.png" width="144">
 							</div>
 
 							<h3 class="icon-box-title">
@@ -290,7 +290,7 @@
 
 							<div class="icon-box-icon">
 								<img alt="" class="attachment-full size-full" height="144"
-									 src="assets/img/fin-icon-2.png" width="144">
+									 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-icon-2.png" width="144">
 							</div>
 
 							<h3 class="icon-box-title">
@@ -312,7 +312,7 @@
 
 							<div class="icon-box-icon">
 								<img alt="" class="attachment-full size-full" height="144"
-									 src="assets/img/fin-icon-3.png" width="144">
+									 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-icon-3.png" width="144">
 							</div>
 
 							<h3 class="icon-box-title">
@@ -380,7 +380,7 @@
 
 										<div class="col-lg-3 col-lg-offset-1 col-sm-4 hidden-xs">
 											<img alt="" class="single-image attachment-medium size-medium"
-												 src="assets/img/fin-project-tab-2-300x300.png">
+												 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-project-tab-2-300x300.png">
 										</div>
 									</div>
 								</div>
@@ -403,7 +403,7 @@
 
 										<div class="col-lg-3 col-lg-offset-1 col-sm-4 hidden-xs">
 											<img alt="" class="single-image attachment-medium size-medium" height="300"
-												 src="assets/img/fin-project-tab-1-300x300.png" width="300">
+												 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-project-tab-1-300x300.png" width="300">
 										</div>
 									</div>
 								</div>
@@ -426,7 +426,7 @@
 
 										<div class="col-lg-3 col-lg-offset-1 col-sm-4 hidden-xs">
 											<img alt="" class="single-image attachment-medium size-medium" height="300"
-												 src="assets/img/fin-project-tab-3-300x300.png" width="300">
+												 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-project-tab-3-300x300.png" width="300">
 										</div>
 									</div>
 								</div>
@@ -449,7 +449,7 @@
 
 										<div class="col-lg-3 col-lg-offset-1 col-sm-4 hidden-xs">
 											<img alt="" class="single-image attachment-medium size-medium" height="300"
-												 src="assets/img/fin-project-tab-4-300x300.png" width="300">
+												 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-project-tab-4-300x300.png" width="300">
 										</div>
 									</div>
 								</div>
@@ -509,7 +509,7 @@
 					<div class="grid-item devices media">
 						<article class="portfolio-tile portfolio-simple">
 							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-1.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-1.jpg">
 							</a>
 						</article>
 					</div>
@@ -517,7 +517,7 @@
 					<div class="grid-item devices financial media">
 						<article class="portfolio-tile portfolio-simple">
 							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-2.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-2.jpg">
 							</a>
 						</article>
 					</div>
@@ -525,7 +525,7 @@
 					<div class="grid-item media">
 						<article class="portfolio-tile portfolio-simple">
 							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-3.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-3.jpg">
 							</a>
 						</article>
 					</div>
@@ -533,7 +533,7 @@
 					<div class="grid-item media">
 						<article class="portfolio-tile portfolio-simple">
 							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-4.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-4.jpg">
 							</a>
 						</article>
 					</div>
@@ -541,7 +541,7 @@
 					<div class="grid-item marketplace">
 						<article class="portfolio-tile portfolio-simple">
 							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-5.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-5.jpg">
 							</a>
 						</article>
 					</div>
@@ -549,7 +549,7 @@
 					<div class="grid-item marketplace">
 						<article class="portfolio-tile portfolio-simple">
 							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-6.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-6.jpg">
 							</a>
 						</article>
 					</div>
@@ -557,7 +557,7 @@
 					<div class="grid-item healthcare">
 						<article class="portfolio-tile portfolio-simple">
 							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-7.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-7.jpg">
 							</a>
 						</article>
 					</div>
@@ -565,7 +565,7 @@
 					<div class="grid-item healthcare">
 						<article class="portfolio-tile portfolio-simple">
 							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-8.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-8.jpg">
 							</a>
 						</article>
 					</div>
@@ -573,7 +573,7 @@
 					<div class="grid-item financial">
 						<article class="portfolio-tile portfolio-simple">
 							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-9.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-9.jpg">
 							</a>
 						</article>
 					</div>
@@ -581,7 +581,7 @@
 					<div class="grid-item financial">
 						<article class="portfolio-tile portfolio-simple">
 							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-10.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-10.jpg">
 							</a>
 						</article>
 					</div>
@@ -589,7 +589,7 @@
 					<div class="grid-item devices">
 						<article class="portfolio-tile portfolio-simple">
 							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-11.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-11.jpg">
 							</a>
 						</article>
 					</div>
@@ -597,7 +597,7 @@
 					<div class="grid-item devices">
 						<article class="portfolio-tile portfolio-simple">
 							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-12.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-12.jpg">
 							</a>
 						</article>
 					</div>
@@ -605,7 +605,7 @@
 					<div class="grid-item healthcare">
 						<article class="portfolio-tile portfolio-simple">
 							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-13.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-13.jpg">
 							</a>
 						</article>
 					</div>
@@ -613,7 +613,7 @@
 					<div class="grid-item devices">
 						<article class="portfolio-tile portfolio-simple post-179">
 							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-14.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-14.jpg">
 							</a>
 						</article>
 					</div>
@@ -621,7 +621,7 @@
 					<div class="grid-item financial">
 						<article class="portfolio-tile portfolio-simple post-151">
 							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-15.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-15.jpg">
 							</a>
 						</article>
 					</div>
@@ -629,7 +629,7 @@
 					<div class="grid-item media">
 						<article class="portfolio-tile portfolio-simple post-148">
 							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-16.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-16.jpg">
 							</a>
 						</article>
 					</div>
@@ -637,7 +637,7 @@
 					<div class="grid-item marketplace">
 						<article class="portfolio-tile portfolio-simple post-92">
 							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-17.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-17.jpg">
 							</a>
 						</article>
 					</div>
@@ -651,27 +651,27 @@
 
 				<div class="row padding-bottom-1x" data-aos="fade-up">
 					<div class="col-sm-2 col-xs-4">
-						<img alt="" class="single-image attachment-full size-full" src="assets/img/fin-client-4.png">
+						<img alt="" class="single-image attachment-full size-full" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-4.png">
 					</div>
 
 					<div class="col-sm-2 col-xs-4">
-						<img alt="" class="single-image attachment-full size-full" src="assets/img/fin-client-6.png">
+						<img alt="" class="single-image attachment-full size-full" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-6.png">
 					</div>
 
 					<div class="col-sm-2 col-xs-4">
-						<img alt="" class="single-image attachment-full size-full" src="assets/img/fin-client-5.png">
+						<img alt="" class="single-image attachment-full size-full" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-5.png">
 					</div>
 
 					<div class="col-sm-2 col-xs-4">
-						<img alt="" class="single-image attachment-full size-full" src="assets/img/fin-client-3.png">
+						<img alt="" class="single-image attachment-full size-full" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-3.png">
 					</div>
 
 					<div class="col-sm-2 col-xs-4">
-						<img alt="" class="single-image attachment-full size-full" src="assets/img/fin-client-2.png">
+						<img alt="" class="single-image attachment-full size-full" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-2.png">
 					</div>
 
 					<div class="col-sm-2 col-xs-4">
-						<img alt="" class="single-image attachment-full size-full" src="assets/img/fin-client-1.png">
+						<img alt="" class="single-image attachment-full size-full" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-1.png">
 					</div>
 				</div>
 			</div>
@@ -682,7 +682,7 @@
 				<div class="testimonials-slider carousel-light text-left text-light carousel-dots-inside carousel-dots-left carousel-effect-slide carousel-autoplay-disable"
 					 data-slick='{"arrows":false,"dots":true,"infinite":false,"fade":false,"autoplay":false,"autoplaySpeed":3000}'>
 					<div class="testimonial-slide padding-top-3x padding-bottom-5x"
-						 style="background-image: url(assets/img/fin-testim-slider-1.jpg);">
+						 style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-testim-slider-1.jpg);">
 						<div class="container">
 							<div class="inner">
 								<a class="testimonial-logo" href="#"></a>
@@ -708,7 +708,7 @@
 					</div>
 
 					<div class="testimonial-slide padding-top-3x padding-bottom-5x"
-						 style="background-image: url(assets/img/fin-testim-slider-2.jpg);">
+						 style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-testim-slider-2.jpg);">
 						<div class="container">
 							<div class="inner">
 								<div class="testimonial-logo">
@@ -738,7 +738,7 @@
 
 		<section class="fw-section bg-parallax vc_custom_1479024795475 padding-top-3x padding-bottom-3x"
 				 data-parallax-speed="0.4" data-parallax-type="scroll-opacity"
-				 style="background-image: url(assets/img/fin-bg-1.jpg);">
+				 style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-bg-1.jpg);">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6">
@@ -797,7 +797,7 @@
 					<div class="col-sm-4">
 						<div class="teammate teammate-dark-skin teammate-tile">
 							<a class="teammate-thumb" href="#"><img alt="" class="attachment-large size-large"
-																	height="590" src="assets/img/fin-team-1.jpg"
+																	height="590" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-1.jpg"
 																	width="539"></a>
 							<div class="teammate-info-wrap">
 								<span class="teammate-info">CEO, <a href="#">8Guild</a></span>
@@ -823,7 +823,7 @@
 					<div class="col-sm-4">
 						<div class="teammate teammate-dark-skin teammate-tile">
 							<a class="teammate-thumb" href="#"><img alt="" class="attachment-large size-large"
-																	height="590" src="assets/img/fin-team-2.jpg"
+																	height="590" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-2.jpg"
 																	width="539"></a>
 							<div class="teammate-info-wrap">
 								<span class="teammate-info">CEO, <a href="#">ZurApp</a></span>
@@ -849,7 +849,7 @@
 					<div class="col-sm-4">
 						<div class="teammate teammate-dark-skin teammate-tile">
 							<a class="teammate-thumb" href="#"><img alt="" class="attachment-large size-large"
-																	height="590" src="assets/img/fin-team-3.jpg"
+																	height="590" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-3.jpg"
 																	width="539"></a>
 							<div class="teammate-info-wrap">
 								<span class="teammate-info">Product Designer, <a href="#">Appica</a></span>
@@ -940,7 +940,7 @@
 									</div>
 
 									<a class="post-thumb" href="news-single.html"><img alt=""
-																					   src="assets/img/fin-blog-post-bg.jpg"></a>
+																					   src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-bg.jpg"></a>
 								</article>
 							</div>
 
@@ -975,7 +975,7 @@
 									</div>
 
 									<a class="post-thumb" href="news-single.html"><img alt=""
-																					   src="assets/img/fin-blog-post-4.jpg"></a>
+																					   src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-4.jpg"></a>
 								</article>
 							</div>
 
@@ -1010,7 +1010,7 @@
 									</div>
 
 									<a class="post-thumb" href="news-single.html"><img alt="" height="1280"
-																					   src="assets/img/fin-blog-post-3.jpg"
+																					   src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-3.jpg"
 																					   width="1920"></a>
 								</article>
 							</div>
@@ -1095,7 +1095,7 @@
 		</section>
 
 		<section class="fw-section with-overlay bg-parallax padding-top-5x padding-bottom-5x" data-parallax-speed="0.4"
-				 data-parallax-type="scroll" style="background-image: url(assets/img/fin-bg-2.jpg);">
+				 data-parallax-type="scroll" style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-bg-2.jpg);">
 			<span class="overlay" style="opacity: 0.25; background-color: #000000;"></span>
 			<div class="container">
 				<div class="row">

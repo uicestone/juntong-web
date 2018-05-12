@@ -49,7 +49,7 @@
 					<div class="grid-item devices media">
 						<article class="portfolio-tile">
 							<a class="portfolio-thumb" href="portfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-1.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-1.jpg">
 							</a>
 							<div class="portfolio-info">
 								<h3 class="portfolio-title">
@@ -68,7 +68,7 @@
 					<div class="grid-item devices financial media">
 						<article class="portfolio-tile">
 							<a class="portfolio-thumb" href="portfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-2.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-2.jpg">
 							</a>
 							<div class="portfolio-info">
 								<h3 class="portfolio-title">
@@ -87,7 +87,7 @@
 					<div class="grid-item media">
 						<article class="portfolio-tile">
 							<a class="portfolio-thumb" href="portfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-3.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-3.jpg">
 							</a>
 							<div class="portfolio-info">
 								<h3 class="portfolio-title">
@@ -106,7 +106,7 @@
 					<div class="grid-item media">
 						<article class="portfolio-tile">
 							<a class="portfolio-thumb" href="portfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-4.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-4.jpg">
 							</a>
 							<div class="portfolio-info">
 								<h3 class="portfolio-title">
@@ -125,7 +125,7 @@
 					<div class="grid-item marketplace">
 						<article class="portfolio-tile">
 							<a class="portfolio-thumb" href="portfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-5.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-5.jpg">
 							</a>
 							<div class="portfolio-info">
 								<h3 class="portfolio-title">
@@ -144,7 +144,7 @@
 					<div class="grid-item marketplace">
 						<article class="portfolio-tile">
 							<a class="portfolio-thumb" href="portfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-6.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-6.jpg">
 							</a>
 							<div class="portfolio-info">
 								<h3 class="portfolio-title">
@@ -163,7 +163,7 @@
 					<div class="grid-item healthcare">
 						<article class="portfolio-tile">
 							<a class="portfolio-thumb" href="portfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-7.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-7.jpg">
 							</a>
 							<div class="portfolio-info">
 								<h3 class="portfolio-title">
@@ -182,7 +182,7 @@
 					<div class="grid-item healthcare">
 						<article class="portfolio-tile">
 							<a class="portfolio-thumb" href="portfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-8.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-8.jpg">
 							</a>
 							<div class="portfolio-info">
 								<h3 class="portfolio-title">
@@ -201,7 +201,7 @@
 					<div class="grid-item financial">
 						<article class="portfolio-tile">
 							<a class="portfolio-thumb" href="portfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-9.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-9.jpg">
 							</a>
 							<div class="portfolio-info">
 								<h3 class="portfolio-title">
@@ -220,7 +220,7 @@
 					<div class="grid-item financial">
 						<article class="portfolio-tile">
 							<a class="portfolio-thumb" href="portfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-10.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-10.jpg">
 							</a>
 							<div class="portfolio-info">
 								<h3 class="portfolio-title">
@@ -239,7 +239,7 @@
 					<div class="grid-item devices">
 						<article class="portfolio-tile">
 							<a class="portfolio-thumb" href="portfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-11.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-11.jpg">
 							</a>
 							<div class="portfolio-info">
 								<h3 class="portfolio-title">
@@ -258,7 +258,7 @@
 					<div class="grid-item devices">
 						<article class="portfolio-tile">
 							<a class="portfolio-thumb" href="portfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-12.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-12.jpg">
 							</a>
 							<div class="portfolio-info">
 								<h3 class="portfolio-title">
@@ -277,7 +277,7 @@
 					<div class="grid-item healthcare">
 						<article class="portfolio-tile">
 							<a class="portfolio-thumb" href="portfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-13.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-13.jpg">
 							</a>
 							<div class="portfolio-info">
 								<h3 class="portfolio-title">
@@ -296,7 +296,7 @@
 					<div class="grid-item devices">
 						<article class="portfolio-tile">
 							<a class="portfolio-thumb" href="portfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-14.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-14.jpg">
 							</a>
 							<div class="portfolio-info">
 								<h3 class="portfolio-title">
@@ -315,7 +315,7 @@
 					<div class="grid-item financial">
 						<article class="portfolio-tile">
 							<a class="portfolio-thumb" href="portfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-15.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-15.jpg">
 							</a>
 							<div class="portfolio-info">
 								<h3 class="portfolio-title">
@@ -334,7 +334,7 @@
 					<div class="grid-item media">
 						<article class="portfolio-tile">
 							<a class="portfolio-thumb" href="portfolio-single.html">
-								<img alt="" src="assets/img/fin-portfolio-16.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-16.jpg">
 							</a>
 							<div class="portfolio-info">
 								<h3 class="portfolio-title">

@@ -64,7 +64,7 @@
 							</div>
 						</footer>
 					</div>
-					<a class="post-thumb" href="news-single.html"><img alt="" src="assets/img/fin-blog-post-bg.jpg"></a>
+					<a class="post-thumb" href="news-single.html"><img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-bg.jpg"></a>
 				</article><!-- Tile END -->
 
 				<article class="post-tile">
@@ -95,7 +95,7 @@
 							</div>
 						</footer>
 					</div>
-					<a class="post-thumb" href="news-single.html"><img alt="" src="assets/img/fin-blog-post-4.jpg"></a>
+					<a class="post-thumb" href="news-single.html"><img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-4.jpg"></a>
 				</article>
 
 				<article class="post-tile">
@@ -157,7 +157,7 @@
 							</div>
 						</footer>
 					</div>
-					<a class="post-thumb" href="news-single.html"><img alt="" src="assets/img/fin-blog-post-3.jpg"></a>
+					<a class="post-thumb" href="news-single.html"><img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-3.jpg"></a>
 				</article>
 			</div>
 
@@ -179,7 +179,7 @@
 
 						<div class="post-item">
 							<a class="post-item-thumb" href="#"><img alt=""
-																	 src="assets/img/fin-blog-post-bg-150x150.jpg"></a>
+																	 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-bg-150x150.jpg"></a>
 							<div class="post-item-info">
 								<span class="post-item-date">October 11</span>
 								<h3 class="post-item-title">
@@ -190,7 +190,7 @@
 
 						<div class="post-item">
 							<a class="post-item-thumb" href="#"><img alt=""
-																	 src="assets/img/fin-blog-post-4-150x150.jpg"></a>
+																	 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-4-150x150.jpg"></a>
 							<div class="post-item-info">
 								<span class="post-item-date">October 11</span>
 								<h3 class="post-item-title">
@@ -211,7 +211,7 @@
 
 						<div class="post-item">
 							<a class="post-item-thumb" href="#"><img alt=""
-																	 src="assets/img/fin-blog-post-3-150x150.jpg"></a>
+																	 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-3-150x150.jpg"></a>
 							<div class="post-item-info">
 								<span class="post-item-date">October 10</span>
 								<h3 class="post-item-title">

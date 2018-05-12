@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<div class="page-title title-size-xl text-light bg-parallax" data-parallax-speed="0.4"
-		 data-parallax-type="scroll-opacity" style="background-image: url(assets/img/fin-bg-7.jpg);">
+		 data-parallax-type="scroll-opacity" style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-bg-7.jpg);">
 		<span class="overlay" style="background-color: #000000; opacity: 0.35;"></span>
 
 		<div class="container">
@@ -33,7 +33,7 @@
 
 	<article class="page">
 		<section class="fw-section padding-top-3x padding-bottom-3x"
-				 style="background-image: url(assets/img/fin-bg-8.jpg)">
+				 style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-bg-8.jpg)">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6">
@@ -57,28 +57,28 @@
 									<div class="grid-item devices media">
 										<article class="portfolio-tile">
 											<a class="portfolio-thumb" href="portfolio-single.html"><img alt=""
-																										 src="assets/img/fin-portfolio-1.jpg"></a>
+																										 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-1.jpg"></a>
 										</article>
 									</div>
 
 									<div class="grid-item devices financial media">
 										<article class="portfolio-tile">
 											<a class="portfolio-thumb" href="portfolio-single.html"><img alt=""
-																										 src="assets/img/fin-portfolio-2.jpg"></a>
+																										 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-2.jpg"></a>
 										</article>
 									</div>
 
 									<div class="grid-item media">
 										<article class="portfolio-tile">
 											<a class="portfolio-thumb" href="portfolio-single.html"><img alt=""
-																										 src="assets/img/fin-portfolio-3.jpg"></a>
+																										 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-3.jpg"></a>
 										</article>
 									</div>
 
 									<div class="grid-item media">
 										<article class="portfolio-tile">
 											<a class="portfolio-thumb" href="portfolio-single.html"><img alt=""
-																										 src="assets/img/fin-portfolio-4.jpg"></a>
+																										 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-4.jpg"></a>
 										</article>
 									</div>
 								</div>
@@ -96,7 +96,7 @@
 		</section>
 
 		<section class="fw-section with-overlay bg-parallax padding-top-3x padding-bottom-1x" data-parallax-speed="0.4"
-				 data-parallax-type="scroll" style="background-image: url(assets/img/fin-bg-9.jpg);">
+				 data-parallax-type="scroll" style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-bg-9.jpg);">
 			<span class="overlay" style="opacity: 0.6; background-color: #000000;"></span>
 
 			<div class="container">
@@ -170,22 +170,22 @@
 						<div class="row">
 							<div class="col-sm-3 col-xs-3">
 								<img alt="" class="single-image attachment-full size-full"
-									 src="assets/img/fin-client-logo-4.png">
+									 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-logo-4.png">
 							</div>
 
 							<div class="col-sm-3 col-xs-3">
 								<img alt="" class="single-image attachment-full size-full"
-									 src="assets/img/fin-client-logo-3.png">
+									 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-logo-3.png">
 							</div>
 
 							<div class="col-sm-3 col-xs-3">
 								<img alt="" class="single-image attachment-full size-full"
-									 src="assets/img/fin-client-logo-2.png">
+									 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-logo-2.png">
 							</div>
 
 							<div class="col-sm-3 col-xs-3">
 								<img alt="" class="single-image attachment-full size-full"
-									 src="assets/img/fin-client-logo-1.png">
+									 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-logo-1.png">
 							</div>
 						</div>
 					</div>
@@ -198,7 +198,7 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<figure class="single-image wp-caption">
-							<img alt="" src="assets/img/fin-philosophy-1.gif">
+							<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-philosophy-1.gif">
 							<figcaption class="wp-caption-text">
 								Sed at justo finibus ligula condimentum scelerisque a non dui
 							</figcaption>
@@ -271,7 +271,7 @@
 
 					<div class="col-sm-6">
 						<figure class="single-image wp-caption">
-							<img alt="" src="assets/img/fin-philosophy-2.jpg">
+							<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-philosophy-2.jpg">
 							<figcaption class="wp-caption-text">
 								Sed at justo finibus ligula condimentum scelerisque a non dui
 							</figcaption>
@@ -282,7 +282,7 @@
 		</section>
 
 		<section class="fw-section with-overlay padding-top-6x padding-bottom-6x"
-				 style="background-image: url(assets/img/fin-bg-10.jpg);">
+				 style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-bg-10.jpg);">
 			<span class="overlay" style="opacity: 0.25; background-color: #000000;"></span>
 			<div class="container">
 				<div class="text-block">
@@ -308,25 +308,25 @@
 					 data-items-md="5" data-items-sm="3" data-items-xs="1"
 					 data-slick='{"dots":false,"arrows":false,"infinite":true,"autoplay":true,"autoplaySpeed":3000}'>
 					<a class="logo-item" href="http://startapp.8guild.com/financial/portfolio-item/cloud-six/">
-						<img alt="" src="assets/img/fin-client-logo-phil-2.png">
+						<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-logo-phil-2.png">
 					</a>
 					<a class="logo-item" href="http://startapp.8guild.com/financial/portfolio-item/vedroid/">
-						<img alt="" src="assets/img/fin-client-logo-phil-1.png">
+						<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-logo-phil-1.png">
 					</a>
 					<a class="logo-item" href="http://startapp.8guild.com/financial/portfolio-item/linkedout/">
-						<img alt="" src="assets/img/fin-client-logo-phil-3.png">
+						<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-logo-phil-3.png">
 					</a>
 					<a class="logo-item" href="http://startapp.8guild.com/financial/portfolio-item/hazam/">
-						<img alt="" src="assets/img/fin-client-logo-phil-4.png">
+						<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-logo-phil-4.png">
 					</a>
 					<a class="logo-item" href="http://startapp.8guild.com/financial/portfolio-item/invato/">
-						<img alt="" src="assets/img/fin-client-logo-phil-5.png">
+						<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-logo-phil-5.png">
 					</a>
 					<a class="logo-item" href="http://startapp.8guild.com/financial/portfolio-item/looper/">
-						<img alt="" src="assets/img/fin-client-logo-phil-6.png">
+						<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-logo-phil-6.png">
 					</a>
 					<a class="logo-item" href="http://startapp.8guild.com/financial/portfolio-item/bishop/">
-						<img alt="" src="assets/img/fin-client-logo-phil-7.png">
+						<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-logo-phil-7.png">
 					</a>
 				</div>
 			</div>

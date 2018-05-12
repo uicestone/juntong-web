@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<div class="page-title title-size-lg text-light bg-parallax" data-parallax-speed="0.4"
-		 data-parallax-type="scroll-opacity" style="background-image: url(assets/img/fin-bg-6.jpg);">
+		 data-parallax-type="scroll-opacity" style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-bg-6.jpg);">
 		<span class="overlay" style="background-color: #000000; opacity: 0.35;"></span>
 
 		<div class="container">
@@ -50,7 +50,7 @@
 						<div class="contacts-tile">
 							<div class="contacts-tile-body">
 								<div class="contacts-tile-country">
-									<span class="country-flag"><img alt="" height="47" src="assets/img/fin-map-1.png"
+									<span class="country-flag"><img alt="" height="47" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-map-1.png"
 																	width="70"></span><span class="country-name">United States</span>
 								</div>
 
@@ -82,7 +82,7 @@
 						<div class="contacts-tile">
 							<div class="contacts-tile-body">
 								<div class="contacts-tile-country">
-									<span class="country-flag"><img alt="" height="47" src="assets/img/fin-map-1.png"
+									<span class="country-flag"><img alt="" height="47" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-map-1.png"
 																	width="70"></span><span class="country-name">United States</span>
 								</div>
 
@@ -114,7 +114,7 @@
 						<div class="contacts-tile">
 							<div class="contacts-tile-body">
 								<div class="contacts-tile-country">
-									<span class="country-flag"><img alt="" height="47" src="assets/img/fin-map-2.png"
+									<span class="country-flag"><img alt="" height="47" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-map-2.png"
 																	width="70"></span><span
 											class="country-name">China</span>
 								</div>

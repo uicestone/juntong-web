@@ -7,35 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<!-- Favicon Images -->
-	<link rel="icon" href="assets/img/favicon/cropped-favicon-32x32.png"/>
-	<link rel="icon" href="assets/img/favicon/cropped-favicon-192x192.png"/>
-	<link rel="apple-touch-icon-precomposed" href="assets/img/favicon/cropped-favicon-180x180.png"/>
+	<link rel="icon" href="<?=get_stylesheet_directory_uri()?>/assets/img/favicon/cropped-favicon-32x32.png"/>
+	<link rel="icon" href="<?=get_stylesheet_directory_uri()?>/assets/img/favicon/cropped-favicon-192x192.png"/>
+	<link rel="apple-touch-icon-precomposed" href="<?=get_stylesheet_directory_uri()?>/assets/img/favicon/cropped-favicon-180x180.png"/>
 	<meta name="msapplication-TileImage" content="assets/img/favicon/cropped-favicon-270x270.png"/>
-
-	<!-- Google Font Import -->
-	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet">
-
-	<!-- Animation, Icon Fonts, Bootsrap styles -->
-	<link rel='stylesheet' href='assets/stylesheets/vendor/aos.min.css' type='text/css' media='all'/>
-	<link rel='stylesheet' href='assets/stylesheets/vendor/material-icons.min.css' type='text/css' media='all'/>
-	<link rel='stylesheet' href='assets/stylesheets/vendor/font-awesome.min.css' type='text/css' media='all'/>
-	<link rel='stylesheet' href='assets/stylesheets/vendor/socicon.min.css' type='text/css' media='screen'/>
-	<link rel='stylesheet' href='assets/stylesheets/vendor/bootstrap.min.css' type='text/css' media='screen'/>
-	<link rel='stylesheet' href='assets/stylesheets/vendor/preloader.css' type='text/css' media='screen'/>
-
-	<!-- *************************************************************************************** -->
-	<!-- Vendor Styles Section -->
-	<link rel="stylesheet" type="text/css" href="assets/stylesheets/vendor/revo/settings.css">
-	<link rel="stylesheet" type="text/css" href="assets/stylesheets/vendor/revo/layers.css">
-	<link rel="stylesheet" type="text/css" href="assets/stylesheets/vendor/revo/navigation.css">
-	<!-- Vendor Styles Section END-->
-	<!-- *************************************************************************************** -->
-
-	<!-- Main Theme Style -->
-	<link rel='stylesheet' href='assets/stylesheets/theme.min.css' type='text/css' media='screen'/>
-
-	<!-- Modernizr Scripts -->
-	<script type='text/javascript' src='assets/js/vendor/modernizr.custom.js'></script>
 
 	<!-- Init For Page Prelodaer -->
 	<script type="text/javascript">
@@ -50,6 +25,8 @@
             };
         })();
 	</script>
+
+	<?php wp_head(); ?>
 </head>
 
 <body>
@@ -73,7 +50,7 @@
 			<h2 class="widget-title">Our CEO</h2>
 
 			<div class="startapp-author text-left">
-				<img src="assets/img/widgets/author-offcanvas.jpg" alt="author-offcanvas"/>
+				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/widgets/author-offcanvas.jpg" alt="author-offcanvas"/>
 
 				<p>I&#039;m all around great guy who invest in other great guys and ideas.</p>
 
@@ -107,16 +84,16 @@
 
 			<div class="widget-inner" data-slick='{"slidesToShow":1,"arrows":false,"autoplay":true,"autoplaySpeed":4000}'>
 				<div class="carousel-item">
-					<img src="assets/img/widgets/carousels/fin-client-logo-phil-7-300x200.png" alt=""/>
+					<img src="<?=get_stylesheet_directory_uri()?>/assets/img/widgets/carousels/fin-client-logo-phil-7-300x200.png" alt=""/>
 				</div>
 				<div class="carousel-item">
-					<img src="assets/img/widgets/carousels/fin-client-logo-phil-6-300x200.png" alt=""/>
+					<img src="<?=get_stylesheet_directory_uri()?>/assets/img/widgets/carousels/fin-client-logo-phil-6-300x200.png" alt=""/>
 				</div>
 				<div class="carousel-item">
-					<img src="assets/img/widgets/carousels/fin-client-logo-phil-4-300x200.png" alt=""/>
+					<img src="<?=get_stylesheet_directory_uri()?>/assets/img/widgets/carousels/fin-client-logo-phil-4-300x200.png" alt=""/>
 				</div>
 				<div class="carousel-item">
-					<img src="assets/img/widgets/carousels/fin-client-logo-phil-3-300x200.png" alt=""/>
+					<img src="<?=get_stylesheet_directory_uri()?>/assets/img/widgets/carousels/fin-client-logo-phil-3-300x200.png" alt=""/>
 				</div>
 			</div>
 		</section><!-- Widget END -->
@@ -300,7 +277,7 @@
 				<div class="inner">
 					<div class="column">
 						<a class="site-logo" href="index.html">
-							<img alt="Financial" class="custom-logo" src="assets/img/logo.png">
+							<img alt="Financial" class="custom-logo" src="<?=get_stylesheet_directory_uri()?>/assets/img/logo.png">
 						</a>
 					</div>
 

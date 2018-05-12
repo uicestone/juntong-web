@@ -31,7 +31,7 @@
 	<article class="page">
 		<section class="fw-section section-no-gap">
 			<div class="container-fluid">
-				<img alt="" class="single-image attachment-full size-full" data-aos="" src="assets/img/fin-team-4.jpg">
+				<img alt="" class="single-image attachment-full size-full" data-aos="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-4.jpg">
 			</div>
 		</section>
 
@@ -82,7 +82,7 @@
 								<div class="col-sm-4">
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-5.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-5.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -98,7 +98,7 @@
 
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-6.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-6.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -114,7 +114,7 @@
 
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-7.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-7.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -132,7 +132,7 @@
 								<div class="col-sm-4">
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-8.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-8.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -148,7 +148,7 @@
 
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-9.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-9.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -184,7 +184,7 @@
 								<div class="col-sm-4">
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-10.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-10.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -200,7 +200,7 @@
 
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-11.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-11.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -216,7 +216,7 @@
 
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-12.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-12.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -234,7 +234,7 @@
 								<div class="col-sm-4">
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-13.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-13.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -250,7 +250,7 @@
 
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-14.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-14.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -288,7 +288,7 @@
 								<div class="col-sm-4">
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-10.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-10.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -304,7 +304,7 @@
 
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-12.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-12.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -320,7 +320,7 @@
 
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-11.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-11.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -338,7 +338,7 @@
 								<div class="col-sm-4">
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-13.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-13.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -354,7 +354,7 @@
 
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-14.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-14.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -390,7 +390,7 @@
 								<div class="col-sm-4">
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-5.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-5.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -406,7 +406,7 @@
 
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-6.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-6.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -422,7 +422,7 @@
 
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-7.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-7.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -440,7 +440,7 @@
 								<div class="col-sm-4">
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-8.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-8.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -456,7 +456,7 @@
 
 									<div class="teammate teammate-dark-skin teammate-horizontal teammate-rounded">
 										<div class="teammate-thumb">
-											<img alt="" src="assets/img/fin-team-9.jpg">
+											<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-9.jpg">
 										</div>
 
 										<div class="teammate-info-wrap">
@@ -482,7 +482,7 @@
 				<div class="testimonials-slider carousel-light text-left text-light carousel-dots-inside carousel-dots-left carousel-effect-slide carousel-autoplay-disable"
 					 data-slick='{"arrows":false,"dots":true,"infinite":false,"fade":false,"autoplay":false,"autoplaySpeed":3000}'>
 					<div class="testimonial-slide padding-top-3x padding-bottom-5x"
-						 style="background-image: url(assets/img/fin-testim-slider-1.jpg);">
+						 style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-testim-slider-1.jpg);">
 						<div class="container">
 							<div class="inner">
 								<a class="testimonial-logo" href="#"></a>

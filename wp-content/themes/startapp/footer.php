@@ -1,5 +1,5 @@
 		<!-- Main Footer -->
-		<footer class="site-footer footer-dark" style="background-image: url(assets/img/fin-bg-footer.jpg);">
+		<footer class="site-footer footer-dark" style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-bg-footer.jpg);">
 			<div class="footer-row">
 				<div class="container">
 					<div class="row">
@@ -7,7 +7,7 @@
 							<!-- Widget Start -->
 							<section class="widget widget_startapp_site_info">
 								<a href="index.html">
-									<img alt="" src="assets/img/logo-light.png"></a>
+									<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/logo-light.png"></a>
 
 								<p>
 									We are the team of web, design, programming and marketing professionals whose main aim is to
@@ -67,7 +67,7 @@
 
 								<div class="post-item">
 									<a class="post-item-thumb" href="news-single.html">
-										<img alt="" src="assets/img/widgets/demo-blog-list-05-150x150.jpg">
+										<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/widgets/demo-blog-list-05-150x150.jpg">
 									</a>
 
 									<div class="post-item-info">
@@ -80,7 +80,7 @@
 
 								<div class="post-item">
 									<a class="post-item-thumb" href="news-single.html">
-										<img alt="" src="assets/img/widgets/demo-blog-list-04-150x150.jpg">
+										<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/widgets/demo-blog-list-04-150x150.jpg">
 									</a>
 
 									<div class="post-item-info">
@@ -179,23 +179,23 @@
 								<div class="widget-inner"
 									 data-slick='{"slidesToShow":4,"arrows":true,"autoplay":true,"autoplaySpeed":4000}'>
 									<div class="carousel-item">
-										<img alt="" src="assets/img/fin-client-footer-1.png">
+										<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-footer-1.png">
 									</div>
 
 									<div class="carousel-item">
-										<img alt="" src="assets/img/fin-client-footer-2.png">
+										<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-footer-2.png">
 									</div>
 
 									<div class="carousel-item">
-										<img alt="" src="assets/img/fin-client-footer-3.png">
+										<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-footer-3.png">
 									</div>
 
 									<div class="carousel-item">
-										<img alt="" src="assets/img/fin-client-footer-4.png">
+										<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-footer-4.png">
 									</div>
 
 									<div class="carousel-item">
-										<img alt="" src="assets/img/fin-client-footer-5.png">
+										<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-footer-5.png">
 									</div>
 								</div>
 							</section>
@@ -223,29 +223,6 @@
 
 	<a class="scroll-to-top-btn" href="#"><i class="material-icons keyboard_arrow_up"></i></a>
 	<div class="site-backdrop"></div>
-
-	<!-- Scripts section -->
-	<!-- **************************************************************************************************************************** -->
-	<script type='text/javascript' src='assets/js/vendor/jquery.js'></script>
-
-	<script type='text/javascript' src='assets/js/vendor/aos.min.js'></script>
-	<script type='text/javascript' src='assets/js/vendor/jquery.waypoints.min.js'></script>
-	<script type='text/javascript' src='assets/js/vendor/bootstrap.min.js'></script>
-	<script type='text/javascript' src='assets/js/vendor/jarallax.min.js'></script>
-	<script type='text/javascript' src='assets/js/vendor/velocity.min.js'></script>
-	<script type='text/javascript' src='assets/js/vendor/waves.min.js'></script>
-	<script type='text/javascript' src='assets/js/vendor/scrollspy.js'></script>
-	<script type='text/javascript' src='assets/js/vendor/slick.min.js'></script>
-	<script type='text/javascript' src='assets/js/vendor/isotope.pkgd.min.js'></script>
-	<script type='text/javascript' src='assets/js/vendor/counterup.min.js'></script>
-	<script type='text/javascript' src='assets/js/vendor/jquery.magnific-popup.min.js'></script>
-	<!-- *************************************************************************************** -->
-	<!-- Vendor Script Section -->
-
-	<!-- Vendor Script Section END-->
-	<!-- *************************************************************************************** -->
-	<script type='text/javascript' src='assets/js/startapp-theme.js'></script>
-	<!-- **************************************************************************************************************************** -->
-	<!-- Scripts section END -->
+	<?php wp_footer(); ?>
 </body>
 </html>

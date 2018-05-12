@@ -5,7 +5,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6">
-						<img alt="" src="assets/img/fin-team-15.jpg">
+						<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-15.jpg">
 					</div>
 
 					<div class="col-sm-6 padding-bottom-1x">
@@ -177,7 +177,7 @@
 											</p>
 										</div>
 										<img alt="" class="single-image attachment-thumbnail size-thumbnail"
-											 src="assets/img/fin-timeline-1-150x150.png">
+											 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-timeline-1-150x150.png">
 									</div>
 								</section>
 							</div>
@@ -248,7 +248,7 @@
 
 								<section class="fw-section">
 									<div class="container">
-										<img alt="" src="assets/img/fin-blog-post-1.jpg">
+										<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-1.jpg">
 										<div class="text-block">
 											<p>
 												Nulla finibus sit amet turpis et ullamcorper. Proin sit amet accumsan
@@ -307,37 +307,37 @@
 
 					<div class="grid-item devices media">
 						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="#"><img alt="" src="assets/img/fin-portfolio-1.jpg"></a>
+							<a class="portfolio-thumb" href="#"><img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-1.jpg"></a>
 						</article>
 					</div>
 
 					<div class="grid-item devices financial media">
 						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="#"><img alt="" src="assets/img/fin-portfolio-2.jpg"></a>
+							<a class="portfolio-thumb" href="#"><img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-2.jpg"></a>
 						</article>
 					</div>
 
 					<div class="grid-item media">
 						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="#"><img alt="" src="assets/img/fin-portfolio-3.jpg"></a>
+							<a class="portfolio-thumb" href="#"><img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-3.jpg"></a>
 						</article>
 					</div>
 
 					<div class="grid-item media">
 						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="#"><img alt="" src="assets/img/fin-portfolio-4.jpg"></a>
+							<a class="portfolio-thumb" href="#"><img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-4.jpg"></a>
 						</article>
 					</div>
 
 					<div class="grid-item marketplace">
 						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="#"><img alt="" src="assets/img/fin-portfolio-5.jpg"></a>
+							<a class="portfolio-thumb" href="#"><img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-5.jpg"></a>
 						</article>
 					</div>
 
 					<div class="grid-item marketplace">
 						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="#"><img alt="" src="assets/img/fin-portfolio-6.jpg"></a>
+							<a class="portfolio-thumb" href="#"><img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-6.jpg"></a>
 						</article>
 					</div>
 				</div>

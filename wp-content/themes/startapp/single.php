@@ -2,7 +2,7 @@
 
 	<!-- Page Title Start -->
 	<section class="single-cover-image bg-parallax" data-parallax-speed="0.4" data-parallax-type="scroll"
-			 style="background-image: url(assets/img/fin-blog-post-bg.jpg); height: 500px;">
+			 style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-bg.jpg); height: 500px;">
 	</section><!-- Page Title Start END -->
 
 	<section class="fw-section">
@@ -31,7 +31,7 @@
 							</h1>
 
 							<div class="featured-image padding-bottom-1x">
-								<img alt="" src="assets/img/fin-blog-post-bg.jpg">
+								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-bg.jpg">
 							</div>
 						</div><!-- Section END -->
 
@@ -75,7 +75,7 @@
 						<section class="fw-section">
 							<div class="container">
 								<figure class="single-image wp-caption">
-									<img alt="" src="assets/img/fin-blog-post-1.jpg">
+									<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-1.jpg">
 
 									<figcaption class="wp-caption-text">
 										Developed by the Intel Corporation, HDCP stands for high-bandwidth digital
@@ -125,7 +125,7 @@
 								</ul>
 
 								<figure class="single-image wp-caption">
-									<img alt="" src="assets/img/fin-blog-post-2.jpg">
+									<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-2.jpg">
 									<figcaption class="wp-caption-text">
 										Maintain Your Pc S Performance With Pc Programs
 									</figcaption>
@@ -193,7 +193,7 @@
 							<section class="post-author">
 								<div class="post-author-thumb">
 									<a href="#">
-										<img alt="" src="assets/img/fin-author.jpg">
+										<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-author.jpg">
 									</a>
 								</div>
 
@@ -283,7 +283,7 @@
 							<div class="comment thread-depth-1 parent">
 								<div class="inner">
 									<div class="author-ava">
-										<img alt="" class="avatar avatar-60" src="assets/img/0202020.jpg">
+										<img alt="" class="avatar avatar-60" src="<?=get_stylesheet_directory_uri()?>/assets/img/0202020.jpg">
 									</div>
 
 									<div class="comment-body">
@@ -306,7 +306,7 @@
 								<div class="comment odd alt depth-2">
 									<div class="inner">
 										<div class="author-ava">
-											<img alt="" class="avatar avatar-60" src="assets/img/0202020.jpg">
+											<img alt="" class="avatar avatar-60" src="<?=get_stylesheet_directory_uri()?>/assets/img/0202020.jpg">
 										</div>
 
 										<div class="comment-body">
@@ -332,7 +332,7 @@
 							<div class="comment depth-1 parent">
 								<div class="inner">
 									<div class="author-ava">
-										<img alt="" class="avatar avatar-60" src="assets/img/0202020.jpg">
+										<img alt="" class="avatar avatar-60" src="<?=get_stylesheet_directory_uri()?>/assets/img/0202020.jpg">
 									</div>
 
 									<div class="comment-body">
@@ -355,7 +355,7 @@
 								<div class="comment odd alt depth-2">
 									<div class="inner">
 										<div class="author-ava">
-											<img alt="" class="avatar avatar-60" src="assets/img/0202020.jpg">
+											<img alt="" class="avatar avatar-60" src="<?=get_stylesheet_directory_uri()?>/assets/img/0202020.jpg">
 										</div>
 
 										<div class="comment-body">
@@ -434,7 +434,7 @@
 					</h2>
 
 					<div class="startapp-author text-left">
-						<img alt="demo-avatar" src="assets/img/fin-author.jpg">
+						<img alt="demo-avatar" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-author.jpg">
 
 						<p>
 							SaaS &amp; Enterprise, Finance and Payments, “Intelligent Software”, ConsumerPalo Alto
@@ -498,7 +498,7 @@
 
 	<div class="post-item">
 		<a class="post-item-thumb" href="blog-single-post-right-sidebar.html">
-			<img alt="" src="assets/img/fin-blog-post-bg-150x150.jpg"">
+			<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-bg-150x150.jpg"">
 		</a>
 
 		<div class="post-item-info">
@@ -511,7 +511,7 @@
 
 	<div class="post-item">
 		<a class="post-item-thumb" href="blog-single-post-right-sidebar.html">
-			<img alt="" src="assets/img/fin-blog-post-4-150x150.jpg">
+			<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-4-150x150.jpg">
 		</a>
 
 		<div class="post-item-info">
@@ -524,7 +524,7 @@
 
 	<div class="post-item">
 		<a class="post-item-thumb" href="blog-single-post-right-sidebar.html">
-			<img alt="" src="assets/img/fin-blog-post-3-150x150.jpg">
+			<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-3-150x150.jpg">
 		</a>
 
 		<div class="post-item-info">

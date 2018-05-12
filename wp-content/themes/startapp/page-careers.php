@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<div class="page-title title-size-xl text-light bg-parallax" data-parallax-speed="0.4"
-		 data-parallax-type="scroll-opacity" style="background-image: url(assets/img/fin-bg-3.jpg);">
+		 data-parallax-type="scroll-opacity" style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-bg-3.jpg);">
 		<span class="overlay" style="background-color: #000000; opacity: 0.5;"></span>
 
 		<div class="container">
@@ -49,7 +49,7 @@
 						<div>
 							<article class="portfolio-tile">
 								<a class="portfolio-thumb" href="portfolio-single.html">
-									<img alt="" src="assets/img/fin-portfolio-16.jpg">
+									<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-16.jpg">
 								</a>
 								<div class="portfolio-info">
 									<h3 class="portfolio-title">
@@ -106,7 +106,7 @@
 						<div>
 							<article class="portfolio-tile">
 								<a class="portfolio-thumb" href="portfolio-single.html">
-									<img alt="" src="assets/img/fin-portfolio-6.jpg">
+									<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-6.jpg">
 								</a>
 								<div class="portfolio-info">
 									<h3 class="portfolio-title">

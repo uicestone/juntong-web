@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<div class="page-title title-size-lg text-light bg-parallax" data-parallax-speed="0.4"
-		 data-parallax-type="scroll-opacity" style="background-image: url(assets/img/fin-bg-4.jpg);">
+		 data-parallax-type="scroll-opacity" style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-bg-4.jpg);">
 		<span class="overlay" style="background-color: #000000; opacity: 0.35;"></span>
 
 		<div class="container">
@@ -241,7 +241,7 @@
 		</section>
 
 		<section class="fw-section with-overlay bg-parallax padding-top-6x padding-bottom-6x" data-parallax-speed="0.4"
-				 data-parallax-type="scroll" style="background-image: url(assets/img/fin-bg-5.jpg);">
+				 data-parallax-type="scroll" style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-bg-5.jpg);">
 			<span class="overlay" style="opacity: 0.25; background-color: #000000;"></span>
 
 			<div class="container">
