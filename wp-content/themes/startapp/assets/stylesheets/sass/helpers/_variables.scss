@@ -1,0 +1,441 @@
+//
+// Variables
+// --------------------------------------------------
+
+//== Colors
+//
+//## Grayscale and brand colors for use across the theme.
+// -------------------------------------------------------
+
+$gray-darker:           #000000;
+$gray-dark:            	#4c4c4c;
+$gray:                  #808080;
+$gray-light:            #e5e5e5;
+$gray-lighter:          #f5f5f5;
+
+$brand-default:         #000000;
+$brand-primary:         #3f6bbe;
+$brand-info:		        #4eabff;
+$brand-success:         #5bc460;
+$brand-warning:         #a9db23;
+$brand-danger:          #e63030;
+
+$body-bg: 							#ffffff;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+// -------------------------------------------------------
+
+$font-family-base: 			'Titillium Web', Helvetica, Arial, sans-serif;
+$font-family-headings: 	inherit;
+
+$text-color: 						$gray-dark;
+$headings-color:        $gray-darker;
+$light-color:           #ffffff;
+$link-color:            $brand-primary;
+$link-hover-color:      $brand-primary;
+$hr-border-color: 			rgba($brand-primary, .25);
+$hr-border-light-color: rgba($light-color, .25);
+
+$font-size-base:          14px;
+$font-size-lead:          ceil(($font-size-base * 1.7)); // ~24px
+$font-size-lg: 				    ceil(($font-size-base * 1.14)); // ~16px
+$font-size-sm: 				    floor(($font-size-base * .86)); // ~12px
+$font-size-xs:         		floor(($font-size-base / 1.4)); // ~10px
+
+$font-size-h1:            floor(($font-size-base * 3.43)); // ~48px
+$font-size-h2:            ceil(($font-size-base * 2.57)); // ~36px
+$font-size-h3:            ceil(($font-size-base * 2.14)); // ~30px
+$font-size-h4:            ceil(($font-size-base * 1.7)); // ~24px
+$font-size-h5:            floor(($font-size-base * 1.29)); // ~18px
+$font-size-h6:            ceil(($font-size-base * 1.14)); // ~16px
+
+$line-height-base:       1.5;
+
+$font-style-h1:          normal;
+$font-style-h2:          normal;
+$font-style-h3:          normal;
+$font-style-h4:          normal;
+$font-style-h5:          normal;
+$font-style-h6:          normal;
+$font-style-link:        normal;
+
+$font-weight-h1:          300;
+$font-weight-h2:          300;
+$font-weight-h3:          300;
+$font-weight-h4:          300;
+$font-weight-h5:          300;
+$font-weight-h6:          300;
+$font-weight-link:        bold;
+
+$text-transform-h1:      none;
+$text-transform-h2:      none;
+$text-transform-h3:      none;
+$text-transform-h4:      none;
+$text-transform-h5:      none;
+$text-transform-h6:      none;
+$text-transform-link:    none;
+
+$line-height-h1:         1.17;
+$line-height-h2:         1.33;
+$line-height-h3:         $line-height-base;
+$line-height-h4:         $line-height-base;
+$line-height-h5:         $line-height-base;
+$line-height-h6:         $line-height-base;
+
+$quote-mark-icon:        24px;
+$quote-mark-box:         ($quote-mark-icon * 2);
+$quote-font-color:       $gray-darker;
+$quote-mark-color:       $brand-primary;
+$font-size-quote:        ceil(($font-size-base * 1.7)); // ~24px
+$font-style-quote:       normal;
+$font-weight-quote:      normal;
+$text-transform-quote:   none;
+$font-size-cite:         $font-size-base;
+$color-cite:             $gray;
+
+// Global Values
+$grid-vertical-step:     24px;
+$border-radius-default:  4px;
+
+$backdrop-zindex: 			9900;
+$backdrop-opacity: 			.9;
+
+
+//== Tables
+// -------------------------------------------------------
+
+$table-border-width: 					1px;
+$table-cell-padding:					14px 15px;
+
+
+//== Forms
+// -------------------------------------------------------
+
+$input-lg-height:            60px;
+$input-height:               48px;
+$input-sm-height:            36px;
+$input-xs-height:            24px;
+$input-multiple-height:      90px;
+$textarea-mi-height:         120px;
+
+$input-lg-font-size:         floor(($font-size-base * 1.29)); // ~18px
+$input-font-size:            floor(($font-size-base * 1.29)); // ~18px
+$input-sm-font-size:         ceil(($font-size-base * 1.14)); // ~16px
+$input-xs-font-size:         $font-size-base;
+
+$input-color:                $gray-dark;
+$input-bg-color:             $gray-lighter;
+$input-focus-bg-color:       #ffffff;
+$input-border-width:         1px;
+$input-border-color:         #ffffff;
+$input-focus-border-color:   #bfbfbf;
+$input-color-placeholder:    $gray;
+
+$search-form-max-width:      970px;
+$search-form-input-height:   72px;
+$search-highlight:           #f9f4c3;
+
+
+//== Header
+// -------------------------------------------------------
+
+$header-zindex:                  1000;
+$header-border:                  1px solid $gray-lighter;
+
+// == Site Logo
+$site-logo-width:                145px;
+$mobile-logo-width:              50px;
+
+//== Main Menu
+$menu-link-font-size:      floor(($font-size-base * 1.29)); // ~18px
+$menu-link-font-weight:    600;
+$menu-link-color:          $gray-dark;
+$menu-link-active-color:   $brand-primary;
+$menu-link-hover-bg:       $gray-lighter;
+
+//== Menu Dropdown
+$menu-dropdown-width:              210px;
+$menu-dropdown-link-font-size:     $font-size-base; //~14px
+$menu-dropdown-arrow-size:         8px;
+
+//== Topbar
+$topbar-link-height:               36px;
+$topbar-dropdown-width:            160px;
+
+$lang-dropdown-width:              120px;
+$cart-dropdown-width:              300px;
+
+//== Lateral Navbar
+$navbar-lateral-width:       300px;
+
+
+//== Toolbar
+$toolbar-count-size:       16px;
+$toolbar-count-font-size:  10px;
+
+//== Scroller
+$scroller-width:           36px;
+$scroller-bg:              #ffffff;
+$scroller-shadow:          0 0 100px -8px rgba(0, 0, 0, .6);
+$scroller-dot-size:        8px;
+$scroller-dot-color:       $brand-primary;
+$scroller-tooltip-height:  48px;
+$scroller-arrow-size:      8px;
+
+//== Floating Menu Button
+$floating-menu-bar-height:    93px;
+$floating-menu-btn-size:      48px;
+$floating-menu-btn-icon-size: 24px;
+$floating-menu-btn-shadow:    0 5px 32px -6px rgba(0, 0, 0, .75);
+
+//== Vertical Navigation
+$vertical-nav-arrow-box-heigh: 28px;
+
+//== Breadcrumbs
+$breadcrumb-link-font-size:     $font-size-base;
+$breadcrumb-link-font-weight:   600;
+$breadcrumb-link-color:         $gray-darker;
+$breadcrumb-link-hover-color:   $brand-primary;
+
+
+//== Buttons
+// -------------------------------------------------------
+
+$btn-lg-height:          60px;
+$btn-height:             48px;
+$btn-sm-height:          36px;
+$btn-xs-height:          24px;
+
+$btn-border-width:       1px;
+
+$btn-lg-padding:         0 25px;
+$btn-padding:            0 14px;
+$btn-sm-padding:         0 14px;
+$btn-xs-padding:         0 14px;
+
+$btn-lg-font-size:       floor(($font-size-base * 1.29)); // ~18px
+$btn-font-size:          floor(($font-size-base * 1.29)); // ~18px
+$btn-sm-font-size:       ceil(($font-size-base * 1.14)); // ~16px
+$btn-xs-font-size:       $font-size-base;
+$btn-font-weight:        600;
+$btn-font-style:         normal;
+$btn-text-transform:     none;
+$btn-3d-shadow-size:     4px;
+
+// Close Button
+$close-btn-size:            24px;
+
+// Scroll To Top Button
+$scroll-top-btn-size: 			36px;
+
+
+//== Social Buttons
+// -------------------------------------------------------
+$social-btn-box-size:                 36px;
+$social-btn-border-width:             1px;
+
+
+//== Market Buttons
+// -------------------------------------------------------
+
+// Global
+$market-btn-height:       60px;
+
+// Amazon
+$amazon-btn-width:        185px;
+$amazon-btn-bg:           #f5f5f5;
+$amazon-btn-color:        #000000;
+
+// App Store
+$appstore-btn-width:      200px;
+$appstore-btn-bg:         #000000;
+$appstore-btn-color:      #ffffff;
+
+// Google Play
+$playstore-btn-width:     202px;
+$playstore-btn-bg:        #f5f5f5;
+$playstore-btn-color:     #000000;
+
+// Windows
+$windows-btn-width:       215px;
+$windows-btn-bg:          #00adef;
+$windows-btn-color:       #ffffff;
+
+// Blackberry
+$blackberry-btn-width:    218px;
+$blackberry-btn-bg:       #000000;
+$blackberry-btn-color:    #ffffff;
+
+
+//== Blog
+// ---------------------------------------------------------
+$post-author-thumb-size:        174px;
+
+
+//== Pagination
+// ---------------------------------------------------------
+$page-link-size:              ceil(($font-size-base * 1.14)); // ~16px
+$page-link-weight:            600;
+$page-link-color:             $gray;
+$page-link-hover-color:       $brand-primary;
+
+
+//== Widgets
+// ---------------------------------------------------------
+$sidebar-max-width:        320px;
+$widget-border:            1px solid $gray-lighter;
+$widget-title-border:      1px solid $hr-border-color;
+$widget-link-border:       1px solid $hr-border-color;
+
+// Recent Posts Widget
+$recent-posts-thumb-size:  60px;
+
+// Tags Widget
+$tag-border-radius:      2px;
+
+
+//== Shop
+// ---------------------------------------------------------
+$cart-thumb-size:        107px;
+$widget-shop-thumb-size: 60px;
+
+
+//== Comments
+// ---------------------------------------------------------
+$coment-author-ava-size:     60px;
+
+
+//== Icon Box
+// -------------------------------------------------------
+$icon-box-icon-size:              72px;
+$icon-box-horizontal-icon-size:   48px;
+$icon-box-bg-opacity:             .05;
+
+
+//== Testimonials
+// -------------------------------------------------------
+$testimonial-author-ava-size:         48px;
+
+
+//== Team
+// -------------------------------------------------------
+$teammate-max-width:              380px;
+$teammate-name-font-weight:       600;
+$teammate-tile-name-font-weight:  300;
+$teammate-horizontal-thumb-width: 100px;
+$teammate-overlay-opacity:        .8;
+
+
+//== Pricin Plan / Table
+// -------------------------------------------------------
+
+$pricing-plan-border:               1px solid $gray-light;
+$pricing-plan-img-size:             96px;
+$pricing-plan-img-lg-size:          180px;
+$pricing-plan-feature-title-weight: 500;
+$pricing-table-min-width:           940px;
+
+
+//== Tabs
+// -------------------------------------------------------
+$nav-tabs-font-size:								floor(($font-size-base * 1.29)); // ~18px
+$nav-tabs-font-weight:							normal;
+$nav-tabs-icon-font-size:						ceil(($font-size-base * 1.14)); // ~16px
+$nav-tabs-link-color: 							$gray-dark;
+$nav-tabs-link-active-color:  			$brand-primary;
+
+
+//== Panels / Accordion
+// -------------------------------------------------------
+$panel-border:                1px solid $hr-border-color;
+$panel-arrow-box-width:       50px;
+
+
+//== Timeline
+// -------------------------------------------------------
+$timeline-dot-size:              9px;
+
+
+//== Steps
+// -------------------------------------------------------
+$steps-min-width:          920px;
+$step-dot-size:            9px;
+
+
+//== Contacts Tile
+// ---------------------------------------------------------
+$contacts-tile-flag-size:       24px;
+
+
+//== Category Tile
+// ---------------------------------------------------------
+$category-tile-overlay-opacity:        .35;
+$category-tile-hover-overlay-opacity:  .75;
+
+
+//== Carousel
+// -------------------------------------------------------
+$carousel-navs-size:               36px;
+$carousel-navs-lg-size:            48px;
+$carousel-navs-arrow-size:         16px;
+$carousel-navs-lg-arrow-size:      24px;
+$carousel-dots-size:               8px;
+
+
+//== Logo Carousel
+// -------------------------------------------------------
+$logo-carousel-item-border:            1px solid $hr-border-color;
+$logo-carousel-item-title-weight:      600;
+
+
+//== Gallery
+// -------------------------------------------------------
+$gallery-icon-box-size:       72px;
+$gallery-icon-size:           24px;
+$gallery-overlay-opacity:     .5;
+
+
+//== Progress Bars
+// -------------------------------------------------------
+$progress-bar-height:          12px;
+
+
+//== Video Popup
+// -------------------------------------------------------
+$video-popup-btn-size:          68px;
+
+
+//== Classes
+// -------------------------------------------------------
+$classes-tile-border:            1px solid $gray-light;
+$classes-tile-overlay-opacity:   .5;
+$classes-tile-avatar-size:       40px;
+
+
+//== Custom Links
+// -------------------------------------------------------
+$custom-link-border:            1px solid $gray-lighter;
+
+
+//== Tooltips
+// -------------------------------------------------------
+$zindex-tooltip:        1070;
+$tooltip-max-width:  		200px;
+$tooltip-arrow-width:   5px;
+$tooltip-opacity:       .9;
+
+
+//== Media queries (responsive breakpoints)
+//## Desktop, Tablet, Mobile
+// -------------------------------------------------------
+
+$desktop:   		   1200px;
+$tablet-land:      991px;
+$tablet-port:      768px;
+$mobile-land:      480px;
+$mobile-port:		 	 360px;
+$nav-collapse: 		 $tablet-land;
+$topbar-collapse:  $tablet-land;

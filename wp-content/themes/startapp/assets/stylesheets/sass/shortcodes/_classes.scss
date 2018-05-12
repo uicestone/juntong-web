@@ -1,0 +1,247 @@
+//
+// Classes
+// -----------------------------------------------------
+
+// Base class
+.classes-wrap {
+  .img-box {
+    position: relative;
+    img { display: block; }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $gray-darker;
+      opacity: $classes-tile-overlay-opacity;
+      z-index: 5;
+    }
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: 0;
+      @include transform(translate(-50%, -50%));
+      z-index: 10;
+    }
+  }
+  .classes-tile-header {
+    display: flex;
+    justify-content: space-between;
+    color: $gray-darker;
+    @media screen and (max-width: $mobile-land) {
+      display: block;
+      .date-time { text-align: center; }
+      .author {
+        justify-content: center;
+        margin-top: $grid-vertical-step / 2;
+      }
+      .badge-cont {
+        justify-content: center;
+        margin-top: $grid-vertical-step / 2;
+      }
+    }
+  }
+  .date-time i { top: -2px; }
+  .author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $gray-darker;
+    font-weight: normal;
+    text-decoration: none;
+    .name span {
+      display: block;
+      line-height: 1.1;
+      text-align: right;
+    }
+    .ava {
+      width: $classes-tile-avatar-size;
+      height: $classes-tile-avatar-size;
+      margin-left: $grid-vertical-step / 2;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+  a.author:hover {
+    color: $link-hover-color;
+  }
+  .classes-tile-content {color: $gray;}
+  .title {
+    margin-top: $grid-vertical-step;
+    margin-bottom: 0;
+    a {
+      display: block;
+      @include link-default($text-color, $link-hover-color);
+      color: $gray-darker;
+      font-size: $font-size-lead;
+      font-weight: 400;
+    }
+  }
+  .subtitle {
+    font-size: $font-size-sm;
+    font-weight: 600;
+  }
+  .text { margin-top: $grid-vertical-step / 2; }
+  .tickets-left {
+    color: $gray-darker;
+    i { top: -1px; }
+  }
+  .badge-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .badge {
+    display: block;
+    padding: ($grid-vertical-step / 4) ($grid-vertical-step / 2);
+    border-radius: $border-radius-default;
+    background-color: $brand-default;
+    color: $light-color;
+    font-size: $font-size-sm;
+
+    // Badges Colors
+    &.badge-default {background-color: $brand-default;}
+    &.badge-primary {background-color: $brand-primary;}
+    &.badge-info {background-color: $brand-info;}
+    &.badge-success {background-color: $brand-success;}
+    &.badge-warning {background-color: $brand-warning;}
+    &.badge-danger {background-color: $brand-danger;}
+    &.badge-gray {
+      background-color: $gray-lighter;
+      color: $text-color;
+    }
+  }
+  i {position: relative;}
+}
+
+.classes-tile {
+  border: $classes-tile-border;
+  border-radius: $border-radius-default;
+  background-color: $light-color;
+  overflow: hidden;
+  .img-box {
+    margin: -1px;
+  }
+  .classes-tile-header {padding: ($grid-vertical-step / 1.5) $grid-vertical-step 0;}
+  .classes-tile-content {
+    padding: 0 $grid-vertical-step;
+  }
+
+  .classes-tile-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 $grid-vertical-step $grid-vertical-step;
+  }
+}
+
+// Single Class Meta
+.class-single-meta {
+  > .container { width: 100% !important; }
+  .author {
+    margin-top: 0 !important;
+    padding-right: 30px;
+    .ava {
+      width: floor($classes-tile-avatar-size * 2.5);
+      height: floor($classes-tile-avatar-size * 2.5);
+      margin: {
+        right: floor($grid-vertical-step / 1.8);
+        left: 0;
+      }
+    }
+    .name {
+      font-size: floor(($font-size-base * 1.29)); // ~18px
+      span { text-align: left; }
+    }
+  }
+  .class-subtitle {
+    margin-bottom: floor($grid-vertical-step * 2);
+    color: $gray;
+    font-size: $font-size-h4;
+    text-align: center;
+  }
+  .classes-tile-header {
+    display: table;
+    margin: 0 auto floor($grid-vertical-step * 2);
+    .date-time, .badge-cont {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .date-time {
+      padding-right: 40px;
+      line-height: 1.8;
+    }
+  }
+}
+.page-title[style^='background-image'] + .startapp_classes {
+  padding-top: floor($grid-vertical-step * 3);
+}
+@media screen and (max-width: $tablet-port) {
+  .class-single-meta .class-subtitle {
+    margin-bottom: floor($grid-vertical-step * 1.5);
+  }
+  .page-title[style^='background-image'] + .startapp_classes {
+    padding-top: floor($grid-vertical-step * 2);
+  }
+}
+@media screen and (max-width: $mobile-land) {
+  .class-single-meta {
+    .author {
+      display: block;
+      margin-bottom: 15px;
+      padding-right: 0;
+      .ava { margin: 0 auto; }
+      .name { padding-top: 10px; }
+      .name span {
+        display: inline-block;
+        margin: 0 4px;
+      }
+    }
+    .classes-tile-header {
+      display: block;
+      margin: 0 auto floor($grid-vertical-step * 2);
+      text-align: center;
+      .date-time, .badge-cont {
+        display: block;
+        width: 100%;
+      }
+      .badge { display: inline-block; }
+      .date-time {
+        padding-right: 0;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+
+// Fixes For Weekly Class Schedule Plugin
+// -----------------------------------------------------
+.wcs-timetable__wrapper {
+  .wcs-timetable__container {
+    padding-top: 0 !important;
+  }
+  ol li {
+    padding-left: 0;
+    &::before {display: none !important;}
+  }
+  .wcs-timetable__tabs-nav-item.active a {
+    color: $light-color;
+  }
+  .wcs-timetable__tabs-nav::before {
+    border-color: $gray-light;
+  }
+  .wcs-timetable__tabs-data .wcs-btn {
+    color: $light-color;
+    text-decoration: none;
+    &:hover {
+      color: $light-color;
+      opacity: .8;
+    }
+  }
+  .wcs-timetable__tabs .wcs-timetable__tabs-data .wcs-class:last-child td {
+    border-bottom: 1px solid $gray-light !important;
+  }
+}

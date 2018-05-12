@@ -1,0 +1,166 @@
+//
+// Form Controls (input, select, radio, checkbox, etc.)
+// -----------------------------------------------------
+
+// Base Class
+textarea,
+select,
+input[type]:not([type='submit']):not([type='hidden']):not([type='checkbox']):not([type='radio']):not([type='file']) {
+  display: block;
+  width: 100%;
+  height: $input-height;
+  margin-bottom: $grid-vertical-step;
+  padding: 0 floor($grid-vertical-step / 2); //~ 0 12px
+  border: {
+    width: $input-border-width;
+    color: $input-border-color;
+    style: solid;
+    radius: $border-radius-default;
+  }
+  background-color: $input-bg-color;
+  color: $input-color;
+  font-size: $input-font-size;
+  @include appearance(none);
+  @include transition(all .35s);
+
+  // Placeholder
+  @include placeholder;
+
+  // Focus state
+  &:focus {
+    border-color: $input-focus-border-color;
+    outline: 0;
+    background-color: $input-focus-bg-color;
+  }
+}
+.ninja-forms-field:not(textarea) { height: $input-height !important; }
+input[type='submit']:focus,
+input[type='file']:focus { outline: none; }
+.wpcf7-form-control-wrap,
+.field-wrap {
+  textarea,
+  select,
+  input[type]:not([type='submit']):not([type='hidden']):not([type='checkbox']):not([type='radio']) {
+    margin-bottom: 0;
+  }
+}
+.field-wrap {
+  margin-bottom: $grid-vertical-step !important;
+  ul li {
+    padding-left: 0 !important;
+    &::before { display: none; }
+  }
+}
+
+// Select
+select::-ms-expand { display: none; }
+.form-select {
+  position: relative;
+  margin-bottom: $grid-vertical-step;
+  &::before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: floor($grid-vertical-step / 2); //~12px
+    margin-top: -($input-font-size / 2);
+    color: $brand-primary;
+    margin-top: -($input-font-size / 2);
+    font: {
+      family: 'Material Icons';
+      size: $input-font-size;
+    }
+    line-height: 1;
+    content: '\e313';
+  }
+  select {
+    margin-bottom: 0;
+    padding-right: ($input-font-size + floor($grid-vertical-step / 2) + 10);
+  }
+}
+select[multiple],
+select[multiple].ninja-forms-field {
+  width: 100%;
+  height: $input-multiple-height !important;
+}
+select[multiple].ninja-forms-field + .form-select::before {
+  display: none;
+}
+
+// Label, Helper texts
+label,
+.ninja-forms-form-wrap label {
+  display: block;
+  margin-bottom: floor($grid-vertical-step / 4); //~6px
+  color: $gray;
+  font: {
+    size: $font-size-base;
+    weight: normal !important;
+  }
+  .wpcf7-form-control-wrap {
+    display: block;
+    padding-top: floor($grid-vertical-step / 4); //~6px
+  }
+}
+.ninja-forms-required-items {
+  margin-bottom: $grid-vertical-step;
+}
+
+// Input Sizes
+.input-lg {
+  height: $input-lg-height;
+  font-size: $input-lg-font-size;
+}
+.input-sm {
+  height: $input-sm-height;
+  font-size: $input-sm-font-size;
+}
+.input-xs {
+  height: $input-xs-height;
+  font-size: $input-xs-font-size;
+}
+textarea {
+  height: auto;
+  padding: floor($grid-vertical-step / 2); //~12px
+}
+
+// Search Box Form
+.search-box {
+  position: relative;
+  > input {
+    margin-bottom: 0 !important;
+    padding-left: 38px !important;
+  }
+  > button[type='submit'] {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    margin-top: -16px;
+    border: 0;
+    background: none;
+    color: $brand-primary;
+    font-size: $input-font-size;
+    &:focus { outline: 0; }
+  }
+}
+.search-highlight {
+  background-color: $search-highlight;
+}
+
+// Checkboxes and Radios
+span.wpcf7-list-item { margin: 0 !important; }
+.wpcf7-list-item-label { margin-left: 4px; }
+
+// Form Validation
+.wpcf7-not-valid-tip,
+.ninja-forms-field-error p {
+  display: block;
+  margin-bottom: 0;
+  padding-top: floor($grid-vertical-step / 4); //~6px
+  color: $brand-danger !important;
+}
+div.wpcf7-validation-errors {
+  border-color: $brand-danger !important;
+}
+div.wpcf7-mail-sent-ok {
+  border-color: $brand-success !important;
+}

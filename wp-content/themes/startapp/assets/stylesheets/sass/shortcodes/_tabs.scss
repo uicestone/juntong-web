@@ -1,0 +1,178 @@
+//
+// Tabs + Filters
+// -------------------------------------------------------------------
+
+.nav-tabs,
+.nav-filters > ul,
+.wc-tabs {
+  margin-bottom: 0;
+  padding-left: 0;
+  border: 0;
+  list-style: none;
+  > li {
+    display: inline-block;
+    position: relative;
+    margin: 0 32px 14px 0;
+    padding: 0;
+    &:last-child { margin-right: 0; }
+    &::before { display: none; }
+    > a {
+      border-bottom: 1px solid transparent;
+      border-radius: 0;
+      color: $nav-tabs-link-color;
+      font: {
+        size: $nav-tabs-font-size;
+        weight: $nav-tabs-font-weight;
+      }
+      line-height: $line-height-base;
+      text-decoration: none;
+      @include user-select(none);
+      @include transition(all .3s);
+      > i {
+        margin-top: -3px;
+        font-size: $nav-tabs-icon-font-size;
+      }
+    }
+    > a:hover,
+    > a:focus {
+      outline: none;
+      text-decoration: none;
+    }
+    > a:hover { color: $nav-tabs-link-active-color; }
+
+    // Active state, and its :hover to override normal :hover
+    &.active > a,
+    &.active > a:hover,
+    &.active > a:focus {
+      border-bottom-color: $nav-tabs-link-active-color;
+      color: $nav-tabs-link-active-color;
+      cursor: default;
+    }
+  }
+}
+.nav-filters {
+  margin: {
+    top: $grid-vertical-step; //~24px
+    bottom: floor($grid-vertical-step * 1.5); //~36px
+  }
+}
+
+// Alignment: Center
+.text-center {
+  .nav-tabs,
+  &.nav-tabs {
+    > li { margin: 0 16px 14px; }
+  }
+}
+
+// Alignment: Right
+.text-right {
+  .nav-tabs,
+  &.nav-tabs {
+    > li { margin: 0 0 14px 32px; }
+    > li:first-child { margin-left: 0; }
+  }
+}
+
+// Tabbable tabs
+.tab-content {
+  padding-top: floor($grid-vertical-step / 2); // ~12px
+  > .tab-pane { display: none; }
+  > .active { display: block; }
+}
+
+// Vertical Layout
+.tabs-vertical {
+  display: table;
+  width: 100%;
+  .nav-tabs,
+  .tab-content {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .nav-tabs > li {
+    display: block;
+    > a { white-space: nowrap; }
+  }
+  &.tabs-vertical-left {
+    .tab-content { padding: 5px 0 0 15px; }
+  }
+  &.tabs-vertical-right {
+    .tab-content { padding: 5px 15px 0 0; }
+  }
+  @media screen and (max-width: $mobile-land) {
+    .nav-tabs,
+    .tab-content {
+      display: block;
+      > li { display: inline-block; }
+    }
+    &.tabs-vertical-left {
+      .tab-content { padding: floor($grid-vertical-step / 2) 0 0; }
+    }
+    &.tabs-vertical-right {
+      .tab-content { padding: 0 0 $grid-vertical-step; }
+    }
+  }
+}
+
+// Light Skin
+.nav-tabs-light {
+  > li {
+    > a { color: rgba($light-color, .5); }
+    > a:hover { color: $light-color; }
+    &.active > a,
+    &.active > a:hover,
+    &.active > a:focus {
+      border-bottom-color: $light-color;
+      color: $light-color;
+    }
+  }
+}
+
+// Component Animations
+.transition {
+  &.fade {
+    opacity: 0;
+    @include transition(all .4s ease-in-out);
+    @include backface-visibility(hidden);
+    &.in { opacity: 1; }
+  }
+  &.scale.fade {
+    @include transform(scale(.9));
+  }
+  &.scaledown.fade {
+    @include transform(scale(1.1));
+  }
+  &.scale.fade.in,
+  &.scaledown.fade.in {
+    @include transform(scale(1));
+  }
+  &.left.fade {
+    @include transform(translateX(40px));
+  }
+  &.right.fade {
+    @include transform(translateX(-40px));
+  }
+  &.left.fade.in,
+  &.right.fade.in {
+    @include transform(translateX(0));
+  }
+  &.top.fade {
+    @include transform(translateY(-40px));
+  }
+  &.bottom.fade {
+    @include transform(translateY(40px));
+  }
+  &.top.fade.in,
+  &.bottom.fade.in {
+    @include transform(translateY(0));
+  }
+  &.flip.fade {
+    @include transform(rotateY(-90deg) scale(1.1));
+    @include transform-origin(50% 50%);
+  }
+  &.flip.fade.in {
+    @include transform(rotateY(0deg) scale(1));
+    @include transform-origin(50% 50%);
+  }
+}

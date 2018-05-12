@@ -1,0 +1,99 @@
+//
+// Steps
+// -------------------------------------------------------------------
+.steps {
+  min-height: .01%;
+  overflow-x: auto;
+
+  // Inner container
+  .inner {
+    display: table;
+    width: 100%;
+    min-width: $steps-min-width;
+  }
+
+  // Individual Step
+  .step {
+    display: table-cell;
+    cursor: default;
+    vertical-align: top;
+  }
+
+  // Step label
+  .step-label {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0 10px floor($grid-vertical-step * 2.5);
+    color: $gray;
+    font: {
+      size: floor(($font-size-base * 1.29));
+      weight: normal;
+    }
+    text-align: center;
+    @include transition(color .3s);
+
+    // Dot and Line
+    &::before,
+    &::after {
+      display: block;
+      position: absolute;
+      content: '';
+    }
+    &::before {
+      top: 54%;
+      left: 50%;
+      width: $step-dot-size;
+      height: $step-dot-size;
+      margin-top: -(floor($step-dot-size / 2)); // -5px
+      margin-left: -(floor($step-dot-size / 2)); // -5px
+      border-radius: 50%;
+      background-color: $brand-primary;
+      z-index: 2;
+    }
+    &::after {
+      top: 54%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $hr-border-color;
+      z-index: 1;
+    }
+  }
+  .step:first-child {
+    .step-label::after {
+      right: 0;
+      left: auto;
+      width: 50%;
+    }
+  }
+  .step:last-child {
+    .step-label::after { width: 50%; }
+  }
+  .step:hover .step-label {
+    color: $gray-darker;
+  }
+
+  // Step Body: Uses Icon Box Styles _icon-box.scss
+  .step-body { padding: 0 10px; }
+  .icon-box.icon-box-bg-enabled {
+    padding: floor($grid-vertical-step * 1.5) $grid-vertical-step;
+  }
+
+  // Light Skin
+  &.steps-light {
+    .step {
+      .step-label { color: rgba($light-color, .5); }
+      .step-label::before { background-color: $light-color; }
+      .step-label::after { background-color: $hr-border-light-color; }
+      &:hover .step-label { color: $light-color; }
+    }
+    .icon-box {
+      .icon-box-title { color: $light-color; }
+      .icon-box-description p {
+        color: $light-color;
+        opacity: .5;
+      }
+    }
+  }
+}

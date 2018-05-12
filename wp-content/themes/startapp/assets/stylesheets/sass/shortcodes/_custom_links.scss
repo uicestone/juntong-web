@@ -1,0 +1,31 @@
+//
+// Custom Links
+// -------------------------------------------------------------------
+
+.custom-links > ul {
+  list-style: none;
+  > li {
+    margin-bottom: 30px;
+    padding: 0 0 $grid-vertical-step;
+    border-bottom: $custom-link-border;
+    &::before { display: none; }
+    &:last-child { margin-bottom: 0; }
+    > span {
+      display: block;
+      margin-bottom: floor($grid-vertical-step / 4); //~6px
+      color: $gray;
+      font-size: $font-size-base;
+    }
+    > a {
+      color: $gray-darker;
+      font: {
+        size: ceil(($font-size-base * 1.7));
+        weight: normal;
+      }
+      text-decoration: none;
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+}

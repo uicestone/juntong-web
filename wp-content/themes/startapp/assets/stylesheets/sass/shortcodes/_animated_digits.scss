@@ -1,0 +1,60 @@
+//
+// Animated Digits
+// -------------------------------------------------------------------
+
+.animated-digit-box {
+  margin-bottom: 30px;
+  padding: {
+    top: floor($grid-vertical-step * 3); //~72px
+    right: $grid-vertical-step; //~24px
+    bottom: floor($grid-vertical-step * 3); //~72px
+    left: $grid-vertical-step; //~24px
+  }
+  border-radius: $border-radius-default;
+  text-align: center;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  .animated-digit {
+    font: {
+      size: ceil($font-size-base * 5.14);
+      weight: 300;
+    }
+    line-height: 1;
+  }
+  .description {
+    margin: $grid-vertical-step 0 0; //~24px 0 0
+    color: $gray;
+    font-size: $font-size-base;
+  }
+
+  // Color Skins
+  &.skin-default {
+    background-color: rgba($brand-default, .05);
+    .animated-digit { color: $brand-default; }
+  }
+  &.skin-primary {
+    background-color: rgba($brand-primary, .05);
+    .animated-digit { color: $brand-primary; }
+  }
+  &.skin-info {
+    background-color: rgba($brand-info, .05);
+    .animated-digit { color: $brand-info; }
+  }
+  &.skin-success {
+    background-color: rgba($brand-success, .05);
+    .animated-digit { color: $brand-success; }
+  }
+  &.skin-warning {
+    background-color: rgba($brand-warning, .05);
+    .animated-digit { color: $brand-warning; }
+  }
+  &.skin-danger {
+    background-color: rgba($brand-danger, .05);
+    .animated-digit { color: $brand-danger; }
+  }
+  &.skin-light {
+    background-color: rgba($light-color, .05);
+    .animated-digit { color: $brand-primary; }
+    .description { color: rgba($light-color, .5); }
+  }
+}

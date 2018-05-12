@@ -1,0 +1,123 @@
+//
+// Testimonials
+// -------------------------------------------------------------------
+
+.testimonial {
+
+  // Quotation mark
+  &::before {
+    display: inline-block;
+    margin-left: -3px;
+    color: $quote-mark-color;
+    font: {
+      family: 'Material Icons';
+      size: $quote-mark-icon;
+    }
+    line-height: 1.17;
+    content: '\e244';
+  }
+  .testimonial-body {
+    h1, h2, h3, h4, h5, h6,
+    p, ol, ul {
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+  .testimonial-cite {
+    display: inline-block;
+    margin-top: $grid-vertical-step; // ~24px
+  }
+  .testimonial-author-ava,
+  .testimonial-author-info {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .testimonial-author-ava {
+    width: $testimonial-author-ava-size + floor($grid-vertical-step / 2);
+    padding-right: floor($grid-vertical-step / 2); // ~12px
+    > img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .testimonial-author-info {
+    color: $gray;
+    font: {
+      size: $font-size-base;
+      weight: normal;
+    }
+    > a {
+      font-weight: normal;
+      text-decoration: none;
+    }
+  }
+
+  // Author Ava Shapes
+  &.testimonial-ava-circle {
+    .testimonial-author-ava > img { border-radius: 50%; }
+  }
+  &.testimonial-ava-rounded {
+    .testimonial-author-ava > img {
+      border-radius: $border-radius-default;
+    }
+  }
+
+  // Background version
+  &.testimonial-background {
+    padding: $grid-vertical-step;
+    border-radius: $border-radius-default;
+    &.bg-gray,
+    &.bg-primary,
+    &.bg-info,
+    &.bg-success,
+    &.bg-warning,
+    &.bg-danger {
+      &::before { color: $light-color; }
+    }
+  }
+}
+
+// Light Skin
+.text-light {
+  .testimonial,
+  &.testimonial {
+    &::before { color: $light-color; }
+    .testimonial-author-info {
+      color: $light-color;
+      opacity: .5;
+    }
+  }
+}
+
+// Text Alignment
+.text-center {
+  .testimonial,
+  &.testimonial {
+    &::before { margin-left: 0; }
+  }
+}
+.text-right {
+  .testimonial,
+  &.testimonial {
+    &::before {
+      margin-right: -3px;
+      margin-left: 0;
+    }
+  }
+}
+
+// Testimonals Carousel
+.testimonials-carousel {
+  padding-bottom: floor($grid-vertical-step * 2); // ~48px
+  overflow: hidden;
+  .slick-list { margin-left: -($grid-vertical-step); }
+  .slick-dots { margin-bottom: 0; }
+  .carousel-item {
+    padding: 0 15px 0 $grid-vertical-step;
+    border-left: 1px solid $hr-border-color;
+  }
+
+  // Light Skin
+  &.carousel-light .carousel-item {
+    border-left-color: $hr-border-light-color;
+  }
+}

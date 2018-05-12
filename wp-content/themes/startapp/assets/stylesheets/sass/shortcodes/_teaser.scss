@@ -1,0 +1,19 @@
+//
+// Teaser
+// -------------------------------------------------------------------
+
+.teaser {
+  padding: $grid-vertical-step;
+  border-radius: $border-radius-default;
+  background-color: $gray-lighter;
+
+  // Image
+  > img {
+    display: inline-block;
+    margin-bottom: floor($grid-vertical-step / 1.2);
+    border-radius: $border-radius-default;
+  }
+
+  // Button
+  .btn { margin: 0; }
+}

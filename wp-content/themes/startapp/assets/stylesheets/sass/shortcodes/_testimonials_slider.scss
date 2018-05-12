@@ -1,0 +1,62 @@
+//
+// Testimonials Slider
+// -------------------------------------------------------------------
+
+.testimonials-slider {
+  .testimonial-slide {
+    background: {
+      position: center;
+      repeat: no-repeat;
+      size: cover;
+    }
+    .inner { max-width: 870px; }
+  }
+  .testimonial-logo {
+    display: inline-block;
+    > img { width: 100%; }
+  }
+  blockquote { margin-top: floor($grid-vertical-step * 2); }
+
+  // Dots
+  .slick-dots {
+    bottom: floor($grid-vertical-step * 3);
+    left: 50%;
+    width: 1140px;
+    margin-left: -570px;
+    @media screen and (max-width: $desktop) {
+      width: 940px;
+      margin-left: -470px;
+    }
+    @media screen and (max-width: $tablet-land) {
+      width: 720px;
+      margin-left: -360px;
+    }
+    @media screen and (max-width: $tablet-port) {
+      bottom: floor($grid-vertical-step * 1.5);
+      left: 0;
+      width: 100%;
+      margin-left: 0;
+      padding: 0 15px;
+    }
+  }
+
+  // Alignment
+  &.text-center {
+    .testimonial-slide .inner { margin: auto; }
+    .slick-dots > li {
+      text-align: center;
+      &::before { display: none; }
+    }
+  }
+  &.text-right {
+    .testimonial-slide {
+      .container { @include clearfix; }
+      .inner { float: right; }
+    }
+  }
+}
+
+// Light Skin
+.text-light {
+  .testimonial-slide h3 { color: $light-color; }
+}

@@ -1,0 +1,259 @@
+//
+// Buttons
+// -----------------------------------------------------
+
+// Base class
+.btn,
+input[type='submit'] {
+  display: inline-block;
+  position: relative;
+  height: $btn-height;
+  margin: floor($grid-vertical-step / 2) floor($grid-vertical-step / 2) floor($grid-vertical-step / 2) 0;
+  padding: $btn-padding;
+  border: $btn-border-width solid transparent;
+  border-radius: $border-radius-default;
+  background: {
+    color: transparent;
+    image: none;
+  }
+  font: {
+    size: $btn-font-size;
+    style: $btn-font-style;
+    weight: $btn-font-weight;
+  }
+  line-height: ($btn-height - ($btn-border-width * 2));
+  white-space: nowrap;
+  cursor: pointer;
+  vertical-align: middle;
+  text: {
+    transform: $btn-text-transform;
+    decoration: none;
+    align: center;
+  }
+  touch-action: manipulation;
+  &:hover,
+  &:focus
+  &:active,
+  &.active {
+    outline: none;
+    background-image: none;
+    text-decoration: none;
+  }
+  @include transform(translateZ(0));
+  @include user-select(none);
+  @include transition(all .3s);
+  > i,
+  > i::before {
+    display: inline-block;
+    line-height: $btn-height;
+    vertical-align: top;
+  }
+}
+input[type='submit'] { margin: 5px 0; }
+
+// Normal Buttons Color Variants
+// @mixin button-variant($bg-color, $color, $bg-hover-color)
+.btn-default,
+input[type='submit'] { @include button-variant($brand-default, $light-color, lighten($brand-default, 10%)); }
+.btn-primary,
+input[type='submit'].btn-primary { @include button-variant($brand-primary, $light-color, darken($brand-primary, 10%)); }
+.btn-info,
+input[type='submit'].btn-info { @include button-variant($brand-info, $light-color, darken($brand-info, 10%)); }
+.btn-success,
+input[type='submit'].btn-success { @include button-variant($brand-success, $light-color, darken($brand-success, 10%)); }
+.btn-warning,
+input[type='submit'].btn-warning { @include button-variant($brand-warning, $light-color, darken($brand-warning, 10%)); }
+.btn-danger,
+input[type='submit'].btn-danger { @include button-variant($brand-danger, $light-color, darken($brand-danger, 10%)); }
+.btn-light,
+input[type='submit'].btn-light { @include button-variant($light-color, $brand-primary, $light-color); }
+
+// Ghost Buttons Color Variants
+// @mixin button-ghost-variant($color, $color-hover, $border-color)
+.btn-ghost,
+input[type='submit'].btn-ghost {
+  background-color: transparent;
+  &.btn-default { @include button-ghost-variant($brand-default, $light-color, rgba($brand-default, .15)); }
+  &.btn-primary { @include button-ghost-variant($brand-primary, $light-color, rgba($brand-primary, .15)); }
+  &.btn-info { @include button-ghost-variant($brand-info, $light-color, rgba($brand-info, .2)); }
+  &.btn-success { @include button-ghost-variant($brand-success, $light-color, rgba($brand-success, .2)); }
+  &.btn-warning { @include button-ghost-variant($brand-warning, $light-color, rgba($brand-warning, .25)); }
+  &.btn-danger { @include button-ghost-variant($brand-danger, $light-color, rgba($brand-danger, .15)); }
+  &.btn-light { @include button-ghost-variant($light-color, $brand-primary, rgba($light-color, .15)); }
+}
+
+// Transparent Buttons Color Variants
+// @mixin button-transparent-variant($color, $color-hover, $bg-color)
+.btn-transparent,
+input[type='submit'].btn-transparent {
+  &.btn-default { @include button-transparent-variant($brand-default, $light-color, rgba($brand-default, .15)); }
+  &.btn-primary { @include button-transparent-variant($brand-primary, $light-color, rgba($brand-primary, .15)); }
+  &.btn-info { @include button-transparent-variant($brand-info, $light-color, rgba($brand-info, .2)); }
+  &.btn-success { @include button-transparent-variant($brand-success, $light-color, rgba($brand-success, .2)); }
+  &.btn-warning { @include button-transparent-variant($brand-warning, $light-color, rgba($brand-warning, .25)); }
+  &.btn-danger { @include button-transparent-variant($brand-danger, $light-color, rgba($brand-danger, .15)); }
+  &.btn-light { @include button-transparent-variant($light-color, $brand-primary, rgba($light-color, .15)); }
+}
+
+// 3D Buttons
+.btn-3d,
+input[type='submit'].btn-3d {
+  height: ($btn-height - $btn-3d-shadow-size);
+  line-height: ($btn-height - $btn-3d-shadow-size);
+  @include transform(translateY(0));
+  @include transition(all .25s);
+  &:active { @include transform(translateY(2px)); }
+  > i,
+  > i::before {
+    line-height: ($btn-height - $btn-3d-shadow-size);
+  }
+
+  // Color Variants
+  // @mixin button-3d-variant($bg-color, $color, $shadow-color, $bg-hover-color)
+  &.btn-default { @include button-3d-variant($brand-default, $light-color, lighten($brand-default, 25%), lighten($brand-default, 10%)); }
+  &.btn-primary { @include button-3d-variant($brand-primary, $light-color, darken($brand-primary, 15%), darken($brand-primary, 10%)); }
+  &.btn-info { @include button-3d-variant($brand-info, $light-color, darken($brand-info, 15%), darken($brand-info, 10%)); }
+  &.btn-success { @include button-3d-variant($brand-success, $light-color, darken($brand-success, 15%), darken($brand-success, 10%)); }
+  &.btn-warning { @include button-3d-variant($brand-warning, $light-color, darken($brand-warning, 15%), darken($brand-warning, 10%)); }
+  &.btn-danger { @include button-3d-variant($brand-danger, $light-color, darken($brand-danger, 15%), darken($brand-danger, 10%)); }
+  &.btn-light { @include button-3d-variant($light-color, $brand-primary, darken($gray-light, 15%), $light-color); }
+}
+
+// Link Buttons
+.btn-link {
+  background-color: transparent;
+  &:hover { background-color: transparent; }
+
+  // Color Variants
+  // @mixin button-link-variant($color, $color-hover)
+  &.btn-default { @include button-link-variant($brand-default, lighten($brand-default, 10%)); }
+  &.btn-primary { @include button-link-variant($brand-primary, darken($brand-primary, 10%)); }
+  &.btn-info { @include button-link-variant($brand-info, darken($brand-info, 10%)); }
+  &.btn-success { @include button-link-variant($brand-success, darken($brand-success, 10%)); }
+  &.btn-warning { @include button-link-variant($brand-warning, darken($brand-warning, 10%)); }
+  &.btn-danger { @include button-link-variant($brand-danger, darken($brand-danger, 10%)); }
+  &.btn-light { @include button-link-variant($light-color, $light-color); }
+}
+
+// Button Sizes
+.btn-lg {
+  height: $btn-lg-height;
+  padding: $btn-lg-padding;
+  font-size: $btn-lg-font-size;
+  line-height: ($btn-lg-height - ($btn-border-width * 2));
+  > i , > i::before {
+    line-height: $btn-lg-height;
+  }
+  &.btn-3d,
+  &.btn-3d > i,
+  &.btn-3d > i::before {
+    line-height: ($btn-lg-height - $btn-3d-shadow-size);
+  }
+}
+.btn-sm {
+  height: $btn-sm-height;
+  padding: $btn-sm-padding;
+  font-size: $btn-sm-font-size;
+  line-height: ($btn-sm-height - ($btn-border-width * 2));
+  > i, > i::before {
+    line-height: $btn-sm-height;
+  }
+  &.btn-3d,
+  &.btn-3d > i,
+  &.btn-3d > i::before {
+    line-height: ($btn-sm-height - $btn-3d-shadow-size);
+  }
+}
+.btn-xs {
+  height: $btn-xs-height;
+  padding: $btn-xs-padding;
+  font-size: $btn-xs-font-size;
+  line-height: ($btn-xs-height - ($btn-border-width * 2));
+  > i, > i::before {
+    line-height: $btn-xs-height;
+  }
+  &.btn-3d,
+  &.btn-3d > i,
+  &.btn-3d > i::before {
+    line-height: ($btn-xs-height - $btn-3d-shadow-size);
+  }
+}
+
+// Button Shape: Square
+.btn-square { border-radius: 0; }
+
+// Button Shape: Pill
+.btn-pill {
+  border-radius: ($btn-height / 2);
+  &.btn-lg { border-radius: ($btn-lg-height / 2); }
+  &.btn-sm { border-radius: ($btn-sm-height / 2); }
+  &.btn-xs { border-radius: ($btn-xs-height / 2); }
+}
+
+// Block Buttons
+.btn-block {
+  width: 100%;
+  margin: 0 !important;
+  margin-bottom: floor($grid-vertical-step / 2) !important;
+}
+
+// Buttons Alignment
+.text-center .btn {
+  margin-right: floor($grid-vertical-step / 4);
+  margin-left: floor($grid-vertical-step / 4);
+}
+.text-right .btn {
+  margin-right: 0;
+  margin-left: floor($grid-vertical-step / 2);
+}
+
+// Custom Button
+.btn-custom:not(.btn-transparent):not(.btn-ghost) {
+  color: $light-color !important;
+}
+
+// Close Btn
+.close-btn {
+  color: $brand-primary;
+  font: {
+    size: $close-btn-size;
+    weight: normal;
+  }
+  text-decoration: none;
+  cursor: pointer;
+  @include transition(opacity .3s);
+  &:hover { opacity: .6; }
+}
+.mfp-close { @include transition(opacity .3s); }
+
+// Scroll to Top Button
+.scroll-to-top-btn {
+  display: block;
+  position: fixed;
+  right: 16px;
+  bottom: -($scroll-top-btn-size * 2);
+  width: $scroll-top-btn-size;
+  height: $scroll-top-btn-size;
+  border-radius: $border-radius-default;
+  background-color: $brand-primary;
+  color: $light-color;
+  font-size: $font-size-lead;
+  line-height: $scroll-top-btn-size - 4;
+  opacity: 0;
+  z-index: $header-zindex;
+  text: {
+    align: center;
+    decoration: none;
+  }
+  @include transition(bottom 400ms $ease-in-out-back, opacity .3s, background-color .3s, border-color .3s)
+
+  &:hover {
+    background-color: darken($brand-primary, 10%);
+    color: $light-color;
+  }
+
+  &.visible {
+    bottom: 14px;
+    opacity: 1;
+  }
+}

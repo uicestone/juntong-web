@@ -1,0 +1,75 @@
+/*
+ * StartApp Multi-Purpose Business Theme
+ * Copyright 2016 8Guild.com
+ * Theme Styles
+ * Dependencies: Bourbon
+ */
+/* ╔══╗╔═══╗╔╗╔╗╔══╗╔╗──╔══╗
+   ║╔╗║║╔══╝║║║║╚╗╔╝║║──║╔╗╚╗
+   ║╚╝║║║╔═╗║║║║─║║─║║──║║╚╗║
+   ║╔╗║║║╚╗║║║║║─║║─║║──║║─║║
+   ║╚╝║║╚═╝║║╚╝║╔╝╚╗║╚═╗║╚═╝║
+   ╚══╝╚═══╝╚══╝╚══╝╚══╝╚═══╝
+*/
+
+// Helpers
+// Core variables, mixins and placeholders
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/placeholders';
+
+// Base
+@import 'base/reset';
+@import 'base/scaffolding';
+
+// Components
+@import 'components/typography';
+@import 'components/forms';
+@import 'components/tables';
+@import 'components/widgets';
+@import 'components/waves';
+@import 'components/tooltips';
+@import 'components/carousel';
+@import 'components/comments';
+@import 'components/pagination';
+@import 'components/wordpress';
+@import 'components/animations';
+
+// Layout
+@import 'layout/grids';
+@import 'layout/header';
+@import 'layout/alt_menus';
+@import 'layout/footer';
+@import 'layout/page_title';
+
+// Modules
+@import 'modules/blog';
+@import 'modules/portfolio';
+@import 'modules/shop';
+@import 'modules/specialty';
+
+// Shortcodes
+@import 'shortcodes/block_title';
+@import 'shortcodes/buttons';
+@import 'shortcodes/social_buttons';
+@import 'shortcodes/market_buttons';
+@import 'shortcodes/icon_box';
+@import 'shortcodes/testimonials';
+@import 'shortcodes/team';
+@import 'shortcodes/pricing';
+@import 'shortcodes/timeline';
+@import 'shortcodes/steps';
+@import 'shortcodes/logo_carousel';
+@import 'shortcodes/progress_bars';
+@import 'shortcodes/tabs';
+@import 'shortcodes/accordion';
+@import 'shortcodes/teaser';
+@import 'shortcodes/contacts_tile';
+@import 'shortcodes/category_tile';
+@import 'shortcodes/testimonials_slider';
+@import 'shortcodes/gallery';
+@import 'shortcodes/video_popup';
+@import 'shortcodes/animated_digits';
+@import 'shortcodes/countdown';
+@import 'shortcodes/custom_links';
+@import 'shortcodes/classes';

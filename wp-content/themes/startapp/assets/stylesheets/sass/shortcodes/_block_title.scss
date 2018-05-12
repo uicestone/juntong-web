@@ -1,0 +1,25 @@
+//
+// Block Titles
+// -------------------------------------------------------------------
+
+.block-title {
+  margin: 0;
+  padding-bottom: floor($grid-vertical-step * 2);
+  > small {
+    display: block;
+    margin: 0;
+    color: $gray;
+  }
+
+  // Light Skin
+  &.text-light {
+    > small {
+      color: $light-color;
+      opacity: .6;
+    }
+  }
+
+  @media screen and (max-width: $tablet-port) {
+    padding-bottom: floor($grid-vertical-step * 1.5);
+  }
+}

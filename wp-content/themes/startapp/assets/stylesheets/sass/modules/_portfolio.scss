@@ -1,0 +1,133 @@
+//
+// Portfolio
+// -------------------------------------------------------------------
+
+// Tile
+.portfolio-tile {
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 0 0 $border-radius-default $border-radius-default;
+  text-align: center;
+  box-shadow: none;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  @include transform(translateY(0));
+  @include transition(all .5s);
+  .portfolio-thumb {
+    display: block;
+    position: relative;
+    border-radius: $border-radius-default $border-radius-default 0 0;
+    background-color: $gray-lighter;
+    overflow: hidden;
+    z-index: 5;
+    > img {
+      display: block;
+      margin: auto;
+    }
+  }
+  .portfolio-info {
+    position: relative;
+    border-radius: 0 0 $border-radius-default $border-radius-default;
+    background-color: $gray-lighter;
+    z-index: 5;
+  }
+  .portfolio-title {
+    margin: 0;
+    padding: 0 $grid-vertical-step;
+    font-size: ceil(($font-size-base * 1.14));
+    > a {
+      display: inline-block;
+      margin-top: floor($grid-vertical-step / 1.5); //~16px
+      color: $gray-darker;
+      font-weight: 600;
+      text-decoration: none;
+      &:hover {
+        color: $link-hover-color;
+      }
+    }
+  }
+  .description, p {
+    margin-top: floor($grid-vertical-step / 6); //~4px
+    margin-bottom: 0;
+    padding: 0 $grid-vertical-step;
+    color: $gray;
+    font-size: floor(($font-size-base * .86));
+  }
+  .btn {
+    margin: {
+      top: floor($grid-vertical-step / 1.33); //~18px
+      right: 0;
+      bottom: $grid-vertical-step;
+      left: 0;
+    }
+  }
+
+  // With text overlay type
+  &.portfolio-text-overlay {
+    position: relative;
+    .overlay {
+      @include overlay-block(6, $gray-darker, .5);
+      border-radius: $border-radius-default;
+      opacity: 0;
+      @include transition(opacity .4s);
+    }
+    .portfolio-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-radius: 0;
+      background: none;
+      opacity: 0;
+      z-index: 6;
+      @include transform(translateY(-10px));
+      @include transition(all .4s);
+    }
+    // :hover state
+    &:hover {
+      .overlay { opacity: 1; }
+      .portfolio-info {
+        opacity: 1;
+        @include transform(translateY(0));
+      }
+    }
+  }
+  &.portfolio-simple,
+  &.portfolio-text-overlay {
+    .portfolio-thumb {
+      border-radius: $border-radius-default;
+    }
+  }
+  &.skin-light {
+    .portfolio-title > a {
+      color: $light-color;
+      opacity: 1;
+      @include transition(opacity .3s);
+      &:hover {
+        color: $light-color;
+        opacity: .5;
+      }
+    }
+    .post-excerpt, p {
+      color: $light-color;
+      opacity: .5;
+    }
+  }
+
+  // :hover state
+  &:hover {
+    box-shadow: 0 20px 60px -6px rgba($gray-darker, .5);
+    @include transform(translateY(-3px));
+  }
+}
+
+// On touch devices
+.touch {
+  .portfolio-tile.portfolio-text-overlay {
+    .overlay { opacity: 1; }
+    .portfolio-info {
+      opacity: 1;
+      @include transform(translateY(0));
+    }
+  }
+}

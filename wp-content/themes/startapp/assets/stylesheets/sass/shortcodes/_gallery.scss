@@ -1,0 +1,131 @@
+//
+// Gallery
+// -------------------------------------------------------------------
+
+// Image Caption inside Carousel and Gallery Tile
+.image-carousel,
+.gallery-tile {
+  .wp-caption {
+    margin: 0;
+    &::before {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 80%;
+      content: '';
+      z-index: 1;
+      @include image-caption-gradient;
+      @include transition(all .45s);
+    }
+    .wp-caption-text {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: floor($grid-vertical-step * 2.5) 15px $grid-vertical-step;
+      color: $light-color;
+      font: {
+        size: $font-size-lg;
+        weight: 600;
+      }
+      text-align: center;
+      z-index: 5;
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
+      span {
+        display: block;
+        color: rgba($light-color, .6);
+        font: {
+          size: $font-size-sm;
+          weight: normal;
+        }
+      }
+    }
+  }
+}
+.gallery-tile {
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+  // image
+  img,
+  .image {
+    display: block;
+    @include backface-visibility(hidden);
+    @include transform(scale(1));
+    @include transition(all .65s);
+  }
+  .image {
+    background: {
+      position: center;
+      repeat: no-repeat;
+      size: cover;
+    }
+  }
+
+  // icon
+  &::before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $gallery-icon-box-size;
+    margin: {
+      top: -(floor($gallery-icon-box-size / 2));
+      left: -(floor($gallery-icon-box-size / 2));
+    }
+    border-radius: 50%;
+    background-color: $light-color;
+    color: $brand-primary;
+    font: {
+      family: 'Material Icons';
+      size: $gallery-icon-size;
+      weight: normal;
+    }
+    line-height: $gallery-icon-box-size;
+    text-align: center;
+    content: '\e145';
+    opacity: 0;
+    z-index: 6;
+    @include transform(translateY(-10px));
+    @include transition(all .45s);
+  }
+
+  // overlay
+  &::after {
+    @include overlay-block(1, $gray-darker, 0);
+    background-color: $gray-darker;
+    @include transition(all .45s);
+  }
+  &:hover {
+    img, .image { @include transform(scale(1.06)); }
+    &::before {
+      opacity: 1;
+      @include transform(translateY(0));
+    }
+    &::after { opacity: $gallery-overlay-opacity; }
+    .wp-caption::before { background-color: transparent; }
+  }
+}
+.grid-justified {
+  .gallery-tile,
+  .gallery-tile .wp-caption,
+  .gallery-tile .image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// PhotoSwipe modifications
+.pswp { z-index: $backdrop-zindex !important; }
+.pswp__caption__center { text-align: center !important; }
+.pswp__caption { font-weight: bold; }
+.admin-bar .pswp__scroll-wrap {
+  top: 32px;
+  height: calc(100% - 32px);
+}

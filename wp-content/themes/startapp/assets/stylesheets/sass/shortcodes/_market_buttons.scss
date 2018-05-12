@@ -1,0 +1,68 @@
+//
+// Market Buttons: App Store, Google Play, Amazon, Windows, Blackberry
+// -------------------------------------------------------------------
+
+.market-btn {
+  display: inline-block;
+  height: $market-btn-height;
+  margin: 0 floor($grid-vertical-step / 2) floor($grid-vertical-step / 2) 0;
+  border-radius: $border-radius-default;
+  background: {
+    position: center;
+    repeat: no-repeat;
+    size: cover;
+  }
+  font: {
+    size: floor(($font-size-base * 1.29)); // ~18px
+    weight: normal;
+  }
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  &:focus, &:active { text-decoration: none; }
+  > span {
+    display: block;
+    font-size: $font-size-base;
+    line-height: 1.3;
+  }
+
+  // Amazon
+  &.btn-amazon {
+    width: $amazon-btn-width;
+    padding: 8px 18px 0 24px;
+    background-color: $amazon-btn-bg;
+    color: $amazon-btn-color;
+  }
+
+  // App Store
+  &.btn-appstore {
+    width: $appstore-btn-width;
+    padding: 8px 18px 0 73px;
+    background-color: $appstore-btn-bg;
+    color: $appstore-btn-color;
+  }
+
+  // Google Play
+  &.btn-playstore {
+    width: $playstore-btn-width;
+    padding: 8px 18px 0 76px;
+    background-color: $playstore-btn-bg;
+    color: $playstore-btn-color;
+  }
+
+  // Windows Store
+  &.btn-windows {
+    width: $windows-btn-width;
+    padding: 8px 18px 0 75px;
+    background-color: $windows-btn-bg;
+    color: $windows-btn-color;
+  }
+
+  // Blackberry Store
+  &.btn-blackberry {
+    width: $blackberry-btn-width;
+    padding: 8px 8px 0 73px;
+    background-color: $blackberry-btn-bg;
+    color: $blackberry-btn-color;
+  }
+}

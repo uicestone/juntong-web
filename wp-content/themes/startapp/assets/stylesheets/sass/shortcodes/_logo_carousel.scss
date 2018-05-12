@@ -1,0 +1,49 @@
+//
+// Logo Carousel
+// -------------------------------------------------------------------
+
+.logo-carousel {
+  padding-top: floor($grid-vertical-step * 2.5); // ~60px
+  padding-bottom: floor($grid-vertical-step * 2); // ~48px
+  overflow: hidden;
+  .slick-list { margin-left: -2px; }
+  .slick-dots { margin-bottom: 0; }
+  .logo-item {
+    display: block;
+    padding: floor($grid-vertical-step / 2) $grid-vertical-step;
+    border-left: $logo-carousel-item-border;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    > img {
+      display: block;
+      margin: auto;
+    }
+    .logo-item-title {
+      margin: {
+        top: $grid-vertical-step;
+        bottom: 0;
+      }
+      color: $gray-darker;
+      font: {
+        size: $font-size-lg;
+        weight: $logo-carousel-item-title-weight;
+      }
+    }
+    .logo-item-description {
+      margin-bottom: 0;
+      color: $gray;
+      font-size: $font-size-sm;
+    }
+  }
+}
+
+// Light Skin
+.carousel-light {
+  &.logo-carousel .logo-item {
+    border-left-color: $hr-border-light-color;
+    .logo-item-title,
+    .logo-item-description { color: $light-color; }
+    .logo-item-description { opacity: .5; }
+  }
+}

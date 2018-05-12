@@ -1,0 +1,124 @@
+//
+// Comments
+// --------------------------------------------------
+.comments-area {
+  margin-top: floor($grid-vertical-step * 1.5);
+  @media screen and (max-width: $tablet-port) {
+    margin-top: $grid-vertical-step;
+  }
+  h4 > sup {
+    color: $text-color;
+    font-size: $font-size-base;
+    font-weight: 600;
+  }
+  .reply-title {
+    margin-bottom: floor($grid-vertical-step / 2); //~12px
+    h4 { display: none; }
+    a { text-decoration: none; }
+  }
+  .logged-in-as {
+    margin-bottom: floor($grid-vertical-step / 1.5); //~16px
+    > a {
+      color: $gray-darker;
+      font-weight: normal;
+      text-decoration: none;
+      &:hover { color: $link-hover-color; }
+    }
+  }
+  .form-submit {
+    margin-bottom: 0;
+    text-align: right;
+    > .btn { margin: 0; }
+  }
+}
+.comment {
+  margin-bottom: $grid-vertical-step;
+  padding: $grid-vertical-step;
+  border-radius: $border-radius-default;
+  background-color: $gray-lighter;
+
+  // Replies
+  &.depth-3,
+  &.depth-5,
+  &.depth-7,
+  &.depth-9 {
+    margin: {
+      top: $grid-vertical-step;
+      bottom: 0;
+    }
+  }
+  &.depth-2,
+  &.depth-4,
+  &.depth-6,
+  &.depth-8,
+  &.depth-10 {
+    margin: {
+      top: $grid-vertical-step;
+      bottom: 0;
+    }
+    background-color: $light-color;
+  }
+
+  // Inner structure
+  .inner {
+    display: table;
+    width: 100%;
+  }
+  .author-ava,
+  .comment-body {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .author-ava {
+    width: $coment-author-ava-size + floor($grid-vertical-step / 2);
+    padding-right: floor($grid-vertical-step / 2);
+    > img {
+      display: block;
+      width: 100%;
+      border-radius: $border-radius-default;
+    }
+  }
+  .author-name {
+    margin-bottom: 0;
+    color: $gray-darker;
+    font: {
+      size: $font-size-base;
+      weight: normal;
+    }
+  }
+  .comment-body p:last-child { margin-bottom: 0; }
+  .comment-date {
+    display: block;
+    margin-bottom: floor($grid-vertical-step / 2); //~12px
+    color: $gray;
+    font-size: $font-size-sm;
+  }
+  .reply-link {
+    margin-top: floor($grid-vertical-step / 2); //~12px
+    text-align: right;
+    .comment-reply-link {
+      @extend .btn;
+      @extend .btn-sm;
+      @extend .btn-primary;
+      @extend .btn-ghost;
+      margin: 0 !important;
+    }
+  }
+  @media screen and (max-width: 560px) {
+    .author-ava,
+    .comment-body { display: block; }
+    .author-ava {
+      width: $coment-author-ava-size;
+      margin-bottom: 15px;
+      padding-right: 0;
+    }
+    .comment-body { width: 100%; }
+  }
+}
+.comment-respond + .comment { margin-top: $grid-vertical-step; }
+.page .comments-area {
+  padding-bottom: floor($grid-vertical-step * 3);
+  @media screen and (max-width: $tablet-port) {
+    padding-bottom: floor($grid-vertical-step * 2);
+  }
+}

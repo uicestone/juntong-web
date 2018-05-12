@@ -1,0 +1,153 @@
+//
+// Pagination
+// --------------------------------------------------
+.nav-links {
+  display: inline-block;
+  .page-numbers {
+    display: inline-block;
+    margin-right: 8px;
+    color: $page-link-color;
+    font: {
+      size: $page-link-size;
+      weight: $page-link-weight;
+    }
+    text-decoration: none;
+    vertical-align: middle;
+    &.current,
+    &:hover { color: $page-link-hover-color; }
+    &.prev, &.next {
+      @extend .btn;
+      @extend .btn-sm;
+      @extend .btn-ghost;
+      @extend .btn-primary;
+      margin: 0 11px 0 0 !important;
+    }
+    &.next {
+      margin: {
+        right: 0 !important;
+        left: 3px !important;
+      }
+      > i { @include transform(rotate(180deg)); }
+    }
+  }
+  .nav-previous,
+  .nav-next {
+    display: inline-block;
+    vertical-align: middle;
+    > a {
+      display: inline-block;
+      padding: floor($grid-vertical-step / 1.5) 0;
+      color: $page-link-color;
+      font: {
+        size: $page-link-size;
+        weight: $page-link-weight;
+      }
+      text-decoration: none;
+      &:hover { color: $page-link-hover-color; }
+    }
+  }
+  .nav-previous { margin-right: 15px; }
+  .nav-previous > a::before {
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    margin-right: 5px;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    content: '\e317';
+    vertical-align: middle;
+  }
+  .nav-next > a::after {
+    display: inline-block;
+    margin-left: 5px;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    content: '\e317';
+    vertical-align: middle;
+    @include transform(rotate(180deg));
+  }
+}
+.page-links {
+  padding-top: floor($grid-vertical-step / 2); //~12px
+  color: $page-link-color;
+  font-size: $page-link-size;
+  a {
+    display: inline-block;
+    font-weight: normal;
+    text-decoration: none;
+  }
+}
+
+// Loading State
+.pagination {
+  position: relative;
+  > .btn { margin: 0; }
+  .loader {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 70px;
+    margin-top: -11px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all .3s);
+    > span {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border-radius: 100%;
+      background-color: rgba($brand-primary, .5);
+      @include animation(loading 1.4s ease-in-out 0s infinite both);
+    }
+    > span.child-1 {
+      @include animation-delay(-.32s);
+    }
+    > span.child-2 {
+      @include animation-delay(-.16s);
+    }
+  }
+}
+.pagination.text-center {
+  .loader {
+    left: 50%;
+    margin-left: -11px;
+  }
+}
+.pagination.text-right {
+  .loader {
+    right: 0;
+    left: auto;
+  }
+}
+.pagination-infinite,
+.pagination-infinite.text-right {
+  padding: {
+    top: floor($grid-vertical-step / 2);
+    right: 0;
+    bottom: floor($grid-vertical-step / 3);
+    left: 0;
+  }
+  .loader {
+    left: 50%;
+    margin-left: -11px;
+  }
+}
+.data-loading {
+  .btn {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .loader {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes loading {
+  0%, 80%, 100% {
+    transform: scale(0);
+  } 40% {
+    transform: scale(1);
+  }
+}

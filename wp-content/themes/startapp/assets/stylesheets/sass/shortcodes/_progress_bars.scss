@@ -1,0 +1,73 @@
+//
+// Progress Bars
+// -------------------------------------------------------------------
+
+.progress {
+  margin-bottom: floor($grid-vertical-step / 1.5); // ~16px
+
+  // Bar
+  .progress-bar {
+    position: relative;
+    text-align: right;
+    .bar, .rails, .value { display: block; }
+    .bar {
+      position: relative;
+      width: 0;
+      height: $progress-bar-height;
+      z-index: 2;
+    }
+    .rails {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: $progress-bar-height;
+      background-color: $gray-lighter;
+      z-index: 1;
+    }
+    .value {
+      width: 0;
+      margin-bottom: floor($grid-vertical-step / 3); // ~8px
+      font: {
+        size: ceil(($font-size-base * 2.14));
+        weight: 300;
+      }
+      white-space: nowrap;
+      > i { font-style: normal; }
+    }
+  }
+
+  // Label
+  .progress-bar-label {
+    display: block;
+    margin-top: floor($grid-vertical-step / 2); // ~12px
+    margin-bottom: 0;
+    color: $gray;
+    font: {
+      size: $font-size-base;
+      weight: normal;
+    }
+  }
+
+  // Animated
+  &.progress-animated {
+    .progress-bar .bar {
+      @include transition(width 1.2s $ease-out-back);
+    }
+    .progress-bar .value {
+      opacity: 0;
+      @include transition(opacity .3s, width 1.2s $ease-out-back);
+      &.is-visible { opacity: 1; }
+    }
+  }
+
+  // Light Skin
+  &.progress-light {
+    .progress-bar .rails {
+      background-color: rgba($light-color, .07);
+    }
+    .progress-bar-label {
+      color: rgba($light-color, .5);
+    }
+  }
+}

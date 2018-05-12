@@ -1,0 +1,181 @@
+//
+// Team
+// -------------------------------------------------------------------
+
+// Base class
+.teammate {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: $teammate-max-width;
+  margin: 0 auto floor($grid-vertical-step * 2);
+  .teammate-thumb {
+    display: block;
+    margin-bottom: floor($grid-vertical-step / 2); // ~12px
+    border-radius: $border-radius-default;
+    > img { border-radius: $border-radius-default; }
+  }
+  .teammate-name,
+  .teammate-name > a {
+    color: $gray-darker;
+    font: {
+      size: floor(($font-size-base * 1.29));
+      weight: $teammate-name-font-weight;
+    }
+    text-decoration: none;
+    &:hover { color: $gray-darker; }
+  }
+  .teammate-info,
+  .teammate-position {
+    display: block;
+    margin-top: floor($grid-vertical-step / 6); // ~4px
+    color: $gray;
+    font-size: $font-size-base;
+    > a {
+      font-weight: normal;
+      text-decoration: none;
+    }
+  }
+  .social-bar {
+    margin-top: floor($grid-vertical-step / 2); // ~12px
+  }
+
+  // Light Skin
+  &.teammate-light-skin {
+    .teammate-name,
+    .teammate-name > a,
+    .teammate-name:hover > a {
+      color: $light-color;
+      font-weight: normal;
+    }
+    .teammate-position,
+    .teammate-info {
+      color: rgba($light-color, .5);
+      > a { color: $light-color; }
+    }
+  }
+
+  // Alignment
+  &.text-center {
+    .social-bar .social-btn {
+      margin-right: 3px;
+      margin-left: 3px;
+    }
+  }
+  .text-right {
+    .social-bar .social-btn {
+      margin-right: 0;
+      margin-left: 6px;
+    }
+  }
+}
+
+// Horizontal Layout
+.teammate-horizontal {
+  display: table;
+  max-width: $teammate-max-width + 20;
+  margin-bottom: floor($grid-vertical-step * 1.5); // ~36px
+  .teammate-thumb,
+  .teammate-info-wrap {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .teammate-thumb {
+    width: $teammate-horizontal-thumb-width;
+    > img { width: 100%; }
+  }
+  .teammate-info-wrap { padding-left: 22px; }
+  &.right-aligned {
+    .teammate-info-wrap {
+      padding-right: 22px;
+      padding-left: 0;
+      text-align: right;
+    }
+    .social-bar {
+      text-align: right !important;
+      > a {
+        margin: {
+          right: 0;
+          left: 6px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: $mobile-port) {
+    .teammate-thumb {
+      width: $teammate-horizontal-thumb-width - 15;
+    }
+  }
+}
+
+// Circle Thumbnail
+.teammate-circle {
+  .teammate-thumb {
+    border-radius: 50%;
+    > img { border-radius: 50%; }
+  }
+}
+
+// Square Thumbnail
+.teammate-square {
+  .teammate-thumb {
+    border-radius: 0;
+    > img { border-radius: 0; }
+  }
+}
+
+// Tile version
+.teammate-tile {
+  margin-bottom: 30px;
+  .teammate-thumb {
+    position: relative;
+    margin-bottom: 0;
+    overflow: hidden;
+    > img { display: block; }
+
+    // overlay
+    &::before {
+      border-radius: $border-radius-default;
+      @include overlay-block(1, $light-color, 0);
+      @include transition(opacity .4s);
+    }
+  }
+  .teammate-name,
+  .teammate-name > a {
+    font: {
+      size: ceil(($font-size-base * 1.7));
+      weight: $teammate-tile-name-font-weight;
+    }
+  }
+  .teammate-position {
+    margin-top: 0;
+    margin-bottom: floor($grid-vertical-step / 4); // ~6px
+    font-size: $font-size-lg; // ~16px
+  }
+
+  // @mixin overlay-block($zindex, $bg-color, $opacity)
+  .teammate-info-wrap {
+    height: auto !important;
+    padding: $grid-vertical-step;
+    @include overlay-block(2, transparent, 1);
+    .hidden-info {
+      opacity: 0;
+      @include transition(opacity .35s);
+    }
+  }
+
+  // :hover state
+  &:hover {
+    .teammate-thumb::before { opacity: $teammate-overlay-opacity; }
+    .hidden-info { opacity: 1; }
+  }
+
+  // Light skin
+  &.teammate-light-skin {
+    .teammate-thumb {
+      &::before {
+        background-color: $gray-darker;
+      }
+    }
+  }
+}

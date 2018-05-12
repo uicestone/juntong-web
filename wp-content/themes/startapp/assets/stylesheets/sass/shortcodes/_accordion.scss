@@ -1,0 +1,95 @@
+//
+// Panels / Accordions
+// -------------------------------------------------------------------
+
+// Panel
+.panel {
+  margin-bottom: floor($grid-vertical-step / 2); // ~12px
+  border: $panel-border;
+  border-radius: $border-radius-default;
+}
+
+// Panel title
+.panel-title {
+  margin: 0;
+  font: {
+    size: $font-size-h5;
+    weight: normal;
+  }
+  > a {
+    display: block;
+    position: relative;
+    padding: floor($grid-vertical-step / 2) $panel-arrow-box-width floor($grid-vertical-step / 2) $grid-vertical-step;
+    color: $gray-darker;
+    font-weight: normal;
+    text-decoration: none;
+    &::before,
+    &::after {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: $panel-arrow-box-width;
+      height: 100%;
+      border-left: $panel-border;
+      content: '';
+      @include transition(all .3s);
+    }
+    &::after {
+      border-left: 0;
+      color: $brand-primary;
+      font: {
+        family: 'Material Icons';
+        size: $font-size-h5;
+      }
+      line-height: $panel-arrow-box-width;
+      text-align: center;
+      content: '\e316';
+      @include transform(rotate(0));
+      @include transition(all .3s);
+    }
+    &.collapsed::after {
+      @include transform(rotate(180deg));
+    }
+    &:hover {
+      color: $gray-darker;
+      text-decoration: none;
+    }
+    > i { margin-top: -3px; }
+  }
+}
+
+// Panel collapse
+.panel-collapse {
+  > .panel-collapse-inner {
+    padding: 14px $grid-vertical-step floor($grid-vertical-step / 2);
+    border-top: $panel-border;
+  }
+}
+
+// Light Skin
+.panel-group-light {
+  .panel {
+    border-color: $hr-border-light-color;
+  }
+  .panel-title > a,
+  .panel-title > a::after { color: $light-color; }
+  .panel-title > a::before {
+    border-left-color: $hr-border-light-color;
+  }
+  .panel-collapse > .panel-collapse-inner {
+    border-top-color: $hr-border-light-color;
+  }
+}
+
+// Component Animation
+.collapse {
+  display: none;
+  &.in { display: block; }
+}
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  @include transition(height .35s ease, visibility .35s ease);
+}

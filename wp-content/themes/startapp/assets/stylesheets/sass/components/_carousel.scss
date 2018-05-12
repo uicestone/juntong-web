@@ -1,0 +1,279 @@
+//
+// Carousel
+// Based on Slick Carousel
+// Version: 1.6.0
+// Author: Ken Wheeler
+// Website: http://kenwheeler.github.io/slick
+// -------------------------------------------------------------------
+
+.slick-slider {
+  display: block;
+  position: relative;
+  @include user-select(none);
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  &:focus { outline: none; }
+
+  &.dragging {
+    cursor: pointer;
+    cursor: hand;
+  }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  @include transform(translate3d(0, 0, 0));
+}
+
+.slick-track {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  @include clearfix;
+
+  .slick-loading & { visibility: hidden; }
+}
+
+.slick-slide {
+  display: block;
+  height: 100%;
+  min-height: 1px;
+  float: left;
+  [dir='rtl'] & { float: right; }
+  img { display: block; }
+  &:focus { outline: none; }
+
+  &.slick-loading img { display: none; }
+
+  &.dragging img { pointer-events: none; }
+
+  .slick-initialized & { display: block; }
+
+  .slick-loading & { visibility: hidden; }
+
+  .slick-vertical & {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+  }
+}
+.slick-arrow.slick-hidden { display: none; }
+
+// Carousel Navs
+.slick-prev,
+.slick-next {
+  display: block !important;
+  position: absolute;
+  top: 50%;
+  width: $carousel-navs-size;
+  height: $carousel-navs-size;
+  margin-top: -(floor($carousel-navs-size / 2));
+  border: 1px solid transparent;
+  border-radius: $border-radius-default;
+  background-color: $light-color;
+  color: $brand-primary;
+  z-index: 10;
+  @include transition(all .35s);
+  text: {
+    align: center;
+    indent: -9999px;
+  }
+  &::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font: {
+      family: 'Material Icons';
+      size: $carousel-navs-arrow-size;
+    }
+    line-height: $carousel-navs-size - 2;
+    text-indent: 0;
+  }
+  &:focus { outline: none; }
+
+  // :hover state
+  &:hover {
+    background-color: $brand-primary;
+    color: $light-color;
+  }
+}
+.slick-prev {
+  left: 24px;
+  &::before { content: '\e314'; }
+}
+.slick-next {
+  right: 24px;
+  &::before { content: '\e315'; }
+}
+
+// Navs sizes
+.carousel-navs-lg {
+  .slick-prev,
+  .slick-next {
+    width: $carousel-navs-lg-size;
+    height: $carousel-navs-lg-size;
+    margin-top: -(floor($carousel-navs-lg-size / 2));
+    &::before {
+      font-size: $carousel-navs-lg-arrow-size;
+      line-height: $carousel-navs-lg-size - 2;
+    }
+  }
+}
+
+// Navs shapes
+.carousel-navs-square {
+  .slick-prev,
+  .slick-next { border-radius: 0; }
+}
+.carousel-navs-circle {
+  .slick-prev,
+  .slick-next { border-radius: 50%; }
+}
+
+// Navs style
+.carousel-navs-ghost,
+.widget-carousel-navs {
+  .slick-prev,
+  .slick-next {
+    border-color: $hr-border-color;
+    background-color: transparent;
+    &:hover {
+      background-color: $brand-primary;
+    }
+  }
+}
+
+// Navs position
+.carousel-navs-top-right {
+  .slick-prev,
+  .slick-next {
+    top: 24px;
+    margin-top: 0;
+  }
+  .slick-prev {
+    right: ($carousel-navs-size + 24 + 6);
+    left: auto;
+  }
+  &.carousel-navs-lg {
+    .slick-prev {
+      right: ($carousel-navs-lg-size + 24 + 6);
+    }
+  }
+}
+.carousel-navs-top-left {
+  .slick-prev,
+  .slick-next {
+    top: 24px;
+    margin-top: 0;
+  }
+  .slick-next {
+    right: auto;
+    left: ($carousel-navs-size + 24 + 6);
+  }
+  &.carousel-navs-lg {
+    .slick-next {
+      left: ($carousel-navs-lg-size + 24 + 6);
+    }
+  }
+}
+.carousel-navs-top-outside {
+  padding-top: ($carousel-navs-size + 12);
+  .slick-prev,
+  .slick-next {
+    top: 0;
+    margin-top: 0;
+  }
+  .slick-next { right: 0; }
+  .slick-prev {
+    right: ($carousel-navs-size + 6);
+    left: auto;
+  }
+  &.carousel-navs-lg {
+    padding-top: ($carousel-navs-lg-size + 12);
+    .slick-prev {
+      right: ($carousel-navs-lg-size + 6);
+    }
+  }
+}
+
+// Carousel Dots
+.slick-dots {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: -($grid-vertical-step + 15);
+  list-style: none;
+  text-align: center;
+  > li {
+    display: inline-block;
+    margin: 0 floor($grid-vertical-step / 4);
+    padding: 0;
+    line-height: $carousel-dots-size;
+    &::before { display: none; }
+    > button {
+      width: $carousel-dots-size;
+      height: $carousel-dots-size;
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+      background-color: rgba($brand-primary, .25);
+      text-indent: -9999px;
+      @include transition(background-color .3s);
+      &:focus { outline: none; }
+    }
+    &.slick-active > button {
+      background-color: $brand-primary;
+    }
+  }
+}
+
+// Carousel Dots Position
+.carousel-dots-inside .slick-dots {
+  bottom: $grid-vertical-step;
+  margin-bottom: 0;
+}
+.carousel-dots-left .slick-dots {
+  text-align: left;
+  > li {
+    margin-right: floor($grid-vertical-step / 2); // ~12px;
+    margin-left: 0;
+  }
+}
+.carousel-dots-right .slick-dots {
+  text-align: right;
+  > li {
+    margin-right: 0;
+    margin-left: floor($grid-vertical-step / 2); // ~12px;
+  }
+}
+
+// Carousel Light Skin
+.carousel-light {
+  &.carousel-navs-ghost .slick-prev,
+  &.carousel-navs-ghost .slick-next {
+    border-color: rgba($light-color, .15);
+    background-color: transparent;
+    color: $light-color;
+    &:hover {
+      background-color: $light-color;
+      color: $brand-primary;
+    }
+  }
+  .slick-dots > li {
+    > button { background-color: rgba($light-color, .5); }
+    &.slick-active > button { background-color: $light-color; }
+  }
+}

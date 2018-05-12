@@ -1,0 +1,30 @@
+//
+// Specialty Pages
+// -------------------------------------------------------------------
+
+// Search Results
+.search-results,
+.no-results,
+.error404 {
+  .search-box {
+    margin-bottom: $grid-vertical-step;
+    input {
+      height: $input-lg-height !important;
+      font-size: $input-lg-font-size !important;
+    }
+  }
+  .nav-links .nav-previous > a,
+  .nav-links .nav-next > a { padding-top: 0; }
+}
+
+// 404
+.error404 {
+  .page-title {
+    .column {padding-right: 0;}
+    .column:last-child {display: none;}
+    h1 {
+      font-size: floor($font-size-h1 * 1.5);
+      text-align: center;
+    }
+  }
+}

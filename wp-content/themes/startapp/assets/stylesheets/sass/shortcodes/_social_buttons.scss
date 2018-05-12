@@ -1,0 +1,87 @@
+//
+// Social Buttons
+// -------------------------------------------------------------------
+
+// Base class
+.social-btn {
+  display: inline-block;
+  position: relative;
+  width: $social-btn-box-size;
+  height: $social-btn-box-size;
+  margin: 0 6px 6px 0;
+  border: $social-btn-border-width solid rgba($brand-primary, .15);
+  border-radius: $border-radius-default;
+  background-color: transparent;
+  color: $brand-primary;
+  font: {
+    size: $font-size-base;
+    style: normal;
+    weight: normal;
+  }
+  line-height: ($social-btn-box-size - ($social-btn-border-width * 2));
+  vertical-align: middle;
+  text: {
+    transform: none;
+    decoration: none;
+    align: center;
+  }
+  @include transition(all .3s);
+  > i,
+  > i::before {
+    line-height: ($social-btn-box-size - ($social-btn-border-width * 2));
+  }
+
+  // :hover state
+  &:hover {
+    background-color: $brand-primary;
+    color: $light-color;
+  }
+}
+
+// Solid BG type
+.sb-solid-bg .social-btn {
+  border-color: transparent;
+  background-color: rgba($brand-primary, .15);
+
+  // :hover state
+  &:hover {
+    background-color: $brand-primary;
+    color: $light-color;
+  }
+}
+
+// Light Skin
+.sb-light-skin,
+.footer-dark,
+.text-light {
+  .social-btn {
+    border-color: rgba($light-color, .15);
+    color: $light-color;
+  }
+  &.sb-solid-bg .social-btn,
+  .sb-solid-bg .social-btn {
+    border-color: transparent;
+    background-color: rgba($light-color, .15);
+    color: $light-color;
+  }
+  .social-btn:hover {
+    background-color: $light-color;
+    color: $brand-primary;
+  }
+}
+
+// Shape: Square
+.sb-square .social-btn { border-radius: 0; }
+
+// Shape: Circle
+.sb-circle .social-btn { border-radius: 50%; }
+
+// Alignment
+.text-center .social-btn {
+  margin-right: 3px;
+  margin-left: 3px;
+}
+.text-right .social-btn {
+  margin-right: 0;
+  margin-left: 6px;
+}

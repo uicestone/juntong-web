@@ -1,0 +1,124 @@
+//
+// Page Title
+// -------------------------------------------------------------------
+
+.page-title {
+  position: relative;
+  width: 100%;
+  padding: floor($grid-vertical-step * 2) 0; //~48px 0
+  background: {
+    position: 50% 50%;
+    repeat: no-repeat;
+    size: cover;
+  }
+  cursor: default;
+  z-index: $header-zindex - 10;
+  .inner {
+    display: table;
+    width: 100%;
+    > .column {
+      display: table-cell;
+      vertical-align: top;
+    }
+    > .column:first-child { padding-right: 15px; }
+  }
+  h1 { margin-bottom: 0; }
+
+  // Overlay
+  > .overlay { @include overlay-block(1, $gray-darker, .35); }
+
+  // Content
+  > .container,
+  > .container-fluid {
+    position: relative;
+    z-index: 5;
+  }
+
+  // Breadcrumbs
+  .breadcrumbs {
+    display: block;
+    padding-top: floor($grid-vertical-step / 1.3);
+    color: $breadcrumb-link-color;
+    font-weight: $breadcrumb-link-font-weight;
+    text-align: right;
+    > span {
+      display: inline-block;
+      margin: 3px;
+      vertical-align: middle;
+    }
+    > i { margin-top: 2px; }
+    a {
+      color: $breadcrumb-link-color;
+      font: {
+        size: $breadcrumb-link-font-size;
+        weight: $breadcrumb-link-font-weight;
+      }
+      text-decoration: none;
+      cursor: pointer;
+      &:hover { color: $breadcrumb-link-hover-color; }
+    }
+  }
+
+  // Sizes
+  &.title-size-lg {
+    padding: floor($grid-vertical-step * 3) 0; //~72px 0
+  }
+  &.title-size-xl {
+    padding: floor($grid-vertical-step * 6.6) 0; //~158px 0
+  }
+
+  // Light Skin
+  &.text-light {
+    h1, .breadcrumbs a,
+    .breadcrumbs { color: $light-color; }
+    .breadcrumbs a {
+      @include transition(opacity .3s);
+      &:hover { opacity: .5; }
+    }
+  }
+
+  // Floating Title
+  &.title-floating {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  @media screen and (max-width: $nav-collapse) {
+    .inner > .column {
+      display: block;
+      width: 100%;
+      text-align: center;
+      &:first-child { padding-right: 0; }
+    }
+    .breadcrumbs { text-align: center; }
+    &.title-size-lg {
+      padding: floor($grid-vertical-step * 2.5) 0; //~60px 0
+    }
+    &.title-size-xl {
+      padding: floor($grid-vertical-step * 5) 0; //~120px 0
+    }
+  }
+
+  // Full Width layout
+  &.title-fullwidth {
+    .container {
+      width: 100% !important;
+      padding: {
+        right: floor($grid-vertical-step * 3);
+        left: floor($grid-vertical-step * 3);
+      }
+    }
+    @media screen and (max-width: $desktop) {
+      .container { padding: 0 15px; }
+    }
+  }
+}
+.admin-bar {
+  .page-title.title-floating { top: 32px; }
+}
+.archive, .search,
+.error404, .home {
+  .page-title {
+    padding-bottom: floor($grid-vertical-step * 2.2) !important;
+  }
+}

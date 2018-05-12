@@ -1,0 +1,205 @@
+//
+// Pricing Plan + Pricing Table
+// -------------------------------------------------------------------
+
+// Pricing Plan
+// ---------------------------------------------------
+.pricing-plan {
+  position: relative;
+  cursor: default;
+  @include transform(translate3d(0, 0, 0));
+  @include transition(all .4s);
+
+  > .inner {
+    position: relative;
+    padding: $grid-vertical-step;
+    border: $pricing-plan-border;
+    border-radius: $border-radius-default;
+    background-color: $light-color;
+    z-index: 1;
+  }
+
+  // Plan Name
+  .pricing-plan-name {
+    margin: 0;
+    color: $gray-darker;
+    font: {
+      size: ceil(($font-size-base * 1.7));
+      weight: 300;
+    }
+  }
+
+  // Plan Description
+  .pricing-plan-description {
+    display: block;
+    margin: 0;
+    color: $gray;
+    font: {
+      size: $font-size-base;
+      weight: normal;
+    }
+  }
+
+  // Plan Price
+  .pricing-plan-price {
+    margin: 0;
+    color: $gray-darker;
+    font: {
+      size: ceil(($font-size-base * 2.14));
+      weight: 300;
+    }
+  }
+
+  // Plan Featured Image
+  .pricing-plan-image {
+    display: inline-block;
+    width: $pricing-plan-img-size;
+    > img {
+      display: block;
+      width: 100%;
+    }
+    &.image-lg {
+      width: $pricing-plan-img-lg-size;
+    }
+  }
+
+  // Pricing Plan Features
+  .pricing-plan-features {
+    padding-top: 4px;
+    .pricing-plan-feature-title {
+      margin-bottom: floor($grid-vertical-step / 2);
+      font: {
+        size: ceil(($font-size-base * 1.14));
+        weight: $pricing-plan-feature-title-weight;
+      }
+    }
+    ul li {
+      margin-bottom: floor($grid-vertical-step / 3); // ~8px
+    }
+  }
+
+  // Pricing Plan Badge
+  .pricing-plan-badge-wrap {
+    position: relative;
+    height: $btn-xs-height;
+    margin-top: floor($grid-vertical-step / 2);
+    margin-right: -($grid-vertical-step);
+    margin-bottom: floor($grid-vertical-step / 2);
+    margin-left: -($grid-vertical-step);
+    padding: 0 $grid-vertical-step;
+    &::before {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $gray-light;
+      content: '';
+      z-index: 1;
+    }
+    .pricing-plan-badge {
+      display: inline-block;
+      position: relative;
+      height: $btn-xs-height;
+      padding: 0 15px;
+      border-radius: $border-radius-default;
+      color: $light-color;
+      font-size: $font-size-xs;
+      line-height: $btn-xs-height;
+      z-index: 2;
+      &.bg-muted { color: $text-color; }
+    }
+  }
+
+  // Divider
+  hr {
+    margin: 0;
+    margin-right:  -($grid-vertical-step);
+    margin-left:  -($grid-vertical-step);
+    border-color: $gray-light;
+  }
+
+  // Hover shadow effect
+  &::before {
+    @include overlay-block(0, transparent, 1);
+    top: 90px;
+    height: calc(100% - 95px);
+    box-shadow: 0 0 90px 0 rgba(0, 0, 0, .23);
+    opacity: 0;
+    @include transition(opacity .4s);
+  }
+
+  // :hover state
+  &:hover {
+    @include transform(translate3d(0, -5px, 0));
+    &::before { opacity: 1; }
+  }
+}
+.pricing-plan-v2 .pricing-plan-features ul li,
+.pricing-plan-v3 .pricing-plan-features ul li { padding-left: 0; }
+
+
+// Pricing Table
+// ---------------------------------------------------
+.pricing-table {
+  min-height: .01%;
+  border: $table-border-width solid $gray-light;
+  border-radius: $border-radius-default;
+  background-color: $light-color;
+  overflow-x: auto;
+  > table {
+    min-width: $pricing-table-min-width;
+    border: 0;
+    table-layout: fixed;
+    > tbody > tr:last-child > td { border-bottom: 0 !important; }
+    > tbody > tr > td {
+      border-right: $table-border-width solid $gray-light;
+      &:last-child { border-right: 0; }
+    }
+    > thead,
+    > tbody,
+    > tfoot {
+      > tr > th,
+      > tr > td {
+        padding: $grid-vertical-step;
+      }
+    }
+  }
+
+  // Plan Name
+  .pricing-plan-name {
+    margin: 0;
+    margin-bottom: floor($grid-vertical-step / 1.5); // ~16px
+    color: $gray-darker;
+    font: {
+      size: ceil(($font-size-base * 1.7));
+      weight: 300;
+    }
+  }
+
+  // Plan Features
+  .pricing-plan-features {
+    margin-bottom: 0;
+    li {
+      margin-bottom: floor($grid-vertical-step / 6); // ~4px
+      padding-bottom: floor($grid-vertical-step / 4); // ~6px
+      border-bottom: 1px solid rgba($gray-light, .75);
+      &:last-child {
+        padding-bottom: 0;
+        border: 0;
+      }
+    }
+  }
+
+  // Pricing Marks
+  .pricing-mark {
+    display: inline-block;
+    font-size: floor(($font-size-base * 1.29));
+    &.not-available { color: $brand-danger; }
+    &.available { color: $brand-success; }
+  }
+
+  // Buttons
+  .btn { margin: 0; }
+}

@@ -1,0 +1,45 @@
+//
+// Contacts Tile
+// -------------------------------------------------------------------
+
+.contacts-tile {
+  border-radius: $border-radius-default;
+  background-color: $gray-lighter;
+  overflow: hidden;
+  .contacts-tile-body {
+    padding: $grid-vertical-step;
+    padding-bottom: 0;
+  }
+  .contacts-tile-country {
+    .country-flag,
+    .country-name {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .country-flag {
+      width: $contacts-tile-flag-size;
+      margin-right: 4px;
+      > img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  .contacts-tile-title {
+    margin: {
+      top: floor($grid-vertical-step / 4); // ~6px
+      bottom: 0;
+    }
+    color: $gray-darker;
+    font: {
+      size: $font-size-h4;
+      weight: normal;
+    }
+  }
+  .contacts-tile-content {
+    margin-top: floor($grid-vertical-step / 3); // ~8px
+  }
+}
+@media screen and (max-width: $mobile-land) {
+  .google-map { height: 300px !important; }
+}

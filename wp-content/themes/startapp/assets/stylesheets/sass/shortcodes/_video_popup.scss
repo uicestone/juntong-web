@@ -1,0 +1,55 @@
+//
+// Video Popup
+// -------------------------------------------------------------------
+
+.video-popup {
+  width: 100%;
+
+  .video-popup-btn {
+    display: inline-block;
+    position: relative;
+    color: $brand-primary;
+    font-size: $video-popup-btn-size;
+    line-height: 1;
+    text-decoration: none;
+    &::before {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: {
+        width: 10px;
+        color: $brand-primary;
+        style: solid;
+        radius: 50%;
+      }
+      content: '';
+      opacity: 0;
+      @include transform(scale(.5));
+      @include transition(all .4s);
+    }
+    > i {
+      display: block;
+      @include transform(scale(1));
+      @include transition(all .4s $ease-in-out-back);
+    }
+    &:focus { outline: none; }
+    &:hover {
+      &::before {
+        opacity: .15;
+        @include transform(scale(1));
+      }
+      > i { @include transform(scale(.92)); }
+    }
+  }
+
+  // Light skin
+  &.text-light {
+    .video-popup-btn {
+      color: $light-color;
+      &::before { border-color: $light-color; }
+    }
+  }
+}

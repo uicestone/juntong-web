@@ -1,0 +1,181 @@
+//
+// Icon Boxes
+// -------------------------------------------------------------------
+
+// Base Class (Vertical Layout)
+.icon-box {
+  margin-bottom: floor($grid-vertical-step * 2);
+  cursor: default;
+  .icon-box-icon,
+  .icon-box-title,
+  .icon-box-description {
+    position: relative;
+    z-index: 2;
+  }
+  .icon-box-icon {
+    margin: 0;
+    margin-bottom: $grid-vertical-step; // ~24px
+    font: {
+      size: $icon-box-icon-size;
+      style: normal;
+      weight: normal;
+    }
+    line-height: .7;
+    > i { margin-bottom: floor($grid-vertical-step / 3); }
+    > i,
+    > i::before { line-height: .7; }
+    > img {
+      display: inline-block;
+      width: $icon-box-icon-size;
+    }
+  }
+  .icon-box-title {
+    margin: 0;
+    font-size: ceil(($font-size-base * 1.7));
+  }
+  .icon-box-description {
+    margin-top: floor($grid-vertical-step / 2); // ~12px
+    margin-bottom: 0;
+    .btn { margin-top: 0; }
+    p, ol, ul, .btn {
+      &:last-child { margin-bottom: 0; }
+      li {
+        margin-bottom: floor($grid-vertical-step / 4) !important; // ~6px
+      }
+      &.list-bordered {
+        li {
+          margin-bottom: floor($grid-vertical-step / 2); // ~12px
+          padding-bottom: floor($grid-vertical-step / 2); // ~12px
+        }
+        &.text-sm li {
+          margin-bottom: floor($grid-vertical-step / 3); // ~8px
+          padding-bottom: floor($grid-vertical-step / 3); // ~8px
+        }
+        &.text-xs li {
+          margin-bottom: floor($grid-vertical-step / 4); // ~6px
+          padding-bottom: floor($grid-vertical-step / 4); // ~6px
+        }
+      }
+    }
+  }
+
+  // With background
+  &.icon-box-bg-enabled {
+    position: relative;
+    margin-bottom: $grid-vertical-step;
+    padding: floor($grid-vertical-step * 2) $grid-vertical-step floor($grid-vertical-step * 1.5);
+    overflow: hidden;
+    > .icon-box-backdrop {
+      border-radius: $border-radius-default;
+      @include overlay-block(0, transparent, 0);
+      @include transition(all .4s);
+    }
+
+    // :hover effects
+    &.hover-from-top > .icon-box-backdrop {
+      @include transform(translateY(-100%));
+    }
+    &.hover-from-bottom > .icon-box-backdrop {
+      @include transform(translateY(100%));
+    }
+    &.hover-from-left > .icon-box-backdrop {
+      @include transform(translateX(-100%));
+    }
+    &.hover-from-right > .icon-box-backdrop {
+      @include transform(translateX(100%));
+    }
+    &.hover-scale-up > .icon-box-backdrop {
+      @include transform(scale(.7));
+    }
+    &.hover-scale-down {
+      overflow: visible;
+      > .icon-box-backdrop {
+        @include transform(scale(1.25));
+      }
+    }
+    &.hover-flip-vertical > .icon-box-backdrop,
+    &.hover-flip-horizontal > .icon-box-backdrop {
+      @include transform-origin(50% 50%);
+    }
+    &.hover-flip-vertical > .icon-box-backdrop {
+      @include transform(rotateY(90deg));
+    }
+    &.hover-flip-horizontal > .icon-box-backdrop {
+      @include transform(rotateX(90deg));
+    }
+    &:hover {
+      &.hover-fade > .icon-box-backdrop,
+      &.hover-scale-up > .icon-box-backdrop,
+      &.hover-scale-down > .icon-box-backdrop,
+      &.hover-flip-vertical > .icon-box-backdrop,
+      &.hover-flip-horizontal > .icon-box-backdrop {
+        opacity: $icon-box-bg-opacity;
+      }
+      &.hover-from-top > .icon-box-backdrop,
+      &.hover-from-bottom > .icon-box-backdrop,
+      &.hover-from-left > .icon-box-backdrop,
+      &.hover-from-right > .icon-box-backdrop {
+        @include transform(translate(0, 0));
+        opacity: $icon-box-bg-opacity;
+      }
+      &.hover-scale-up > .icon-box-backdrop,
+      &.hover-scale-down > .icon-box-backdrop {
+        @include transform(scale(1));
+      }
+      &.hover-flip-vertical > .icon-box-backdrop {
+        @include transform(rotateY(0deg));
+      }
+      &.hover-flip-horizontal > .icon-box-backdrop {
+        @include transform(rotateX(0deg));
+      }
+    }
+
+    // Static background
+    &.bg-static {
+      > .icon-box-backdrop {
+        opacity: $icon-box-bg-opacity;
+        @include transform(none);
+        @include transition(none);
+      }
+    }
+  }
+}
+
+// Horizontal Layout
+.icon-box-horizontal {
+  display: table;
+  width: 100%;
+  .icon-box-icon,
+  .icon-box-info-wrap {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .icon-box-icon {
+    width: $icon-box-horizontal-icon-size;
+    font-size: $icon-box-horizontal-icon-size;
+    > img {
+      width: $icon-box-horizontal-icon-size;
+    }
+  }
+  .icon-box-info-wrap { padding-left: 22px; }
+  .icon-box-title {
+    margin-top: 0;
+    margin-bottom: floor($grid-vertical-step / 2); // ~12px
+    font: {
+      size: floor(($font-size-base * 1.29)); // ~18px
+      weight: 600;
+    }
+  }
+  .icon-box-description { margin: 0; }
+  &.text-right {
+    .icon-box-info-wrap {
+      padding-right: 22px;
+      padding-left: 0;
+    }
+  }
+}
+
+// Light Skin
+.icon-box-light {
+  .icon-box-title { color: $light-color; }
+}

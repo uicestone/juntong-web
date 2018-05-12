@@ -1,0 +1,141 @@
+//
+// Scaffolding
+// -----------------------------------------------------
+
+// Body base
+// -------------------------------------------------------
+body {
+  background: {
+    position: center;
+    color: $body-bg;
+    repeat: no-repeat;
+    size: cover;
+  }
+  color: $text-color;
+  font: {
+    family: $font-family-base;
+    size: $font-size-base;
+  }
+  line-height: $line-height-base;
+  overflow-x: hidden;
+  &.sidebar-open,
+  &.menu-open {
+    overflow: hidden !important;
+    &.hasScrollbar,
+    &.hasScrollbar .fs-menu-wrap { padding-right: 15px; }
+    &.hasScrollbar .navbar.stuck,
+    &.hasScrollbar .title-floating,
+    &.hasScrollbar .navbar-floating-menu,
+    &.hasScrollbar .floating-menu-btn-wrap {
+      right: (floor($grid-vertical-step * 3) + 15);
+    }
+    &.hasScrollbar .scroller-right {
+      right: (floor($grid-vertical-step * 1.25) + 15);
+    }
+    @media screen and (max-width: $desktop) {
+      &.hasScrollbar .floating-menu-btn-wrap { right: 30px; }
+    }
+  }
+}
+
+
+// Font Smoothing
+// -------------------------------------------------------
+
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+// Display & Positioning
+// -------------------------------------------------------
+
+.block { display: block !important; }
+.inline { display: inline-block !important; }
+.block-center {
+  display: block;
+  margin: auto;
+}
+.relative { position: relative !important; }
+.absolute { position: absolute !important; }
+.overflow-hidden { overflow: hidden; }
+
+
+// Vertical Space classes
+// -------------------------------------------------------
+
+@include block-padding-top(1, 10);
+@include block-padding-bottom(1, 10);
+@include block-margin-top(1, 10);
+@include block-margin-bottom(1, 10);
+
+
+// Horizontal rule
+// -------------------------------------------------------
+
+hr {
+  display: block;
+  margin: floor($grid-vertical-step / 2) 0; //~12px 0
+  border-top: 1px solid $hr-border-color;
+
+  // Color Variations
+  &.hr-default { border-top-color: $brand-default; }
+  &.hr-primary { border-top-color: $brand-primary; }
+  &.hr-info { border-top-color: $brand-info; }
+  &.hr-success { border-top-color: $brand-success; }
+  &.hr-warning { border-top-color: $brand-warning; }
+  &.hr-danger { border-top-color: $brand-danger; }
+  &.hr-light { border-top-color: $light-color; }
+  &.hr-gray { border-top-color: $gray-light; }
+
+  // Type Variations
+  &.hr-solid { border-top-style: solid; }
+  &.hr-dotted { border-top-style: dotted; }
+  &.hr-dashed { border-top-style: dashed; }
+  &.hr-double { border-top-style: double; }
+}
+
+
+// Opacity scale
+// -------------------------------------------------------
+
+.opacity-25 { opacity: .25; }
+.opacity-50 { opacity: .5; }
+.opacity-75 { opacity: .75; }
+
+
+// Backdrop
+// -------------------------------------------------------
+
+.site-backdrop {
+  @include overlay-block($backdrop-zindex, $gray-darker, 0);
+  @include transition(all .4s);
+  position: fixed;
+  cursor: pointer;
+  visibility: hidden;
+  &.active {
+    opacity: .9;
+    visibility: visible;
+  }
+}
+.mfp-bg {
+  background-color: $gray-darker !important;
+  opacity: .9 !important;
+}
+
+
+// Reset Bootstrap Container on 1200px screen
+// -------------------------------------------------------
+
+@media screen and (max-width: $desktop) {
+  .container { width: 100% !important; }
+}
+.container .container {
+  width: 100% !important;
+  padding: {
+    right: 0;
+    left: 0;
+  }
+}

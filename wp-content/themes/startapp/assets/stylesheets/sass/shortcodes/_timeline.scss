@@ -1,0 +1,90 @@
+//
+// Timeline
+// -------------------------------------------------------------------
+
+.timeline {
+  overflow: hidden;
+
+  .slick-list { margin-right: -30px; }
+
+  // Milestone label
+  .milestone-label {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0 30px floor($grid-vertical-step * 2.5) 0;
+    color: $gray;
+    font: {
+      size: floor(($font-size-base * 1.29));
+      weight: normal;
+    }
+    @include transition(color .3s);
+
+    // Dot and Line
+    &::before,
+    &::after {
+      display: block;
+      position: absolute;
+      content: '';
+    }
+    &::before {
+      top: 54%;
+      left: 0;
+      width: $timeline-dot-size;
+      height: $timeline-dot-size;
+      margin-top: -(floor($timeline-dot-size / 2)); // -5px
+      border-radius: 50%;
+      background-color: $brand-primary;
+      z-index: 2;
+    }
+    &::after {
+      top: 54%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $hr-border-color;
+      z-index: 1;
+    }
+  }
+
+  // Milestone Item
+  .milestone-item {
+    margin-bottom: 30px;
+    padding-right: 30px;
+  }
+
+  // Milestone Body
+  .milestone-body {
+    padding: $grid-vertical-step;
+    border-radius: $border-radius-default;
+    background-color: $gray-lighter;
+    h1, h2, h3, h4, h5, h6, p, ul, ol {
+      &:last-child {
+        margin-bottom: floor($grid-vertical-step / 4); // ~6px
+      }
+    }
+  }
+
+  // Milestone Date
+  .milestone-date {
+    margin-bottom: floor($grid-vertical-step / 2); // ~12px
+    color: $gray-darker;
+    font: {
+      size: $font-size-lg;
+      weight: normal;
+    }
+  }
+
+  // :hover statess
+  .milestone:hover {
+    .milestone-label { color: $gray-darker; }
+  }
+
+  // Light Skin
+  &.timeline-light {
+    .milestone-label { color: rgba($light-color, .5); }
+    .milestone-label::before { background-color: $light-color; }
+    .milestone-label::after { background-color: $hr-border-light-color; }
+    .milestone:hover .milestone-label { color: $light-color; }
+  }
+}
