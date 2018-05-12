@@ -26,8 +26,8 @@ add_action('wp', function() {
 	wp_register_script('isotope', get_stylesheet_directory_uri() . '/assets/js/vendor/isotope.pkgd.min.js', array(), '3.0.1', true);
 	wp_register_script('counterup', get_stylesheet_directory_uri() . '/assets/js/vendor/counterup.min.js', array(), false, true);
 	wp_register_script('jquery.magnific-popup', get_stylesheet_directory_uri() . '/assets/js/vendor/jquery.magnific-popup.min.js', array('jquery'), '1.1.0', true);
-    wp_register_script('jquery.themepunch.revolution', get_stylesheet_directory_uri() . '/assets/js/vendor/revo/jquery.themepunch.tools.min.js', array('jquery'), '1.6.9', true);
-    wp_register_script('jquery.themepunch.tools', get_stylesheet_directory_uri() . '/assets/js/vendor/revo/jquery.themepunch.revolution.min.js', array('query'), '5.3.1.6', true);
+    wp_register_script('jquery.themepunch.tools', get_stylesheet_directory_uri() . '/assets/js/vendor/revo/jquery.themepunch.tools.min.js', array('jquery'), '1.6.9', true);
+    wp_register_script('jquery.themepunch.revolution', get_stylesheet_directory_uri() . '/assets/js/vendor/revo/jquery.themepunch.revolution.min.js', array('jquery'), '5.3.1.6', true);
 	wp_register_script('startapp-theme', get_stylesheet_directory_uri() . '/assets/js/startapp-theme.js', array(), false, true);
 });
 
@@ -55,7 +55,7 @@ add_action('wp_enqueue_scripts', function(){
     wp_enqueue_script('isotope');
     wp_enqueue_script('counterup');
     wp_enqueue_script('jquery.magnific-popup');
-    wp_enqueue_script('startapp-theme');
-    wp_enqueue_script('jquery.themepunch.revolution');
     wp_enqueue_script('jquery.themepunch.tools');
+    wp_enqueue_script('jquery.themepunch.revolution');
+    wp_enqueue_script('startapp-theme');
 });
