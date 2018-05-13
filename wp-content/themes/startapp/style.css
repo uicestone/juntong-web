@@ -2290,6 +2290,11 @@ table > tbody + tbody {
   font-size: 16px;
 }
 
+.widget_startapp_contacts .contact-info span a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .widget_startapp_button {
   color: #808080;
 }

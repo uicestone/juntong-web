@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="zh-CN">
 <head>
 	<title><?php bloginfo('sitename'); ?></title>
 
@@ -208,64 +208,27 @@
 		<div class="topbar topbar-primary text-light">
 			<div class="container">
 				<div class="inner">
-					<div class="column">
-						<div class="lang-switcher">
-							<span><i class="material-icons language"></i> English</span>
-							<ul class="lang-dropdown">
-								<li>
-									<a href="#">French</a>
-								</li>
-
-								<li>
-									<a href="#">German</a>
-								</li>
-
-								<li>
-									<a href="#">Italian</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-
 					<div class="column text-right">
 						<nav class="topbar-menu">
 							<ul class="menu">
 								<li class="menu-item">
-									<a href="#">Philosophy</a>
+									<a href="<?=site_url()?>/philosophy/">理念</a>
 								</li>
 
 								<li class="menu-item">
-									<a href="#">Careers</a>
+									<a href="<?=site_url()?>/career/">加入我们</a>
 								</li>
 
 								<li class="menu-item">
-									<a href="#">Contacts</a>
+									<a href="<?=site_url()?>/contact/">联系我们</a>
 								</li>
 
-								<li class="menu-item menu-item-has-children">
-									<a href="#">New York</a>
-
-									<ul class="sub-menu">
-										<li class="menu-item">
-											<a href="#">Singapore</a>
-										</li>
-
-										<li class="menu-item">
-											<a href="#">London</a>
-										</li>
-
-										<li class="menu-item">
-											<a href="#">Odessa</a>
-										</li>
-									</ul>
-								</li>
 							</ul>
 						</nav>
 
 						<div class="social-bar sb-solid-bg sb-rounded sb-dark-skin text-left">
-							<a class="social-btn" href="#"><i class="socicon-facebook"></i></a>
-							<a class="social-btn" href="#"><i class="socicon-linkedin"></i></a>
-							<a class="social-btn" href="#"><i class="socicon-twitter"></i></a>
+							<a class="social-btn" href="#"><i class="fa fa-wechat"></i></a>
+							<a class="social-btn" href="#"><i class="fa fa-weibo"></i></a>
 						</div>
 					</div>
 				</div>
@@ -276,7 +239,7 @@
 			<div class="container">
 				<div class="inner">
 					<div class="column">
-						<a class="site-logo" href="index.html">
+						<a class="site-logo" href="<?=site_url()?>">
 							<img alt="Financial" class="custom-logo" src="<?=get_stylesheet_directory_uri()?>/assets/img/logo.png">
 						</a>
 					</div>
@@ -289,7 +252,7 @@
 								</div>
 
 								<div class="contact-info">
-									<span>001 800 8080</span><span>info@8guild.com</span>
+                                    <span><a href="tel:021-68635068">021-68635068</a></span><span><a href="mailto:info@juntong-capital.com">info@juntong-capital.com</a></span>
 								</div>
 							</div>
 
@@ -299,7 +262,7 @@
 								</div>
 
 								<div class="contact-info">
-									<span>1260 Broadway</span><span>New York, NY 10001</span>
+									<span>上海市浦东新区</span><span>春晓路439号14号楼</span>
 								</div>
 							</div>
 
@@ -309,7 +272,7 @@
 								</div>
 
 								<div class="contact-info">
-									<span>07:30 – 19:00</span><span>Monday to Friday</span>
+									<span>9:00 - 17:00</span><span>周一至周五</span>
 								</div>
 							</div>
 						</div>
