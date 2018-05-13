@@ -258,7 +258,7 @@
 			</div>
 		</section>
 
-		<section class="fw-section padding-top-3x padding-bottom-3x" style="background-color: #3f6bbe;">
+		<section class="fw-section padding-top-3x padding-bottom-3x" style="background-color: #f50000;">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4">
