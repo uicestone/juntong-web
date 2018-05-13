@@ -40,6 +40,7 @@ add_action('after_setup_theme', function () {
 });
 
 add_filter('nav_menu_item_args', function ($args, $item, $depth) {
+    $args->link_after = '';
     if (in_array('menu-item-has-children', $item->classes)) {
         $args->link_after = '<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span>';
     }
