@@ -209,8 +209,8 @@
 					<div class="row">
 						<div class="col-sm-6">
 							<p class="copyright-text">
-								StartApp. Made with <i class="material-icons favorite_border"></i> by
-								<a href="#">8Guild</a>
+								君桐资本 2018 版权所有
+                                <a href="http://www.miibeian.gov.cn/">沪ICP备15029885号-1</a>
 							</p>
 						</div>
 
