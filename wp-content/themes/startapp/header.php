@@ -40,72 +40,13 @@
 		</div>
 	</div>
 
-
-	<!-- Offcanvas Sidebar -->
-	<aside class="off-canvas-sidebar right-positioned">
-		<span class="close-btn"><i class="material-icons clear"></i></span>
-
-		<!-- Widget Start -->
-		<section class="widget widget_startapp_author">
-			<h2 class="widget-title">Our CEO</h2>
-
-			<div class="startapp-author text-left">
-				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/widgets/author-offcanvas.jpg" alt="author-offcanvas"/>
-
-				<p>I&#039;m all around great guy who invest in other great guys and ideas.</p>
-
-				<div class="social-bar sb-border sb-rounded sb-dark-skin inline">
-					<a href="#" class="social-btn"><i class="socicon-facebook"></i></a>
-					<a href="#" class="social-btn"><i class="socicon-dribbble"></i></a>
-					<a href="#" class="social-btn"><i class="socicon-twitter"></i></a>
-				</div>
-			</div>
-		</section><!-- Widget END -->
-
-		<!-- Widget Start -->
-		<section class="widget widget_startapp_subscribe">
-			<h2 class="widget-title">Newsletter</h2>
-
-			<form method="post" target="_blank" novalidate autocomplete="off">
-				<p>Subscribe to our newspaper. Be informed about all new themes and updates.</p>
-
-				<div class="input-group">
-					<i class="material-icons mail_outline"></i>
-					<input type="email" name="EMAIL" placeholder="Enter email">
-					<button type="submit"><i class="material-icons send"></i></button>
-				</div>
-			</form>
-		</section><!-- Widget END -->
-
-		<!-- Widget Start -->
-		<section class="widget widget_startapp_image_carousel">
-			<h2 class="widget-title">Latest Portfolio</h2>
-			<p class="widget-description">Latest additions to our portfolio. Companies we are proud of.</p>
-
-			<div class="widget-inner" data-slick='{"slidesToShow":1,"arrows":false,"autoplay":true,"autoplaySpeed":4000}'>
-				<div class="carousel-item">
-					<img src="<?=get_stylesheet_directory_uri()?>/assets/img/widgets/carousels/fin-client-logo-phil-7-300x200.png" alt=""/>
-				</div>
-				<div class="carousel-item">
-					<img src="<?=get_stylesheet_directory_uri()?>/assets/img/widgets/carousels/fin-client-logo-phil-6-300x200.png" alt=""/>
-				</div>
-				<div class="carousel-item">
-					<img src="<?=get_stylesheet_directory_uri()?>/assets/img/widgets/carousels/fin-client-logo-phil-4-300x200.png" alt=""/>
-				</div>
-				<div class="carousel-item">
-					<img src="<?=get_stylesheet_directory_uri()?>/assets/img/widgets/carousels/fin-client-logo-phil-3-300x200.png" alt=""/>
-				</div>
-			</div>
-		</section><!-- Widget END -->
-	</aside><!-- Offcanvas Sidebar END -->
-
 	<!-- Site Search Form -->
 	<div class="site-search-form">
 		<div class="inner">
 			<span class="close-btn"><i class="material-icons clear"></i></span>
 
 			<form method="get" class="search-box" autocomplete="off">
-				<input type="text" name="s" placeholder="Search" value="">
+				<input type="text" name="s" placeholder="搜索" value="">
 				<button type="submit"><i class="material-icons search"></i></button>
 			</form>
 		</div>
