@@ -31,6 +31,21 @@ add_action('wp', function() {
 	wp_register_script('startapp-theme', get_stylesheet_directory_uri() . '/assets/js/startapp-theme.js', array(), false, true);
 });
 
+add_action('after_setup_theme', function () {
+    register_nav_menu('primary', '主导航');
+    add_theme_support('post-thumbnails');
+//    add_image_size('headline', 1600, 700, true);
+//    add_image_size('mentor', 270, 270, true);
+//    add_image_size('post-thumbnail', 1280, 720, true);
+});
+
+add_filter('nav_menu_item_args', function ($args, $item, $depth) {
+    if (in_array('menu-item-has-children', $item->classes)) {
+        $args->link_after = '<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span>';
+    }
+    return $args;
+}, 10, 3);
+
 add_action('wp_enqueue_scripts', function(){
     wp_enqueue_style('aos');
     wp_enqueue_style('material-icons');

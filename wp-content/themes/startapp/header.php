@@ -117,88 +117,7 @@
 
 		<!-- Main navigation -->
 		<!-- Visible only on mobile -->
-		<nav class="vertical-navigation">
-			<ul class="menu">
-				<li class="menu-item">
-					<a href="index.html">Home<span class="arrow"><i
-									class="material-icons keyboard_arrow_down"></i></span></a>
-				</li>
-
-				<li class="menu-item menu-item-has-children current-menu-item">
-					<a href="#">Portfolio<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-
-					<ul class="sub-menu">
-						<li class="menu-item current-menu-item">
-							<a href="portfolio-all.html">All Projects<span class="arrow"><i
-											class="material-icons keyboard_arrow_down"></i></span></a>
-						</li>
-
-						<li class="menu-item">
-							<a href="portfolio-single.html">Single Portfolio<span class="arrow"><i
-											class="material-icons keyboard_arrow_down"></i></span></a>
-						</li>
-					</ul>
-				</li>
-
-				<li class="menu-item menu-item-has-children">
-					<a href="#">News<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-
-					<ul class="sub-menu">
-						<li class="menu-item">
-							<a href="news-all.html">All News<span class="arrow"><i
-											class="material-icons keyboard_arrow_down"></i></span></a>
-						</li>
-
-						<li class="menu-item">
-							<a href="news-single.html">Single Post<span class="arrow"><i
-											class="material-icons keyboard_arrow_down"></i></span></a>
-						</li>
-					</ul>
-				</li>
-
-				<li class="menu-item menu-item-has-children">
-					<a href="#">Team<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-
-					<ul class="sub-menu">
-						<li class="menu-item">
-							<a href="team-all.html">All Team<span class="arrow"><i
-											class="material-icons keyboard_arrow_down"></i></span></a>
-						</li>
-
-						<li class="menu-item">
-							<a href="team-single.html">Team Member<span class="arrow"><i
-											class="material-icons keyboard_arrow_down"></i></span></a>
-						</li>
-					</ul>
-				</li>
-
-				<li class="menu-item menu-item-has-children">
-					<a href="#">Pages<span class="arrow"><i class="material-icons keyboard_arrow_down"></i></span></a>
-
-					<ul class="sub-menu">
-						<li class="menu-item">
-							<a href="page-careers.html">Careers<span class="arrow"><i
-											class="material-icons keyboard_arrow_down"></i></span></a>
-						</li>
-
-						<li class="menu-item">
-							<a href="page-faq.html">FAQ<span class="arrow"><i
-											class="material-icons keyboard_arrow_down"></i></span></a>
-						</li>
-
-						<li class="menu-item">
-							<a href="page-contacts.html">Contacts<span class="arrow"><i
-											class="material-icons keyboard_arrow_down"></i></span></a>
-						</li>
-
-						<li class="menu-item">
-							<a href="page-philosophy.html">Philosophy<span class="arrow"><i
-											class="material-icons keyboard_arrow_down"></i></span></a>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</nav><!-- Main navigation END -->
+        <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'menu', 'container' => 'nav', 'container_class' => 'vertical-navigation')); ?>
 	</aside><!-- Offcanvas Sidebar Mobile Menu END -->
 
 	<!-- Header -->
@@ -278,9 +197,7 @@
 						</div>
 
 						<div class="toolbar">
-							<a class="site-search-btn tool mobile-view" href="#"><i class="material-icons search"></i></a><a
-									class="sidebar-btn tool mobile-view" href="#"><i
-										class="material-icons more_vert"></i></a><a class="topbar-btn tool" href="#"><i
+							<a class="site-search-btn tool mobile-view" href="#"><i class="material-icons search"></i></a><a class="topbar-btn tool" href="#"><i
 										class="material-icons more_horiz"></i></a><a class="menu-btn tool"
 																					 data-toggle="offcanvas" href="#"><i
 										class="material-icons menu"></i></a>
@@ -294,81 +211,10 @@
 		<!-- Visible only on desktop -->
 		<div class="navbar navbar-justified">
 			<div class="container">
-				<nav class="main-navigation">
-					<ul class="menu">
-						<li class="menu-item">
-							<a href="index.html">Home</a>
-						</li>
-
-						<li class="menu-item menu-item-has-children current-menu-item">
-							<a href="#">Portfolio</a>
-
-							<ul class="sub-menu">
-								<li class="menu-item current-menu-item">
-									<a href="portfolio-all.html">All Projects</a>
-								</li>
-
-								<li class="menu-item">
-									<a href="portfolio-single.html">Single Portfolio</a>
-								</li>
-							</ul>
-						</li>
-
-						<li class="menu-item menu-item-has-children">
-							<a href="#">News</a>
-
-							<ul class="sub-menu">
-								<li class="menu-item">
-									<a href="news-all.html">All News</a>
-								</li>
-
-								<li class="menu-item">
-									<a href="news-single.html">Single Post</a>
-								</li>
-							</ul>
-						</li>
-
-						<li class="menu-item menu-item-has-children">
-							<a href="#">Team</a>
-
-							<ul class="sub-menu">
-								<li class="menu-item">
-									<a href="team-all.html">All Team</a>
-								</li>
-
-								<li class="menu-item">
-									<a href="team-single.html">Team Member</a>
-								</li>
-							</ul>
-						</li>
-
-						<li class="menu-item menu-item-has-children">
-							<a href="#">Pages</a>
-
-							<ul class="sub-menu">
-								<li class="menu-item">
-									<a href="page-careers.html">Careers</a>
-								</li>
-
-								<li class="menu-item">
-									<a href="page-faq.html">FAQ</a>
-								</li>
-
-								<li class="menu-item">
-									<a href="page-contacts.html">Contacts</a>
-								</li>
-
-								<li class="menu-item">
-									<a href="page-philosophy.html">Philosophy</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
+                <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'menu', 'container' => 'nav', 'container_class' => 'main-navigation')); ?>
 
 				<div class="toolbar">
 					<a class="site-search-btn tool" href="#"><i class="material-icons search"></i></a><a
-							class="sidebar-btn tool" href="#"><i class="material-icons more_vert"></i></a><a
 							class="topbar-btn tool" href="#"><i class="material-icons more_horiz"></i></a><a
 							class="menu-btn tool" data-toggle="offcanvas" href="#"><i class="material-icons menu"></i></a>
 				</div>
