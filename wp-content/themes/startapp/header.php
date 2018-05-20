@@ -7,10 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<!-- Favicon Images -->
-	<link rel="icon" href="<?=get_stylesheet_directory_uri()?>/assets/img/favicon/cropped-favicon-32x32.png"/>
-	<link rel="icon" href="<?=get_stylesheet_directory_uri()?>/assets/img/favicon/cropped-favicon-192x192.png"/>
-	<link rel="apple-touch-icon-precomposed" href="<?=get_stylesheet_directory_uri()?>/assets/img/favicon/cropped-favicon-180x180.png"/>
-	<meta name="msapplication-TileImage" content="assets/img/favicon/cropped-favicon-270x270.png"/>
+	<link rel="shortcut icon" href="<?=get_stylesheet_directory_uri()?>/assets/img/favicon.ico"/>
 
 	<!-- Init For Page Prelodaer -->
 	<script type="text/javascript">
