@@ -10,19 +10,8 @@
 									<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/logo-light.png"></a>
 
 								<p>
-									We are the team of web, design, programming and marketing professionals whose main aim is to
-									create quality themes and templates, websites, tools and applications that offer a beautiful
-									web presence and the ultimate user experience.
-								</p>
-
-								<div class="social-bar sb-solid-bg sb-rounded sb-dark-skin text-left">
-									<a class="social-btn waves-effect waves-light" data-placement="top" data-toggle="tooltip"
-									   href="#" title="Facebook"><i class="socicon-facebook"></i></a>
-									<a class="social-btn waves-effect waves-light" data-placement="top" data-toggle="tooltip"
-									   href="#" title="Instagram"><i class="socicon-instagram"></i></a>
-									<a class="social-btn waves-effect waves-light" data-placement="top" data-toggle="tooltip"
-									   href="#" title="LinkedIn"><i class="socicon-linkedin"></i></a>
-								</div>
+                                    上海君桐股权投资管理有限公司（简称“君桐资本”）于2015年5月成立，是一家专注于电子信息等高新技术产业（以半导体集成电路领域为主）的私募股权投资服务机构。目前已在基金业协会完成私募基金管理人备案，完成逾10个产品的发行及设立，直接管理规模逾10亿元。
+                                </p>
 							</section><!-- Widget END -->
 						</div>
 
@@ -30,26 +19,21 @@
 							<!-- Widget Start -->
 							<section class="widget widget_nav_menu">
 								<h3 class="widget-title">
-									Useful Links
+									快速链接
 								</h3>
 
 								<div class="menu-footer-menu-1-container">
 									<ul class="menu">
 										<li class="menu-item">
-											<a href="#">Buy Theme</a>
+											<a href="http://www.amac.org.cn/" target="_blank">基金业协会</a>
 										</li>
 
 										<li class="menu-item">
-											<a href="http://the8guild.com/docs/startapp-html/index.html">Documentation</a>
+											<a href="http://www.csrc.gov.cn/pub/newsite/" target="_blank">证监会</a>
 										</li>
 
 										<li class="menu-item">
-											<a href="https://8guild.ticksy.com/">Premium Support</a>
-										</li>
-
-										<li class="menu-item">
-											<a href="https://themeforest.net/user/8guild/portfolio?ref=8guild">We are at
-												Themeforest</a>
+											<a href="http://www.cbrc.gov.cn/chinese/newIndex.html" target="_blank">银保监会</a>
 										</li>
 									</ul>
 								</div>
@@ -62,34 +46,24 @@
 							<!-- Widget Start -->
 							<section class="widget widget_startapp_recent_posts">
 								<h3 class="widget-title">
-									Latest News
+									最近文章
 								</h3>
 
+                                <?php foreach (get_posts(array('posts_per_page' => 2)) as $recent_post): ?>
 								<div class="post-item">
-									<a class="post-item-thumb" href="news-single.html">
-										<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/widgets/demo-blog-list-05-150x150.jpg">
+									<a class="post-item-thumb" href="<?=get_the_permalink($recent_post->ID)?>">
+										<?=get_the_post_thumbnail($recent_post->ID, 'small')?>
 									</a>
 
 									<div class="post-item-info">
-										<span class="post-item-date">October 29</span>
+										<span class="post-item-date"><?=get_the_date('Y-m-d', $recent_post->ID)?></span>
 										<h3 class="post-item-title">
-											<a href="news-single.html" rel="bookmark">Incredible City View</a>
+											<a href="<?=get_the_permalink($recent_post->ID)?>" rel="bookmark"><?=get_the_title($recent_post->ID)?></a>
 										</h3>
 									</div>
 								</div>
+                                <?php endforeach; ?>
 
-								<div class="post-item">
-									<a class="post-item-thumb" href="news-single.html">
-										<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/widgets/demo-blog-list-04-150x150.jpg">
-									</a>
-
-									<div class="post-item-info">
-										<span class="post-item-date">October 29</span>
-										<h3 class="post-item-title">
-											<a href="news-single.html" rel="bookmark">Thoughts About Car Concepts</a>
-										</h3>
-									</div>
-								</div>
 							</section><!-- Widget END -->
 						</div>
 
@@ -97,7 +71,7 @@
 							<!-- Widget Start -->
 							<section class="widget widget_startapp_contacts">
 								<h3 class="widget-title">
-									Get In Touch
+									建立联络
 								</h3>
 
 								<div class="contact-item">
@@ -106,7 +80,7 @@
 									</div>
 
 									<div class="contact-info">
-										<span>1260 Broadway</span><span>New York, NY 10001</span>
+										<span>上海市浦东新区</span><span>春晓路439号14号楼</span>
 									</div>
 								</div>
 
@@ -116,7 +90,7 @@
 									</div>
 
 									<div class="contact-info">
-										<span>001 800 8080</span>
+										<span><a href="tel:021-68635068">021-68635068</a></span>
 									</div>
 								</div>
 
@@ -126,7 +100,7 @@
 									</div>
 
 									<div class="contact-info">
-										<span>info@8guild.com</span>
+										<span><a href="mailto:info@juntong-capital.com">info@juntong-capital.com</a></span>
 									</div>
 								</div>
 							</section><!-- Widget Start -->
@@ -141,34 +115,27 @@
 						<div class="col-sm-6">
 							<section class="widget widget_startapp_subscribe">
 								<h3 class="widget-title">
-									Subscribe For News
+									关注微信公众号
 								</h3>
+                                <p class="widget-description">
+                                    保持行业嗅觉，紧跟投资风向
+                                </p>
 
-								<form autocomplete="off" class="subscribe-form">
-									<p>
-										Subscribe to our newspaper. Be informed about all new themes and updates.
-									</p>
-
-									<div class="input-group">
-										<i class="material-icons mail_outline"></i>
-										<input name="EMAIL" placeholder="Enter email" type="email">
-
-										<button type="submit">
-											<i class="material-icons send"></i>
-										</button>
-									</div>
-								</form>
+                                <div class="social-bar sb-solid-bg sb-rounded sb-dark-skin text-left">
+                                    <a class="social-btn waves-effect waves-light" data-placement="top" data-toggle="tooltip"
+                                       href="#" title="Facebook"><i class="fa fa-wechat"></i></a>
+                                </div>
 							</section>
 						</div>
 
 						<div class="col-sm-6">
 							<section class="widget widget_startapp_image_carousel">
 								<h3 class="widget-title">
-									Our Clients
+									合作机构
 								</h3>
 
 								<p class="widget-description">
-									Brilliance, Dedication and Fearlessness
+									海纳百川，大气谦和
 								</p>
 
 								<div class="widget-carousel-navs">

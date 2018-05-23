@@ -109,7 +109,8 @@
 								</div>
 
 								<div class="contact-info">
-                                    <span><a href="tel:021-68635068">021-68635068</a></span><span><a href="mailto:info@juntong-capital.com">info@juntong-capital.com</a></span>
+                                    <span><a href="tel:021-68635068">021-68635068</a></span>
+                                    <span><a href="mailto:info@juntong-capital.com">info@juntong-capital.com</a></span>
 								</div>
 							</div>
 
