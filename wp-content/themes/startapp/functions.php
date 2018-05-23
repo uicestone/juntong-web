@@ -54,9 +54,8 @@ add_action('init', function () {
 add_action('after_setup_theme', function () {
     register_nav_menu('primary', '主导航');
     add_theme_support('post-thumbnails');
-//    add_image_size('headline', 1600, 700, true);
-//    add_image_size('mentor', 270, 270, true);
-//    add_image_size('post-thumbnail', 1280, 720, true);
+    add_image_size('headline', 1600, 700, true);
+    add_image_size('post-thumbnail', 1280, 720, true);
 });
 
 add_filter('nav_menu_item_args', function ($args, $item, $depth) {
