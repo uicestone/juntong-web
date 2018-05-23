@@ -9,7 +9,7 @@
 					<div class="rev_slider revo-slider-financial" style="display:none;">
 
 						<ul>
-
+                            <?php foreach (get_posts(array('category_name' => 'home-banner')) as $banner): ?>
 							<!-- SLIDE  -->
 							<li
 									data-description=""
@@ -20,12 +20,12 @@
 									data-fstransition="fade"
 									data-hideafterloop="0"
 									data-hideslideonmobile="off"
-									data-index="rs-22"
+									data-index="rs-<?=$banner->ID?>"
 									data-masterspeed="300"
 									data-rotate="0"
 									data-saveperformance="off"
 									data-slotamount="default"
-									data-thumb="<?=get_stylesheet_directory_uri()?>/assets/img/fin-slider-control-1.jpg"
+									data-thumb="<?=get_the_post_thumbnail_url($banner->ID, 'small')?>"
 									data-title="Slide"
 									data-transition="fade">
 								<!-- MAIN IMAGE -->
@@ -45,7 +45,7 @@
 										data-scaleend="110"
 										data-scalestart="100"
 										height="816"
-										src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-slider-main-1.jpg"
+										src="<?=get_the_post_thumbnail_url($banner->ID, 'headline')?>"
 										title="fin-slider-main-1"
 										width="1920">
 
@@ -68,42 +68,41 @@
 										data-transform_out="y:-20px;opacity:0;s:300;e:Power2.easeInOut;"
 										data-voffset="['3','3','21','8']"
 										data-whitespace="normal"
-										data-width="['606','640','621','308']"
+										data-width="['100%','100%','100%','100%']"
 										data-x="['center','center','center','center']"
-										data-y="['middle','middle','middle','middle']"
-										id="slide-22-layer-2"
+										data-y="['350','350','350','100']"
+                                        data-textalign="center"
+										id="slide-<?=$banner->ID?>-layer-2"
 										style="z-index: 5; min-width: 606px; max-width: 606px; max-width: 73px; max-width: 73px; white-space: normal; font-size: 24px; line-height: 36px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Titillium Web;text-align:center;">
 
-									New Enterprise Associates is a global venture capital firm investing in technology
-									and healthcare
+									<?=get_the_excerpt($banner->ID)?>
 								</div>
 
 								<!-- LAYER NR. 2 -->
 								<div
-										class="tp-caption tp-resizeme"
-										data-height="none"
-										data-hoffset="['0','0','0','0']"
-										data-responsive_offset="on"
-										data-start="1150"
-										data-transform_idle="o:1;"
-										data-transform_in="y:20px;opacity:0;s:800;e:Power4.easeOut;"
-										data-transform_out="y:-20px;opacity:0;s:300;e:Power2.easeInOut;"
-										data-voffset="['-97','-97','-97','-91']"
-										data-whitespace="normal"
-										data-width="none"
-										data-x="['center','center','center','center']"
-										data-y="['middle','middle','middle','middle']"
-										id="slide-22-layer-10"
-										style="z-index: 6;">
+                                        class="tp-caption"
+                                        data-fontsize="['48','48','48','36']"
+                                        data-height="['73','none','112','none']"
+                                        data-hoffset="['0','0','0','0']"
+                                        data-lineheight="['36','36','36','27']"
+                                        data-responsive="off"
+                                        data-responsive_offset="on"
+                                        data-splitin="none"
+                                        data-splitout="none"
+                                        data-start="1150"
+                                        data-transform_idle="o:1;"
+                                        data-transform_in="y:20px;opacity:0;s:800;e:Power4.easeOut;"
+                                        data-transform_out="y:-20px;opacity:0;s:300;e:Power2.easeInOut;"
+                                        data-voffset="['3','3','21','8']"
+                                        data-whitespace="normal"
+                                        data-width="['100%','100%','100%','100%']"
+                                        data-x="['center','center','center','center']"
+                                        data-y="['300','300','300','50']"
+                                        data-textalign="center"
+                                        id="slide-<?=$banner->ID?>-layer-2"
+                                        style="z-index: 5; min-width: 606px; max-width: 606px; max-width: 73px; max-width: 73px; white-space: normal; font-size: 24px; line-height: 36px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Titillium Web;text-align:center;">
 
-									<img
-											alt=""
-											data-hh="['53px','53px','53px','47px']"
-											data-no-retina=""
-											data-ww="['466px','466px','466px','430px']"
-											height="53"
-											src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-slider-logo-2.png"
-											width="466">
+                                    <?=get_the_title($banner->ID)?>
 								</div>
 
 								<!-- LAYER NR. 3 -->
@@ -121,136 +120,18 @@
 										data-transform_idle="o:1;"
 										data-transform_in="y:20px;opacity:0;s:800;e:Power4.easeOut;"
 										data-transform_out="y:-20px;opacity:0;s:300;e:Power2.easeInOut;"
-										data-voffset="['98','98','98','333']"
+										data-voffset="['50','98','98','333']"
 										data-whitespace="nowrap"
 										data-width="none"
 										data-x="['center','center','center','center']"
-										data-y="['middle','middle','middle','top']"
-										id="slide-22-layer-12"
+										data-y="['bottom','bottom','bottom','bottom']"
+										id="slide-<?=$banner->ID?>-layer-12"
 										style="z-index: 7; white-space: nowrap; font-size: 18px; line-height: 18px; font-weight: 600; color: rgba(255, 255, 255, 1.00);font-family:Titillium Web;background-color:rgba(255, 255, 255, 0.25);padding:15px 12px 15px 12px;border-color:rgba(0, 0, 0, 1.00);border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
 
-									Learn More
+									查看详情
 								</div>
 							</li>
-
-							<!-- SLIDE  -->
-							<li
-									data-description=""
-									data-easein="default"
-									data-easeout="default"
-									data-hideafterloop="0"
-									data-hideslideonmobile="off"
-									data-index="rs-21"
-									data-masterspeed="300"
-									data-rotate="0"
-									data-saveperformance="off"
-									data-slotamount="default"
-									data-thumb="<?=get_stylesheet_directory_uri()?>/assets/img/fin-slider-control-2.jpg"
-									data-title="Slide"
-									data-transition="fade">
-								<!-- MAIN IMAGE -->
-								<img
-										alt=""
-										class="rev-slidebg"
-										data-bgparallax="5"
-										data-bgposition="center center"
-										data-duration="10000"
-										data-ease="Linear.easeNone"
-										data-kenburns="on"
-										data-no-retina=""
-										data-offsetend="0 0"
-										data-offsetstart="0 0"
-										data-rotateend="0"
-										data-rotatestart="0"
-										data-scaleend="110"
-										data-scalestart="100"
-										height="816"
-										src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-slider-main-2.jpg"
-										title="fin-slider-main-2"
-										width="1920">
-
-								<!-- LAYERS -->
-								<!-- LAYER NR. 1 -->
-
-								<div
-										class="tp-caption"
-										data-fontsize="['24','24','24','18']"
-										data-height="['73','none','112','none']"
-										data-hoffset="['0','0','0','0']"
-										data-lineheight="['36','36','36','27']"
-										data-responsive="off"
-										data-responsive_offset="on"
-										data-splitin="none"
-										data-splitout="none"
-										data-start="1600"
-										data-transform_idle="o:1;"
-										data-transform_in="y:20px;opacity:0;s:800;e:Power4.easeOut;"
-										data-transform_out="y:-20px;opacity:0;s:300;e:Power2.easeInOut;"
-										data-voffset="['3','3','21','8']"
-										data-whitespace="normal"
-										data-width="['606','640','621','308']"
-										data-x="['center','center','center','center']"
-										data-y="['middle','middle','middle','middle']"
-										id="slide-21-layer-2"
-										style="z-index: 5; min-width: 606px; max-width: 606px; max-width: 73px; max-width: 73px; white-space: normal; font-size: 24px; line-height: 36px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Titillium Web;text-align:center;">
-
-									New Enterprise Associates is a global venture capital firm investing in technology
-									and healthcare
-								</div>
-
-								<!-- LAYER NR. 2 -->
-								<div
-										class="tp-caption tp-resizeme"
-										data-height="none"
-										data-hoffset="['0','0','0','0']"
-										data-responsive_offset="on"
-										data-start="1150"
-										data-transform_idle="o:1;"
-										data-transform_in="y:20px;opacity:0;s:800;e:Power4.easeOut;"
-										data-transform_out="y:-20px;opacity:0;s:300;e:Power2.easeInOut;"
-										data-voffset="['-97','-97','-97','-91']"
-										data-whitespace="normal"
-										data-width="none"
-										data-x="['center','center','center','center']"
-										data-y="['middle','middle','middle','middle']"
-										id="slide-21-layer-10"
-										style="z-index: 6;">
-									<img
-											alt=""
-											data-hh="['53px','53px','53px','47px']"
-											data-no-retina=""
-											data-ww="['220px','220px','220px','220px']"
-											height="53"
-											src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-slider-logo-1.png"
-											width="220">
-								</div>
-
-								<!-- LAYER NR. 3 -->
-								<div
-										class="tp-caption rev-btn"
-										data-height="none"
-										data-hoffset="['0','0','0','0']"
-										data-responsive="off"
-										data-responsive_offset="on"
-										data-splitin="none"
-										data-splitout="none"
-										data-start="2250"
-										data-style_hover="c:rgba(63, 107, 190, 1.00);bg:rgba(255, 255, 255, 1.00);br:3px 3px 3px 3px;"
-										data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeIn;"
-										data-transform_idle="o:1;"
-										data-transform_in="y:20px;opacity:0;s:800;e:Power4.easeOut;"
-										data-transform_out="y:-20px;opacity:0;s:300;e:Power2.easeInOut;"
-										data-voffset="['98','98','98','333']"
-										data-whitespace="nowrap"
-										data-width="none"
-										data-x="['center','center','center','center']"
-										data-y="['middle','middle','middle','top']"
-										id="slide-21-layer-12"
-										style="z-index: 7; white-space: nowrap; font-size: 18px; line-height: 18px; font-weight: 600; color: rgba(255, 255, 255, 1.00);font-family:Titillium Web;background-color:rgba(255, 255, 255, 0.25);padding:15px 12px 15px 12px;border-color:rgba(0, 0, 0, 1.00);border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
-
-									Learn More
-								</div>
-							</li>
+                            <?php endforeach; ?>
 						</ul>
 					</div>
 				</div>
@@ -261,6 +142,7 @@
 		<section class="fw-section padding-top-3x padding-bottom-3x" style="background-color: #f50000;">
 			<div class="container">
 				<div class="row">
+                    <?php foreach (get_posts(array('category_name' => 'service')) as $index => $service): ?>
 					<div class="col-sm-4">
 						<div class="icon-box icon-box-vertical icon-box-light icon-box-bg-enabled icon-box-type-image bg-hover hover-from-left text-center"
 							 data-aos="zoom-in">
@@ -268,411 +150,19 @@
 
 							<div class="icon-box-icon">
 								<img alt="" class="attachment-full size-full" height="144"
-									 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-icon-1.png" width="144">
+									 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-icon-<?=$index+1?>.png" width="144">
 							</div>
 
 							<h3 class="icon-box-title">
-								Global Brand, Global Reach
+								<?=get_the_title($service->ID)?>
 							</h3>
 
 							<div class="icon-box-description">
-								<p>
-									<span class="opacity-50 text-light">Cras faucibus dolor vel rhoncus consequat. Suspendisse potenti. In mattis elit lectus, eget tempus lectus bibendum eu. Praesent laoreet.</span>
-								</p>
+                                <p><span class="opacity-50 text-light"><?=strip_tags(get_the_excerpt($service->ID))?></span></p>
 							</div>
 						</div>
 					</div>
-
-					<div class="col-sm-4">
-						<div class="icon-box icon-box-vertical icon-box-light icon-box-bg-enabled icon-box-type-image bg-hover hover-from-bottom text-center"
-							 data-aos="zoom-in">
-							<span class="icon-box-backdrop" style="background-color: #fff;"></span>
-
-							<div class="icon-box-icon">
-								<img alt="" class="attachment-full size-full" height="144"
-									 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-icon-2.png" width="144">
-							</div>
-
-							<h3 class="icon-box-title">
-								Connect With Customers
-							</h3>
-
-							<div class="icon-box-description">
-								<p>
-									<span class="opacity-50 text-light">Cras faucibus dolor vel rhoncus consequat. Suspendisse potenti. In mattis elit lectus, eget tempus lectus bibendum eu. Praesent laoreet.</span>
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-4">
-						<div class="icon-box icon-box-vertical icon-box-light icon-box-bg-enabled icon-box-type-image bg-hover hover-from-right text-center"
-							 data-aos="zoom-in">
-							<span class="icon-box-backdrop" style="background-color: #fff;"></span>
-
-							<div class="icon-box-icon">
-								<img alt="" class="attachment-full size-full" height="144"
-									 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-icon-3.png" width="144">
-							</div>
-
-							<h3 class="icon-box-title">
-								Experts at the Ready
-							</h3>
-
-							<div class="icon-box-description">
-								<p>
-									<span class="opacity-50 text-light">Cras faucibus dolor vel rhoncus consequat. Suspendisse potenti. In mattis elit lectus, eget tempus lectus bibendum eu. Praesent laoreet.</span>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="fw-section padding-top-3x" data-aos="fade-up">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-						<h2 class="block-title text-dark text-center" data-aos="fade-up">
-							We Invest in Technology
-							<small class="h4">Be early. Be insightful. Drive to consensus.</small>
-						</h2>
-
-						<div class="tabs tabs-horizontal tabs-horizontal-center mobile-center" data-aos="fade-up"
-							 id="tta-6c51415d">
-							<ul class="nav-tabs nav-tabs-dark text-center" role="tablist">
-								<li class="active">
-									<a data-toggle="tab" href="#1475586234305-de40fc29-5898" role="tab">Software and
-										Cloud Services</a>
-								</li>
-
-								<li>
-									<a data-toggle="tab" href="#1475587635898-881bc596-c705" role="tab">Security</a>
-								</li>
-
-								<li>
-									<a data-toggle="tab" href="#1475587705607-28e34b09-86fa" role="tab">Healthcare
-										IT</a>
-								</li>
-
-								<li>
-									<a data-toggle="tab" href="#1475587802063-502e203a-0eb5" role="tab">Consumer</a>
-								</li>
-							</ul>
-
-							<div class="tab-content text-dark">
-								<div class="tab-pane transition fade scale in active" id="1475586234305-de40fc29-5898">
-									<div class="row padding-top-2x">
-										<div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-8">
-											<div class="text-block">
-												<h3>
-													Software and Cloud Services
-												</h3>
-
-												<p>
-													<span class="text-gray">Duis congue quis magna quis eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed tempor dapibus magna, a commodo neque tempus ut. Sed at lacus id mauris viverra volutpat ornare ut risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit rhoncus metus, dictum auctor quam iaculis ut.</span>
-												</p>
-											</div>
-											<a class="btn btn-ghost btn-rounded btn-primary btn-nl waves-effect waves-light"
-											   href="#">View Portfolio</a>
-										</div>
-
-										<div class="col-lg-3 col-lg-offset-1 col-sm-4 hidden-xs">
-											<img alt="" class="single-image attachment-medium size-medium"
-												 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-project-tab-2-300x300.png">
-										</div>
-									</div>
-								</div>
-
-								<div class="tab-pane transition fade scale" id="1475587635898-881bc596-c705">
-									<div class="row padding-top-2x">
-										<div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-8">
-											<div class="text-block">
-												<h3>
-													Security
-												</h3>
-
-												<p>
-													<span class="text-gray">Duis congue quis magna quis eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed tempor dapibus magna, a commodo neque tempus ut. Sed at lacus id mauris viverra volutpat ornare ut risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit rhoncus metus, dictum auctor quam iaculis ut.</span>
-												</p>
-											</div>
-											<a class="btn btn-ghost btn-rounded btn-primary btn-nl waves-effect waves-light"
-											   href="#">View Portfolio</a>
-										</div>
-
-										<div class="col-lg-3 col-lg-offset-1 col-sm-4 hidden-xs">
-											<img alt="" class="single-image attachment-medium size-medium" height="300"
-												 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-project-tab-1-300x300.png" width="300">
-										</div>
-									</div>
-								</div>
-
-								<div class="tab-pane transition fade scale" id="1475587705607-28e34b09-86fa">
-									<div class="row padding-top-2x">
-										<div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-8">
-											<div class="text-block">
-												<h3>
-													Healthcare IT
-												</h3>
-
-												<p>
-													<span class="text-gray">Duis congue quis magna quis eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed tempor dapibus magna, a commodo neque tempus ut. Sed at lacus id mauris viverra volutpat ornare ut risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit rhoncus metus, dictum auctor quam iaculis ut.</span>
-												</p>
-											</div>
-											<a class="btn btn-ghost btn-rounded btn-primary btn-nl waves-effect waves-light"
-											   href="#">View Portfolio</a>
-										</div>
-
-										<div class="col-lg-3 col-lg-offset-1 col-sm-4 hidden-xs">
-											<img alt="" class="single-image attachment-medium size-medium" height="300"
-												 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-project-tab-3-300x300.png" width="300">
-										</div>
-									</div>
-								</div>
-
-								<div class="tab-pane transition fade scale" id="1475587802063-502e203a-0eb5">
-									<div class="row padding-top-2x">
-										<div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-8">
-											<div class="text-block">
-												<h3>
-													Software and Cloud Services
-												</h3>
-
-												<p>
-													<span class="text-gray">Duis congue quis magna quis eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed tempor dapibus magna, a commodo neque tempus ut. Sed at lacus id mauris viverra volutpat ornare ut risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit rhoncus metus, dictum auctor quam iaculis ut.</span>
-												</p>
-											</div>
-											<a class="btn btn-ghost btn-rounded btn-primary btn-nl waves-effect waves-light"
-											   href="#">View Portfolio</a>
-										</div>
-
-										<div class="col-lg-3 col-lg-offset-1 col-sm-4 hidden-xs">
-											<img alt="" class="single-image attachment-medium size-medium" height="300"
-												 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-project-tab-4-300x300.png" width="300">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="fw-section padding-bottom-2x padding-top-2x" data-aos="fade-up">
-			<div class="container">
-				<hr class="hr-solid hr-primary" style="border-top-color: ; border-top-width: 1px; opacity: 0.25;">
-
-				<h2 class="block-title text-dark text-center padding-top-3x" data-aos="fade-up">
-					The First Partner to Entrepreneurs Around the World
-					<small class="h4">Brilliance, Dedication and Fearlessness</small>
-				</h2>
-
-				<nav class="nav-filters portfolio-categories text-center" data-grid-id="portfolio-ebe9e769-grid"
-					 id="portfolio-ebe9e769-filters">
-					<ul>
-						<li class="active">
-							<a data-filter="*" href="#">Show All</a>
-						</li>
-
-						<li>
-							<a data-filter=".devices" href="#">Devices</a>
-						</li>
-
-						<li>
-							<a data-filter=".financial" href="#">Financial</a>
-						</li>
-
-						<li>
-							<a data-filter=".healthcare" href="#">Healthcare</a>
-						</li>
-
-						<li>
-							<a data-filter=".marketplace" href="#">Marketplace</a>
-						</li>
-
-						<li>
-							<a data-filter=".media" href="#">Media</a>
-						</li>
-					</ul>
-				</nav>
-
-				<div class="portfolio-posts masonry-grid col-6 filter-grid" data-aos="fade-up"
-					 id="portfolio-ebe9e769-grid">
-					<div class="gutter-sizer">
-					</div>
-
-					<div class="grid-sizer">
-					</div>
-
-					<div class="grid-item devices media">
-						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-1.jpg">
-							</a>
-						</article>
-					</div>
-
-					<div class="grid-item devices financial media">
-						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-2.jpg">
-							</a>
-						</article>
-					</div>
-
-					<div class="grid-item media">
-						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-3.jpg">
-							</a>
-						</article>
-					</div>
-
-					<div class="grid-item media">
-						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-4.jpg">
-							</a>
-						</article>
-					</div>
-
-					<div class="grid-item marketplace">
-						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-5.jpg">
-							</a>
-						</article>
-					</div>
-
-					<div class="grid-item marketplace">
-						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-6.jpg">
-							</a>
-						</article>
-					</div>
-
-					<div class="grid-item healthcare">
-						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-7.jpg">
-							</a>
-						</article>
-					</div>
-
-					<div class="grid-item healthcare">
-						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-8.jpg">
-							</a>
-						</article>
-					</div>
-
-					<div class="grid-item financial">
-						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-9.jpg">
-							</a>
-						</article>
-					</div>
-
-					<div class="grid-item financial">
-						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-10.jpg">
-							</a>
-						</article>
-					</div>
-
-					<div class="grid-item devices">
-						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-11.jpg">
-							</a>
-						</article>
-					</div>
-
-					<div class="grid-item devices">
-						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-12.jpg">
-							</a>
-						</article>
-					</div>
-
-					<div class="grid-item healthcare">
-						<article class="portfolio-tile portfolio-simple">
-							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-13.jpg">
-							</a>
-						</article>
-					</div>
-
-					<div class="grid-item devices">
-						<article class="portfolio-tile portfolio-simple post-179">
-							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-14.jpg">
-							</a>
-						</article>
-					</div>
-
-					<div class="grid-item financial">
-						<article class="portfolio-tile portfolio-simple post-151">
-							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-15.jpg">
-							</a>
-						</article>
-					</div>
-
-					<div class="grid-item media">
-						<article class="portfolio-tile portfolio-simple post-148">
-							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-16.jpg">
-							</a>
-						</article>
-					</div>
-
-					<div class="grid-item marketplace">
-						<article class="portfolio-tile portfolio-simple post-92">
-							<a class="portfolio-thumb" href="porfolio-single.html">
-								<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-17.jpg">
-							</a>
-						</article>
-					</div>
-				</div>
-
-				<div class="text-block padding-top-2x padding-bottom-2x" data-aos="fade-up">
-					<h4 style="text-align: center;">
-						<span class="text-gray">…and discover what comes next.</span>
-					</h4>
-				</div>
-
-				<div class="row padding-bottom-1x" data-aos="fade-up">
-					<div class="col-sm-2 col-xs-4">
-						<img alt="" class="single-image attachment-full size-full" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-4.png">
-					</div>
-
-					<div class="col-sm-2 col-xs-4">
-						<img alt="" class="single-image attachment-full size-full" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-6.png">
-					</div>
-
-					<div class="col-sm-2 col-xs-4">
-						<img alt="" class="single-image attachment-full size-full" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-5.png">
-					</div>
-
-					<div class="col-sm-2 col-xs-4">
-						<img alt="" class="single-image attachment-full size-full" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-3.png">
-					</div>
-
-					<div class="col-sm-2 col-xs-4">
-						<img alt="" class="single-image attachment-full size-full" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-2.png">
-					</div>
-
-					<div class="col-sm-2 col-xs-4">
-						<img alt="" class="single-image attachment-full size-full" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-1.png">
-					</div>
+                    <?php endforeach; ?>
 				</div>
 			</div>
 		</section>
