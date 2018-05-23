@@ -374,15 +374,15 @@
 				<div class="row">
 					<div class="col-lg-8 col-md-8 col-sm-12">
 						<h2 class="block-title text-dark text-left tablet-center">
-							News
-							<small class="h4">StartApp news</small>
+							新闻
+							<small class="h4">行业和公司最近信息</small>
 						</h2>
 					</div>
 
 					<div class="col-sm-4 hidden-sm hidden-xs">
 						<div class="text-right">
 							<a class="btn btn-ghost btn-rounded btn-primary btn-nl waves-effect waves-light"
-							   href="news-all.html">Read more news&nbsp;<i class="material-icons trending_flat"></i></a>
+							   href="news-all.html">全部新闻&nbsp;<i class="material-icons trending_flat"></i></a>
 						</div>
 					</div>
 
@@ -393,117 +393,41 @@
 
 							<div class="grid-sizer">
 							</div>
-
+                            <?php foreach (get_posts(array('category_name' => 'news', 'posts_per_page' => 3)) as $news): ?>
 							<div class="grid-item">
 								<article
 										class="post-tile post-1 post type-post format-standard category-investment tag-business tag-investment tag-iot">
 									<div class="post-body">
 										<header class="post-header">
 											<div class="column">
-												<a class="post-date" href="#">October 11, 2016</a>by
-												<a href="#">8guild</a>&nbsp;in
-												<a href="#" rel="category tag">Investment</a>
+												<a class="post-date" href="#"><?=get_the_date('Y-m-d', $news->ID)?></a>
 											</div>
 
-											<div class="column">
-												<a class="post-comments" href="#">3&nbsp;<i
-															class="material-icons chat_bubble"></i></a>
-											</div>
+											<!--<div class="column">
+												<a class="post-comments" href="#">3 <i class="material-icons chat_bubble"></i></a>
+											</div>-->
 										</header>
 
 										<h3 class="post-title">
-											<a href="news-single.html">Are You Ready To Buy A Home</a>
+											<a href="news-single.html"><?=get_the_title($news->ID)?></a>
 										</h3>
 
 										<p class="post-excerpt">
-											Nulla finibus sit amet turpis et ullamcorper. Proin sit amet accumsan elit,
-											quis finibus arcu. Morbi pretium velit non
+											<?=strip_tags(get_the_excerpt($news->ID))?>
 										</p>
 
 										<footer class="post-footer">
 											<div class="tags-links">
-												<a href="#" rel="tag">Business</a>
-												<a href="#" rel="tag">Investment</a>
-												<a href="#" rel="tag">IOT</a>
+                                                <?php get_the_tag_list('', '', '', $news->ID)?>
 											</div>
 										</footer>
 									</div>
 
-									<a class="post-thumb" href="news-single.html"><img alt=""
-																					   src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-bg.jpg"></a>
+									<a class="post-thumb" href="news-single.html"><?=get_the_post_thumbnail($news->ID)?></a>
 								</article>
 							</div>
+                            <?php endforeach; ?>
 
-							<div class="grid-item">
-								<article class="post-tile">
-									<div class="post-body">
-										<header class="post-header">
-											<div class="column">
-												<a class="post-date" href="#">October 11, 2016</a>by
-												<a href="#">8guild</a>&nbsp;in
-												<a href="#" rel="category tag">Podcasts</a>
-											</div>
-
-											<div class="column">
-											</div>
-										</header>
-
-										<h3 class="post-title">
-											<a href="news-single.html">Publikate Net</a>
-										</h3>
-
-										<p class="post-excerpt">
-											Nulla finibus sit amet turpis et ullamcorper. Proin sit amet accumsan elit,
-											quis finibus arcu. Morbi pretium velit non
-										</p>
-
-										<footer class="post-footer">
-											<div class="tags-links">
-												<a href="#" rel="tag">Business</a><a href="#" rel="tag">Investment</a>
-											</div>
-										</footer>
-									</div>
-
-									<a class="post-thumb" href="news-single.html"><img alt=""
-																					   src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-4.jpg"></a>
-								</article>
-							</div>
-
-							<div class="grid-item">
-								<article class="post-tile">
-									<div class="post-body">
-										<header class="post-header">
-											<div class="column">
-												<a class="post-date" href="#">October 10, 2016</a>by
-												<a href="#">8guild</a>&nbsp;in <a href="#"
-																				  rel="category tag">Technology</a>
-											</div>
-
-											<div class="column">
-											</div>
-										</header>
-
-										<h3 class="post-title">
-											<a href="news-single.html">How To Put Movies On Iphone</a>
-										</h3>
-
-										<p class="post-excerpt">
-											Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec id ante
-											augue. Sed augue ipsum, varius et ligula eu
-										</p>
-
-										<footer class="post-footer">
-											<div class="tags-links">
-												<a href="#" rel="tag">Investment</a><a href="#" rel="tag">IOT</a>
-											</div>
-										</footer>
-									</div>
-
-									<a class="post-thumb" href="news-single.html"><img alt="" height="1280"
-																					   src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-3.jpg"
-																					   width="1920"></a>
-								</article>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -513,61 +437,49 @@
 		<section class="fw-section padding-bottom-3x padding-top-3x" data-aos="fade-up">
 			<div class="container">
 				<h2 class="block-title text-dark text-center">
-					Proven Customer Benefits
-					<small class="h4">Closing In On Effective Advertising</small>
+					数据一瞥
+					<small class="h4">仅仅3年，来我们达成的成就和规模</small>
 				</h2>
 
 				<div class="row">
-					<div class="col-sm-3">
+					<div class="col-sm-4">
 						<div class="animated-digit-box skin-primary">
 							<div class="animated-digit">
-								<span class="digit">61</span><span class="unit">%</span>
+								<span class="digit">11</span><span class="unit">%</span>
 							</div>
 
 							<p class="description">
-								Reduction in hadoop job failures
+								管理的产品数量
 							</p>
 						</div>
 					</div>
 
-					<div class="col-sm-3">
+					<div class="col-sm-4">
 						<div class="animated-digit-box skin-primary">
 							<div class="animated-digit">
-								<span class="digit">46</span><span class="unit">%</span>
+								<span class="digit">10</span><span class="unit">亿</span>
 							</div>
 
 							<p class="description">
-								Maintain Your Pc S Performance
+								管理的资金规模
 							</p>
 						</div>
 					</div>
 
-					<div class="col-sm-3">
+					<div class="col-sm-4">
 						<div class="animated-digit-box skin-primary">
 							<div class="animated-digit">
-								<span class="digit">78</span><span class="unit">%</span>
+								<span class="digit">50</span><span class="unit">+</span>
 							</div>
 
 							<p class="description">
-								Unique Myspace Layouts Nowadays
-							</p>
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-						<div class="animated-digit-box skin-primary">
-							<div class="animated-digit">
-								<span class="digit">90</span>
-							</div>
-
-							<p class="description">
-								Fta Keys
+								合作机构
 							</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="row">
+				<!--<div class="row">
 					<div class="col-sm-12">
 						<div class="text-block">
 							<p class="lead" style="text-align: center;">
@@ -577,43 +489,13 @@
 
 						<div class="text-center">
 							<a class="btn btn-solid btn-rounded btn-primary btn-nl waves-effect waves-light" href="#"><i
-										class="material-icons file_download"></i>&nbsp;Download report</a>
+										class="material-icons file_download"></i>&nbsp;下载报告</a>
 						</div>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</section>
 
-		<section class="fw-section with-overlay bg-parallax padding-top-5x padding-bottom-5x" data-parallax-speed="0.4"
-				 data-parallax-type="scroll" style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-bg-2.jpg);">
-			<span class="overlay" style="opacity: 0.25; background-color: #000000;"></span>
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-3">
-					</div>
-
-					<div class="col-sm-6">
-						<div class="text-block">
-							<h1 style="text-align: center;">
-								<span class="text-light">Become a Partner</span>
-							</h1>
-
-							<p style="text-align: center;">
-								<span class="text-light opacity-50">Duis congue quis magna quis eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed tempor dapibus magna, a commodo neque tempus ut. Sed at lacus id mauris viverra volutpat ornare ut risus. Cras faucibus dolor vel rhoncus consequat. Cras faucibus dolor vel rhoncus consequat.</span>
-							</p>
-						</div>
-
-						<div class="text-center">
-							<a class="btn btn-transparent btn-rounded btn-light btn-nl waves-effect waves-light"
-							   href="page-contacts.html">Contact Us</a>
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-					</div>
-				</div>
-			</div>
-		</section>
 	</article>
 
 <?php get_footer(); ?>
