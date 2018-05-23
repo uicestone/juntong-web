@@ -31,6 +31,26 @@ add_action('wp', function() {
 	wp_register_script('startapp-theme', get_stylesheet_directory_uri() . '/assets/js/startapp-theme.js', array(), false, true);
 });
 
+add_action('init', function () {
+
+    register_post_type('team', array(
+        'label' => '团队',
+        'labels' => array(
+            'all_items' => '所有团队成员',
+            'add_new' => '添加团队成员',
+            'add_new_item' => '新团队成员',
+            'edit_item' => '编辑团队成员',
+            'not_found' => '未找到团队成员'
+        ),
+        'public' => true,
+        'supports' => array('title', 'excerpt', 'editor', 'subtitles', 'thumbnail', 'author'),
+        'taxonomies' => array('post_tag'),
+        'menu_icon' => 'dashicons-groups',
+        'has_archive' => true
+    ));
+
+});
+
 add_action('after_setup_theme', function () {
     register_nav_menu('primary', '主导航');
     add_theme_support('post-thumbnails');
