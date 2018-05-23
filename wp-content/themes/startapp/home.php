@@ -139,7 +139,7 @@
 			</div>
 		</section>
 
-		<section class="fw-section padding-top-3x padding-bottom-3x" style="background-color: #f50000;">
+		<section class="fw-section padding-top-3x padding-bottom-3x" style="background-color: #9a0909;">
 			<div class="container">
 				<div class="row">
                     <?php foreach (get_posts(array('category_name' => 'service')) as $index => $service): ?>
@@ -167,208 +167,6 @@
 			</div>
 		</section>
 
-		<section class="fw-section section-no-gap">
-			<div class="container-fluid">
-				<div class="testimonials-slider carousel-light text-left text-light carousel-dots-inside carousel-dots-left carousel-effect-slide carousel-autoplay-disable"
-					 data-slick='{"arrows":false,"dots":true,"infinite":false,"fade":false,"autoplay":false,"autoplaySpeed":3000}'>
-					<div class="testimonial-slide padding-top-3x padding-bottom-5x"
-						 style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-testim-slider-1.jpg);">
-						<div class="container">
-							<div class="inner">
-								<a class="testimonial-logo" href="#"></a>
-
-								<h3 class="h2">
-									Medicine’s Transistor Moment
-								</h3>
-
-								<blockquote>
-									<p>
-										Duis congue quis magna quis eleifend. Vestibulum ante ipsum primis in faucibus
-										orci luctus et ultrices posuere cubilia Curae; Sed tempor dapibus magna, a
-										commodo neque tempus ut. Sed at lacus id mauris viverra volutpat ornare ut
-										risus. Sed at lacus id mauris viverra volutpat ornare ut risus.
-									</p>
-									<cite>Sue Price, CEO <a href="#">Cunfluence</a></cite>
-								</blockquote>
-
-								<a class="btn btn-transparent btn-rounded btn-light btn-default waves-effect waves-light"
-								   href="#">Read All</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="testimonial-slide padding-top-3x padding-bottom-5x"
-						 style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-testim-slider-2.jpg);">
-						<div class="container">
-							<div class="inner">
-								<div class="testimonial-logo">
-								</div>
-
-								<h3 class="h2">
-									How To Make Money
-								</h3>
-
-								<blockquote>
-									<p>
-										Duis congue quis magna quis eleifend. Vestibulum ante ipsum primis in faucibus
-										orci luctus et ultrices posuere cubilia Curae; Sed tempor dapibus magna, a
-										commodo neque tempus ut. Sed at lacus id mauris viverra volutpat ornare ut
-										risus. Sed at lacus id mauris viverra volutpat ornare ut risus.
-									</p>
-									<cite>Mark Cucerberg, CEO <a href="#">8Guild</a></cite>
-								</blockquote>
-
-								<a class="btn btn-transparent btn-rounded btn-light btn-default" href="#">Learn More</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="fw-section bg-parallax vc_custom_1479024795475 padding-top-3x padding-bottom-3x"
-				 data-parallax-speed="0.4" data-parallax-type="scroll-opacity"
-				 style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-bg-1.jpg);">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-6">
-					</div>
-
-					<div class="col-sm-6">
-						<div class="text-block">
-							<h3>
-								Business Plan Submissions
-							</h3>
-
-							<p>
-								<span class="text-gray">Duis congue quis magna quis eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed tempor dapibus magna, a commodo neque tempus ut. Sed at lacus id mauris viverra volutpat ornare ut risus. Cras faucibus dolor vel rhoncus consequat.</span>
-							</p>
-						</div>
-
-						<ul class="list-unordered text-lg text-dark">
-							<li>Thinking Globally
-								<small>Duis congue quis magna quis eleifend. Vestibulum ante ipsum primis.</small>
-							</li>
-
-							<li>Growing up on Both Coasts
-								<small>Duis congue quis magna quis eleifend. Vestibulum ante ipsum primis in faucibus
-									orci luctus et ultrices posuere cubilia Curae; Sed tempor dapibus magna, a commodo
-									neque tempus ut.
-								</small>
-							</li>
-						</ul>
-
-						<a class="btn btn-solid btn-rounded btn-primary btn-nl waves-effect waves-light" href="#">Submit
-							a business plan</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="fw-section padding-top-3x">
-			<div class="container">
-				<div class="row" data-aos="fade-up">
-					<div class="col-lg-8 col-md-8 col-sm-12">
-						<h2 class="block-title text-dark text-left tablet-center">
-							Investment Team
-							<small class="h4">Maecenas mattis lorem massa, nec condimentum nulla pretium eu...</small>
-						</h2>
-					</div>
-
-					<div class="col-lg-4 col-md-4 col-sm-12 hidden-sm hidden-xs">
-						<div class="text-right">
-							<a class="btn btn-ghost btn-rounded btn-primary btn-nl waves-effect waves-light"
-							   href="team-all.html">See full team&nbsp;<i class="material-icons trending_flat"></i></a>
-						</div>
-					</div>
-				</div>
-
-				<div class="row" data-aos="fade-up">
-					<div class="col-sm-4">
-						<div class="teammate teammate-dark-skin teammate-tile">
-							<a class="teammate-thumb" href="#"><img alt="" class="attachment-large size-large"
-																	height="590" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-1.jpg"
-																	width="539"></a>
-							<div class="teammate-info-wrap">
-								<span class="teammate-info">CEO, <a href="#">8Guild</a></span>
-								<h3 class="teammate-name">
-									<a href="#">Katharine Wells</a>
-								</h3>
-
-								<div class="hidden-info">
-									<span class="teammate-info">SaaS &amp; Enterprise, Finance and Payments, “Intelligent Software”, Consumer Palo Alto</span>
-									<div class="social-bar sb-border sb-rounded sb-dark-skin text-left">
-										<a class="social-btn waves-effect waves-light" href="#"><i
-													class="socicon-twitter"></i></a><a
-												class="social-btn waves-effect waves-light" href="#"><i
-													class="socicon-linkedin"></i></a><a
-												class="social-btn waves-effect waves-light" href="#"><i
-													class="socicon-facebook"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-4">
-						<div class="teammate teammate-dark-skin teammate-tile">
-							<a class="teammate-thumb" href="#"><img alt="" class="attachment-large size-large"
-																	height="590" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-2.jpg"
-																	width="539"></a>
-							<div class="teammate-info-wrap">
-								<span class="teammate-info">CEO, <a href="#">ZurApp</a></span>
-								<h3 class="teammate-name">
-									<a href="#">Ray Singleton</a>
-								</h3>
-
-								<div class="hidden-info">
-									<span class="teammate-info">SaaS &amp; Enterprise, Finance and Payments, “Intelligent Software”, Consumer</span>
-									<div class="social-bar sb-border sb-rounded sb-dark-skin text-left">
-										<a class="social-btn waves-effect waves-light" href="#"><i
-													class="socicon-facebook"></i></a><a
-												class="social-btn waves-effect waves-light" href="#"><i
-													class="socicon-telegram"></i></a><a
-												class="social-btn waves-effect waves-light" href="#"><i
-													class="socicon-dribbble"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-4">
-						<div class="teammate teammate-dark-skin teammate-tile">
-							<a class="teammate-thumb" href="#"><img alt="" class="attachment-large size-large"
-																	height="590" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-team-3.jpg"
-																	width="539"></a>
-							<div class="teammate-info-wrap">
-								<span class="teammate-info">Product Designer, <a href="#">Appica</a></span>
-								<h3 class="teammate-name">
-									<a href="#">Amelia Powers</a>
-								</h3>
-
-								<div class="hidden-info">
-									<span class="teammate-info">SaaS &amp; Enterprise, Finance and Payments, “Intelligent Software”, Consumer Palo Alto</span>
-									<div class="social-bar sb-border sb-rounded sb-dark-skin text-left">
-										<a class="social-btn" href="#"><i class="socicon-twitter"></i></a><a
-												class="social-btn" href="#"><i class="socicon-pinterest"></i></a><a
-												class="social-btn" href="#"><i class="socicon-stackoverflow"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row padding-top-2x">
-					<div class="col-sm-12">
-						<hr class="hr-solid hr-primary"
-							style="border-top-color: ; border-top-width: 1px; opacity: 0.25;">
-					</div>
-				</div>
-			</div>
-		</section>
-
 		<section class="fw-section padding-top-2x padding-top-3x" data-aos="fade-up">
 			<div class="container">
 				<div class="row">
@@ -382,7 +180,7 @@
 					<div class="col-sm-4 hidden-sm hidden-xs">
 						<div class="text-right">
 							<a class="btn btn-ghost btn-rounded btn-primary btn-nl waves-effect waves-light"
-							   href="news-all.html">全部新闻&nbsp;<i class="material-icons trending_flat"></i></a>
+							   href="<?=site_url()?>/category/news/">全部新闻&nbsp;<i class="material-icons trending_flat"></i></a>
 						</div>
 					</div>
 
