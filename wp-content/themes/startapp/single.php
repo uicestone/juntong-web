@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); the_post(); ?>
 
 	<!-- Page Title Start -->
 	<section class="single-cover-image bg-parallax" data-parallax-speed="0.4" data-parallax-type="scroll"
