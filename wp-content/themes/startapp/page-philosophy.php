@@ -33,7 +33,7 @@
 
 	<article class="page">
 		<section class="fw-section padding-top-3x padding-bottom-3x"
-				 style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/chip-flat-bw.jpg); background-size: 35%; background-position: 80% 50%;">
+				 style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/chip.jpg); background-size: 50%; background-position: 80% 50%;">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6">
@@ -67,8 +67,7 @@
                                     <?php endforeach; ?>
 								</div>
 								<a class="btn btn-ghost btn-rounded btn-primary btn-nl btn-block waves-effect waves-light"
-								   href="portfolio-all.html">业务介绍&nbsp;<i
-											class="material-icons trending_flat"></i></a>
+								   href="<?=site_url()?>/service/">业务介绍&nbsp;<i class="material-icons trending_flat"></i></a>
 							</div>
 						</div>
 					</div>

@@ -2,7 +2,7 @@
 
 	<!-- Page Title Start -->
 	<section class="single-cover-image bg-parallax" data-parallax-speed="0.4" data-parallax-type="scroll"
-			 style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-bg.jpg); height: 500px;">
+			 style="background-image: url(<?php the_post_thumbnail_url(); ?>); height: 500px;">
 	</section><!-- Page Title Start END -->
 
 	<section class="fw-section">
@@ -30,9 +30,6 @@
 								<?php the_title(); ?>
 							</h1>
 
-							<div class="featured-image padding-bottom-1x">
-                                <?php the_post_thumbnail('post-thumbnail', array('alt' => '')); ?>
-							</div>
 						</div><!-- Section END -->
 
 						<!-- Section Start -->
@@ -114,145 +111,6 @@
 							</section><!-- Widget END -->
 						</div><!-- Post Footer END -->
 
-						<!-- Comments Area Start -->
-						<!--<div class="comments-area">
-							<h4 class="text-gray margin-bottom-2x">
-								Comments <sup>4</sup>
-							</h4>
-
-							<div class="comment thread-depth-1 parent">
-								<div class="inner">
-									<div class="author-ava">
-										<img alt="" class="avatar avatar-60" src="<?=get_stylesheet_directory_uri()?>/assets/img/0202020.jpg">
-									</div>
-
-									<div class="comment-body">
-										<h4 class="author-name">
-											Den Brave
-										</h4>
-
-										<span class="comment-date">October 28, 2016</span>
-
-										<p>
-											Hi! Great first level comment. Like it, guys!
-										</p>
-									</div>
-								</div>
-
-								<div class="reply-link">
-									<a class="comment-reply-login" href="#" rel="nofollow">Log in to Reply</a>
-								</div>
-
-								<div class="comment odd alt depth-2">
-									<div class="inner">
-										<div class="author-ava">
-											<img alt="" class="avatar avatar-60" src="<?=get_stylesheet_directory_uri()?>/assets/img/0202020.jpg">
-										</div>
-
-										<div class="comment-body">
-											<h4 class="author-name">
-												8guild
-											</h4>
-
-											<span class="comment-date">October 28, 2016</span>
-
-											<p>
-												Thank you so much. We also have incredible design for a second level
-												comment. Check it out!
-											</p>
-										</div>
-									</div>
-
-									<div class="reply-link">
-										<a class="comment-reply-login" href="#" rel="nofollow">Log in to Reply</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="comment depth-1 parent">
-								<div class="inner">
-									<div class="author-ava">
-										<img alt="" class="avatar avatar-60" src="<?=get_stylesheet_directory_uri()?>/assets/img/0202020.jpg">
-									</div>
-
-									<div class="comment-body">
-										<h4 class="author-name">
-											Jennys Jiplon
-										</h4>
-
-										<span class="comment-date">October 28, 2016</span>
-
-										<p>
-											Wow, incredible theme! Like it so much!
-										</p>
-									</div>
-								</div>
-
-								<div class="reply-link">
-									<a class="comment-reply-login" href="#" rel="nofollow">Log in to Reply</a>
-								</div>
-
-								<div class="comment odd alt depth-2">
-									<div class="inner">
-										<div class="author-ava">
-											<img alt="" class="avatar avatar-60" src="<?=get_stylesheet_directory_uri()?>/assets/img/0202020.jpg">
-										</div>
-
-										<div class="comment-body">
-											<h4 class="author-name">
-												8guild
-											</h4>
-
-											<span class="comment-date">October 28, 2016</span>
-
-											<p>
-												Wow! So sweet from you!
-											</p>
-										</div>
-									</div>
-
-									<div class="reply-link">
-										<a class="comment-reply-login" href="#" rel="nofollow">Log in to Reply</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="comment-respond">
-								<div class="reply-title">
-									<h4>
-										Comment
-									</h4>
-
-									<small class="cancel-reply"><a href="#" rel="nofollow" style="display:none;">Cancel
-											reply</a></small>
-								</div>
-
-								<form>
-									<textarea name="comment" rows="6" placeholder="Enter your comment"
-											  required=""></textarea>
-									<div class="row">
-										<div class="col-sm-9">
-											<div class="row">
-												<div class="col-sm-6">
-													<input name="author" placeholder="Name" type="text" value="">
-												</div>
-
-												<div class="col-sm-6">
-													<input name="email" placeholder="Email" type="email" value="">
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-3 form-submit">
-											<button class="btn btn-ghost btn-primary btn-block" id="submit"
-													name="submit" type="submit">Comment&nbsp;<i
-														class="material-icons reply"></i></button>
-											<input id="comment_post_ID" name="comment_post_ID" type="hidden" value="1">
-											<input id="comment_parent" name="comment_parent" type="hidden" value="0">
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>--><!-- Comme	nts Area Start END -->
 					</article><!-- Post Section END -->
 				</div><!-- Posts Column END -->
 
@@ -266,28 +124,6 @@
 						</form>
 					</section><!-- Widget END -->
 
-					<!-- Widget Start -->
-					<!--<section class="widget widget_startapp_author">
-                        <h2 class="widget-title">
-                            Blog Author
-                        </h2>
-
-                        <div class="startapp-author text-left">
-                            <img alt="demo-avatar" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-author.jpg">
-
-                            <p>
-                                SaaS &amp; Enterprise, Finance and Payments, “Intelligent Software”, ConsumerPalo Alto
-                            </p>
-
-                            <div class="social-bar sb-border sb-rounded sb-dark-skin inline">
-                                <a class="social-btn" href="#"><i class="socicon-instagram"></i></a>
-                                <a class="social-btn" href="#"><i class="socicon-linkedin"></i></a>
-                                <a class="social-btn" href="#"><i class="socicon-odnoklassniki"></i></a>
-                                <a class="social-btn" href="#"><i class="socicon-facebook"></i></a>
-                            </div>
-                        </div>
-                    </section>--><!-- Widget END -->
-
                     <!-- Widget Start -->
                     <section class="widget widget_categories">
                         <h2 class="widget-title">
@@ -299,69 +135,25 @@
                     <!-- Widget Start -->
                     <section class="widget widget_startapp_recent_posts">
                         <h2 class="widget-title">
-                            Recent Posts
+                            最近文章
                         </h2>
 
+                        <?php foreach (get_posts(array('posts_per_page' => 3)) as $recent_post): ?>
                         <div class="post-item">
-                            <a class="post-item-thumb" href="blog-single-post-right-sidebar.html">
-                                <img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-bg-150x150.jpg">
+                            <a class="post-item-thumb" href="<?=get_the_permalink($recent_post->ID)?>">
+                                <?=get_the_post_thumbnail($recent_post->ID, 'small')?>
                             </a>
 
                             <div class="post-item-info">
-                                <span class="post-item-date">October 29</span>
+                                <span class="post-item-date"><?=get_the_date('Y-m-d', $recent_post->ID)?></span>
                                 <h3 class="post-item-title">
-                                    <a href="blog-single-post-right-sidebar.html" rel="bookmark">Incredible City View</a>
+                                    <a href="<?=get_the_permalink($recent_post->ID)?>" rel="bookmark"><?=get_the_title($recent_post->ID)?></a>
                                 </h3>
                             </div>
                         </div>
+                        <?php endforeach; ?>
 
-                        <div class="post-item">
-                            <a class="post-item-thumb" href="blog-single-post-right-sidebar.html">
-                                <img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-4-150x150.jpg">
-                            </a>
-
-                            <div class="post-item-info">
-                                <span class="post-item-date">October 29</span>
-                                <h3 class="post-item-title">
-                                    <a href="blog-single-post-right-sidebar.html" rel="bookmark">Thoughts About Car Concepts</a>
-                                </h3>
-                            </div>
-                        </div>
-
-                        <div class="post-item">
-                            <a class="post-item-thumb" href="blog-single-post-right-sidebar.html">
-                                <img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-blog-post-3-150x150.jpg">
-                            </a>
-
-                            <div class="post-item-info">
-                                <span class="post-item-date">October 29</span>
-                                <h3 class="post-item-title">
-                                    <a href="blog-single-post-right-sidebar.html" rel="bookmark">Drones and Delivery</a>
-                                </h3>
-                            </div>
-                        </div>
 	                </section><!-- Widget END -->
-
-                    <!-- Widget Start -->
-                    <section class="widget widget_recent_comments">
-                        <h2 class="widget-title">
-                            Recent Comments
-                        </h2>
-
-                        <ul>
-                            <li class="recentcomments">
-                                <span class="comment-author-link">8guild</span> on <a href="#">Withings Camera</a>
-                            </li>
-
-                            <li class="recentcomments">
-                                <span class="comment-author-link">8guild</span> on <a href="#">Drones and Delivery</a>
-                            </li>
-
-                            <li class="recentcomments">
-                                <span class="comment-author-link">8guild</span> on <a href="#">Pretty Watches</a>
-                            </li>
-                        </ul>
-                    </section><!-- Widget END -->
 	            </div><!-- Sidebar Column END -->
 	        </div>
 	    </div>

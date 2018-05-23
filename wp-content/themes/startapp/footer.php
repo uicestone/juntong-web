@@ -123,7 +123,7 @@
 
                                 <div class="social-bar sb-solid-bg sb-rounded sb-dark-skin text-left">
                                     <a class="social-btn waves-effect waves-light" data-placement="top" data-toggle="tooltip"
-                                       href="#" title="Facebook"><i class="fa fa-wechat"></i></a>
+                                       href="#" title="微信公众号"><i class="fa fa-wechat"></i></a>
                                 </div>
 							</section>
 						</div>

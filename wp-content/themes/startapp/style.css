@@ -3919,6 +3919,7 @@ ul.wpb_thumbnails-fluid > li {
 
 .masonry-grid .grid-item {
   margin-bottom: 30px;
+  height: 100px;
 }
 
 .masonry-grid .grid-item .post-tile,
@@ -8337,11 +8338,13 @@ ul.wpb_thumbnails-fluid > li {
   background-color: #f5f5f5;
   overflow: hidden;
   z-index: 5;
+  line-height: 100px;
 }
 
 .portfolio-tile .portfolio-thumb > img {
-  display: block;
+  display: inline-block;
   margin: auto;
+  vertical-align: middle;
 }
 
 .portfolio-tile .portfolio-info {
