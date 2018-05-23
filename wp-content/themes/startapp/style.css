@@ -12049,6 +12049,8 @@ input[type='submit'].btn-3d.btn-light:active {
   margin-top: 4px;
   color: #808080;
   font-size: 14px;
+  max-height: 120px;
+  overflow-y: scroll;
 }
 
 .teammate .teammate-info > a,
