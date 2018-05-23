@@ -8,22 +8,22 @@
 			<div class="inner">
 				<div class="column">
 					<h1>
-						Philosophy
+						关于我们
 					</h1>
 				</div>
 
 				<div class="column">
 					<div class="breadcrumbs">
 			          <span>
-			          	<a href="#">
-			          		<span property="name">Home</span>
+			          	<a href="<?=site_url()?>">
+			          		<span property="name">首页</span>
 			          	</a>
 			          </span>
 
 						<i class="material-icons keyboard_arrow_right"></i>
 
 						<span property="itemListElement" typeof="ListItem">
-		          		<span property="name">Philosophy</span>
+		          		<span property="name">关于我们</span>
 		          	</span>
 					</div>
 				</div>
@@ -33,15 +33,18 @@
 
 	<article class="page">
 		<section class="fw-section padding-top-3x padding-bottom-3x"
-				 style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-bg-8.jpg)">
+				 style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/chip-flat-bw.jpg); background-size: 35%; background-position: 80% 50%;">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-6">
 						<h2 class="block-title text-dark text-left">
-							One Team. A World of Opportunity.
-							<small class="h4">Duis enim neque, scelerisque ullamcorper pretium et, accumsan vel est.
-								Morbi enim lectus, auctor id diam quis, dapibus suscipit urna. Aenean sed aliquet lacus.
+							君桐资本概况
+							<small class="h4">
+                                上海君桐股权投资管理有限公司（简称“君桐资本”）于2015年5月成立，是一家专注于电子信息等高新技术产业（以半导体集成电路领域为主）的私募股权投资服务机构。
 							</small>
+                            <small class="h4">
+                                目前已在基金业协会完成私募基金管理人备案，完成逾10个产品的发行及设立，直接管理规模逾10亿元。
+                            </small>
 						</h2>
 
 						<div class="row">
@@ -53,37 +56,18 @@
 
 									<div class="grid-sizer">
 									</div>
-
+                                    <?php foreach (get_posts(array('category_name' => '产品', 'posts_per_page' => 4)) as $product): ?>
 									<div class="grid-item devices media">
 										<article class="portfolio-tile">
-											<a class="portfolio-thumb" href="portfolio-single.html"><img alt=""
-																										 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-1.jpg"></a>
+											<a class="portfolio-thumb" href="<?=get_the_permalink($product->ID)?>">
+                                                <?=get_the_post_thumbnail($product->ID, 'small')?>
+                                            </a>
 										</article>
 									</div>
-
-									<div class="grid-item devices financial media">
-										<article class="portfolio-tile">
-											<a class="portfolio-thumb" href="portfolio-single.html"><img alt=""
-																										 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-2.jpg"></a>
-										</article>
-									</div>
-
-									<div class="grid-item media">
-										<article class="portfolio-tile">
-											<a class="portfolio-thumb" href="portfolio-single.html"><img alt=""
-																										 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-3.jpg"></a>
-										</article>
-									</div>
-
-									<div class="grid-item media">
-										<article class="portfolio-tile">
-											<a class="portfolio-thumb" href="portfolio-single.html"><img alt=""
-																										 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-portfolio-4.jpg"></a>
-										</article>
-									</div>
+                                    <?php endforeach; ?>
 								</div>
 								<a class="btn btn-ghost btn-rounded btn-primary btn-nl btn-block waves-effect waves-light"
-								   href="portfolio-all.html">Discover Our Portfolio&nbsp;<i
+								   href="portfolio-all.html">业务介绍&nbsp;<i
 											class="material-icons trending_flat"></i></a>
 							</div>
 						</div>
