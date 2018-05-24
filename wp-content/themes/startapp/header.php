@@ -73,7 +73,7 @@
 								</li>
 
 								<li class="menu-item">
-									<a href="<?=site_url()?>/career/">加入我们</a>
+									<a href="<?=site_url()?>/careers/">加入我们</a>
 								</li>
 
 								<li class="menu-item">
