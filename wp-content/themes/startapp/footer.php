@@ -28,7 +28,11 @@
 											<a href="http://www.amac.org.cn/" target="_blank">基金业协会</a>
 										</li>
 
-										<li class="menu-item">
+                                        <li class="menu-item">
+                                            <a href="http://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000031277.html" target="_blank">公示信息</a>
+                                        </li>
+
+                                        <li class="menu-item">
 											<a href="http://www.csrc.gov.cn/pub/newsite/" target="_blank">证监会</a>
 										</li>
 

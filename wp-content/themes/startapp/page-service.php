@@ -14,7 +14,7 @@
                         <div class="tabs tabs-horizontal tabs-horizontal-center mobile-center" data-aos="fade-up"
                              id="tta-6c51415d">
                             <ul class="nav-tabs nav-tabs-dark text-center" role="tablist">
-                                <?php foreach (get_posts(array('category_name' => 'service')) as $index => $service): ?>
+                                <?php foreach (get_posts(array('category_name' => 'service', 'order' => 'asc')) as $index => $service): ?>
                                 <li class="<?=$index?'':'active'?>">
                                     <a data-toggle="tab" href="#service-<?=$service->ID?>" role="tab"><?=get_the_title($service->ID)?></a>
                                 </li>

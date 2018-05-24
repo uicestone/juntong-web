@@ -120,7 +120,7 @@
 										data-transform_idle="o:1;"
 										data-transform_in="y:20px;opacity:0;s:800;e:Power4.easeOut;"
 										data-transform_out="y:-20px;opacity:0;s:300;e:Power2.easeInOut;"
-										data-voffset="['50','98','98','333']"
+										data-voffset="['50','98','98','100']"
 										data-whitespace="nowrap"
 										data-width="none"
 										data-x="['center','center','center','center']"
@@ -142,7 +142,7 @@
 		<section class="fw-section padding-top-3x padding-bottom-3x" style="background-color: #9a0909;">
 			<div class="container">
 				<div class="row">
-                    <?php foreach (get_posts(array('category_name' => 'service')) as $index => $service): ?>
+                    <?php foreach (get_posts(array('category_name' => 'service', 'order' => 'asc')) as $index => $service): ?>
 					<div class="col-sm-4">
 						<div class="icon-box icon-box-vertical icon-box-light icon-box-bg-enabled icon-box-type-image bg-hover hover-from-left text-center"
 							 data-aos="zoom-in">
@@ -243,7 +243,7 @@
 					<div class="col-sm-4">
 						<div class="animated-digit-box skin-primary">
 							<div class="animated-digit">
-								<span class="digit">11</span><span class="unit">%</span>
+								<span class="digit">11</span>
 							</div>
 
 							<p class="description">

@@ -2,7 +2,7 @@
 Theme Name: Start App (JunTong)
 Author: Rain Lee, Uice Lu
 Version: 1.0
-Text Domain: young-bird
+Text Domain: start-app
 */
 
 /*
@@ -3919,6 +3919,9 @@ ul.wpb_thumbnails-fluid > li {
 
 .masonry-grid .grid-item {
   margin-bottom: 30px;
+}
+
+portfolio-posts.masonry-grid .grid-item {
   height: 100px;
 }
 

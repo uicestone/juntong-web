@@ -130,7 +130,7 @@
 								</div>
 
 								<div class="contact-info">
-									<span>9:00 - 17:00</span><span>周一至周五</span>
+									<span>9:00 - 18:00</span><span>周一至周五</span>
 								</div>
 							</div>
 						</div>
