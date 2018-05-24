@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<div class="page-title title-size-lg text-light bg-parallax" data-parallax-speed="0.4"
-		 data-parallax-type="scroll-opacity" style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/fin-bg-6.jpg);">
+		 data-parallax-type="scroll-opacity" style="background-image: url(<?=get_stylesheet_directory_uri()?>/assets/img/shanghai.jpg);">
 		<span class="overlay" style="background-color: #000000; opacity: 0.35;"></span>
 
 		<div class="container">
