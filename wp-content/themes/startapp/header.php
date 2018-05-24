@@ -69,15 +69,15 @@
 						<nav class="topbar-menu">
 							<ul class="menu">
 								<li class="menu-item">
-									<a href="<?=site_url()?>/philosophy/">理念</a>
+									<a href="<?=site_url()?>/philosophy/">关于</a>
 								</li>
 
 								<li class="menu-item">
-									<a href="<?=site_url()?>/careers/">加入我们</a>
+									<a href="<?=site_url()?>/careers/">加入</a>
 								</li>
 
 								<li class="menu-item">
-									<a href="<?=site_url()?>/contact/">联系我们</a>
+									<a href="<?=site_url()?>/contact/">联络</a>
 								</li>
 
 							</ul>
@@ -85,7 +85,6 @@
 
 						<div class="social-bar sb-solid-bg sb-rounded sb-dark-skin text-left">
 							<a class="social-btn" href="#"><i class="fa fa-wechat"></i></a>
-							<a class="social-btn" href="#"><i class="fa fa-weibo"></i></a>
 						</div>
 					</div>
 				</div>
