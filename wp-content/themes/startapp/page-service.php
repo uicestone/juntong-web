@@ -7,8 +7,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <h2 class="block-title text-dark text-center" data-aos="fade-up">
-                            半导体行业投资专家
-                            <small class="h4">君桐资本结合自身优势，通过专业的服务，<br>与业内许多企业和机构建立了深度合作关系，积累了丰富的人脉资源。 </small>
+                            <!--<small class="h4">君桐资本结合自身优势，通过专业的服务，<br>与业内许多企业和机构建立了深度合作关系，积累了丰富的人脉资源。 </small>-->
                         </h2>
 
                         <div class="tabs tabs-horizontal tabs-horizontal-center mobile-center" data-aos="fade-up"
@@ -22,7 +21,7 @@
                             </ul>
 
                             <div class="tab-content text-dark">
-                                <?php foreach (get_posts(array('category_name' => 'service')) as $index => $service): ?>
+                                <?php foreach (get_posts(array('category_name' => 'service', 'order' => 'asc')) as $index => $service): ?>
                                 <div class="tab-pane transition fade scale in<?=$index?'':' active'?>" id="service-<?=$service->ID?>">
                                     <div class="row padding-top-2x">
                                         <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-8">
@@ -99,36 +98,16 @@
                     <?php endforeach; ?>
                 </div>
 
-                <div class="text-block padding-top-2x padding-bottom-2x" data-aos="fade-up">
+                <!--<div class="text-block padding-top-2x padding-bottom-2x" data-aos="fade-up">
                     <h4 style="text-align: center;">
                         <span class="text-gray">……即将启动</span>
                     </h4>
-                </div>
+                </div>-->
 
                 <div class="row padding-bottom-1x" data-aos="fade-up">
-                    <div class="col-sm-2 col-xs-4">
+                    <!--<div class="col-sm-2 col-xs-4">
                         <img alt="" class="single-image attachment-full size-full" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-4.png">
-                    </div>
-
-                    <div class="col-sm-2 col-xs-4">
-                        <img alt="" class="single-image attachment-full size-full" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-6.png">
-                    </div>
-
-                    <div class="col-sm-2 col-xs-4">
-                        <img alt="" class="single-image attachment-full size-full" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-5.png">
-                    </div>
-
-                    <div class="col-sm-2 col-xs-4">
-                        <img alt="" class="single-image attachment-full size-full" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-3.png">
-                    </div>
-
-                    <div class="col-sm-2 col-xs-4">
-                        <img alt="" class="single-image attachment-full size-full" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-2.png">
-                    </div>
-
-                    <div class="col-sm-2 col-xs-4">
-                        <img alt="" class="single-image attachment-full size-full" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-1.png">
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </section>

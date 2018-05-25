@@ -10,7 +10,7 @@
 									<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/logo-light.png"></a>
 
 								<p>
-                                    上海君桐股权投资管理有限公司（简称“君桐资本”）于2015年5月成立，是一家专注于电子信息等高新技术产业（以半导体集成电路领域为主）的私募股权投资服务机构。目前已在基金业协会完成私募基金管理人备案，完成逾10个产品的发行及设立，直接管理规模逾10亿元。
+                                    上海君桐股权投资管理有限公司（简称“君桐资本”）于2015年5月成立，是一家专注于电子信息等高新技术产业（以半导体集成电路领域为主）的私募股权投资服务机构。已在基金业协会完成私募基金管理人备案，目前完成逾10个产品的发行及设立，直接管理规模逾10亿元。
                                 </p>
 							</section><!-- Widget END -->
 						</div>
@@ -122,7 +122,6 @@
 									关注微信公众号
 								</h3>
                                 <p class="widget-description">
-                                    保持行业嗅觉，紧跟投资风向
                                 </p>
 
                                 <div class="social-bar sb-solid-bg sb-rounded sb-dark-skin text-left">
@@ -139,7 +138,6 @@
 								</h3>
 
 								<p class="widget-description">
-									海纳百川，大气谦和
 								</p>
 
 								<div class="widget-carousel-navs">
@@ -149,25 +147,9 @@
 
 								<div class="widget-inner"
 									 data-slick='{"slidesToShow":4,"arrows":true,"autoplay":true,"autoplaySpeed":4000}'>
-									<div class="carousel-item">
+									<!--<div class="carousel-item">
 										<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-footer-1.png">
-									</div>
-
-									<div class="carousel-item">
-										<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-footer-2.png">
-									</div>
-
-									<div class="carousel-item">
-										<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-footer-3.png">
-									</div>
-
-									<div class="carousel-item">
-										<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-footer-4.png">
-									</div>
-
-									<div class="carousel-item">
-										<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-footer-5.png">
-									</div>
+									</div>-->
 								</div>
 							</section>
 						</div>
