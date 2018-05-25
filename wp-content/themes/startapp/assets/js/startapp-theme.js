@@ -220,7 +220,6 @@
             origo:"slidercenter",
             speed:400,
             levels:[5,10,15,20,25,30,35,40,-15,-20,-25,-30,-35,-40,-45,55],
-            type:"scroll",
         },
         shadow:0,
         spinner:"off",
@@ -252,40 +251,9 @@
     if ( revoSaas.length > 0 ) {
       $('.revo-slider-saas').show().revolution({
         sliderType:"hero",        
-        sliderLayout:"fullscreen",
-        dottedOverlay:"none",
-        delay:9000,
-        navigation: {},
-        responsiveLevels:[1240,1024,778,480],
-        visibilityLevels:[1240,1024,778,480],
-        gridwidth:[1170,1024,778,480],
-        gridheight:[520,520,520,520],
-        lazyType:"none",
-        parallax: {
-          type:"mouse",
-          origo:"enterpoint",
-          speed:400,
-          levels:[5,10,15,20,25,30,35,40,45,46,47,48,49,50,51,55],
-          type:"mouse",
-          disable_onmobile:"on"
-        },
-        shadow:0,
-        spinner:"spinner0",
-        autoHeight:"off",
-        fullScreenAutoWidth:"off",
-        fullScreenAlignForce:"off",
-        fullScreenOffsetContainer: ".site-header",
-        fullScreenOffset: "",
-        disableProgressBar:"on",
-        hideThumbsOnMobile:"off",
-        hideSliderAtLimit:0,
-        hideCaptionAtLimit:0,
-        hideAllCaptionAtLilmit:0,
-        debugMode:false,
-        fallbacks: {
-          simplifyAll:"off",
-          disableFocusListener:false,
-        }
+        sliderLayout:"auto",
+        minHeight:"750",
+        delay:9000
       });
     }
 

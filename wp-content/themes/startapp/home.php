@@ -12,22 +12,10 @@
                             <?php foreach (get_posts(array('category_name' => 'home-banner')) as $banner): ?>
 							<!-- SLIDE  -->
 							<li
-									data-description=""
-									data-easein="default"
-									data-easeout="default"
 									data-fsmasterspeed="1000"
 									data-fsslotamount="7"
-									data-fstransition="fade"
-									data-hideafterloop="0"
-									data-hideslideonmobile="off"
 									data-index="rs-<?=$banner->ID?>"
-									data-masterspeed="300"
-									data-rotate="0"
-									data-saveperformance="off"
-									data-slotamount="default"
-									data-thumb="<?=get_the_post_thumbnail_url($banner->ID, 'small')?>"
-									data-title="Slide"
-									data-transition="fade">
+									data-thumb="<?=get_the_post_thumbnail_url($banner->ID, 'small')?>">
 								<!-- MAIN IMAGE -->
 								<img
 										alt=""
@@ -37,17 +25,9 @@
 										data-duration="10000"
 										data-ease="Linear.easeNone"
 										data-kenburns="on"
-										data-no-retina=""
-										data-offsetend="0 0"
-										data-offsetstart="0 0"
-										data-rotateend="0"
-										data-rotatestart="0"
 										data-scaleend="110"
 										data-scalestart="100"
-										height="816"
-										src="<?=get_the_post_thumbnail_url($banner->ID, 'headline')?>"
-										title="fin-slider-main-1"
-										width="1920">
+										src="<?=get_the_post_thumbnail_url($banner->ID, 'headline')?>">
 
 								<!-- LAYERS -->
 
@@ -72,8 +52,8 @@
 										data-x="['center','center','center','center']"
 										data-y="['350','350','350','100']"
                                         data-textalign="center"
-										id="slide-<?=$banner->ID?>-layer-2"
-										style="z-index: 5; min-width: 606px; max-width: 606px; max-width: 73px; max-width: 73px; white-space: normal; font-size: 24px; line-height: 36px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Titillium Web;text-align:center;">
+										id="slide-<?=$banner->ID?>-layer-1"
+										style="z-index: 5; min-width: 606px; max-width: 606px; max-width: 73px; max-width: 73px; white-space: normal; font-size: 24px; line-height: 36px; font-weight: 300; color: rgba(255, 255, 255, 1.00);text-align:center;">
 
 									<?=get_the_excerpt($banner->ID)?>
 								</div>
@@ -97,37 +77,29 @@
                                         data-whitespace="normal"
                                         data-width="['100%','100%','100%','100%']"
                                         data-x="['center','center','center','center']"
-                                        data-y="['300','300','300','50']"
+                                        data-y="['300','310','320','50']"
                                         data-textalign="center"
                                         id="slide-<?=$banner->ID?>-layer-2"
-                                        style="z-index: 5; min-width: 606px; max-width: 606px; max-width: 73px; max-width: 73px; white-space: normal; font-size: 24px; line-height: 36px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Titillium Web;text-align:center;">
-
+                                        style="z-index: 5; min-width: 606px; max-width: 73px; white-space: normal; font-size: 24px; line-height: 36px; font-weight: 300; color: rgba(255, 255, 255, 1.00);text-align:center;">
                                     <?=get_the_title($banner->ID)?>
 								</div>
 
 								<!-- LAYER NR. 3 -->
 								<div
 										class="tp-caption rev-btn"
-										data-height="none"
-										data-hoffset="['0','0','0','0']"
-										data-responsive="off"
-										data-responsive_offset="on"
-										data-splitin="none"
-										data-splitout="none"
 										data-start="2250"
 										data-style_hover="c:rgba(63, 107, 190, 1.00);bg:rgba(255, 255, 255, 1.00);br:3px 3px 3px 3px;"
 										data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeIn;"
 										data-transform_idle="o:1;"
 										data-transform_in="y:20px;opacity:0;s:800;e:Power4.easeOut;"
 										data-transform_out="y:-20px;opacity:0;s:300;e:Power2.easeInOut;"
-										data-voffset="['50','98','98','100']"
+										data-voffset="['50','40','30,'100']"
 										data-whitespace="nowrap"
 										data-width="none"
 										data-x="['center','center','center','center']"
 										data-y="['bottom','bottom','bottom','bottom']"
-										id="slide-<?=$banner->ID?>-layer-12"
-										style="z-index: 7; white-space: nowrap; font-size: 18px; line-height: 18px; font-weight: 600; color: rgba(255, 255, 255, 1.00);font-family:Titillium Web;background-color:rgba(255, 255, 255, 0.25);padding:15px 12px 15px 12px;border-color:rgba(0, 0, 0, 1.00);border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
-
+										id="slide-<?=$banner->ID?>-layer-3"
+										style="z-index: 7; white-space: nowrap; font-size: 18px; line-height: 18px; font-weight: 600; color: rgba(255, 255, 255, 1.00);background-color:rgba(255, 255, 255, 0.25);padding:15px 12px 15px 12px;border-color:rgba(0, 0, 0, 1.00);border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
 									查看详情
 								</div>
 							</li>
