@@ -207,7 +207,7 @@
 										</header>
 
 										<h3 class="post-title">
-											<a href="news-single.html"><?=get_the_title($news->ID)?></a>
+											<a href="<?=get_the_permalink($news->ID)?>"><?=get_the_title($news->ID)?></a>
 										</h3>
 
 										<p class="post-excerpt">
@@ -221,7 +221,7 @@
 										</footer>
 									</div>
 
-									<a class="post-thumb" href="news-single.html"><?=get_the_post_thumbnail($news->ID)?></a>
+									<a class="post-thumb" href="<?=get_the_permalink($news->ID)?>"><?=get_the_post_thumbnail($news->ID)?></a>
 								</article>
 							</div>
                             <?php endforeach; ?>
@@ -243,7 +243,7 @@
 					<div class="col-sm-4">
 						<div class="animated-digit-box skin-primary">
 							<div class="animated-digit">
-								<span class="digit">11</span>
+								<span class="digit">12</span>
 							</div>
 
 							<p class="description">
