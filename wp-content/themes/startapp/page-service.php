@@ -15,14 +15,14 @@
                             <ul class="nav-tabs nav-tabs-dark text-center" role="tablist">
                                 <?php foreach (get_posts(array('category_name' => 'service', 'order' => 'asc')) as $index => $service): ?>
                                 <li class="<?=$index?'':'active'?>">
-                                    <a data-toggle="tab" href="#service-<?=$service->ID?>" role="tab"><?=get_the_title($service->ID)?></a>
+                                    <a data-toggle="tab" href="#service-<?=$service->post_name?>" role="tab"><?=get_the_title($service->ID)?></a>
                                 </li>
                                 <?php endforeach; ?>
                             </ul>
 
                             <div class="tab-content text-dark">
                                 <?php foreach (get_posts(array('category_name' => 'service', 'order' => 'asc')) as $index => $service): ?>
-                                <div class="tab-pane transition fade scale in<?=$index?'':' active'?>" id="service-<?=$service->ID?>">
+                                <div class="tab-pane transition fade scale in<?=$index?'':' active'?>" id="service-<?=$service->post_name?>">
                                     <div class="row padding-top-2x">
                                         <div class="col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-8">
                                             <div class="text-block">
@@ -65,18 +65,11 @@
                         <li class="active">
                             <a data-filter="*" href="#">显示全部</a>
                         </li>
-
+                        <?php foreach (get_posts(array('category_name' => 'service', 'order' => 'asc')) as $service): ?>
                         <li>
-                            <a data-filter=".share" href="#">股权投资</a>
+                            <a data-filter=".product-<?=$service->post_name?>" href="#"><?=get_the_title($service->ID)?></a>
                         </li>
-
-                        <li>
-                            <a data-filter=".fa" href="#">财务顾问</a>
-                        </li>
-
-                        <li>
-                            <a data-filter=".pe" href="#">PE基金产品管理服务</a>
-                        </li>
+                        <?php endforeach; ?>
                     </ul>
                 </nav>
 
@@ -88,7 +81,7 @@
                     <div class="grid-sizer">
                     </div>
                     <?php foreach (get_posts(array('category_name' => 'product', 'posts_per_page' => -1)) as $product): ?>
-                    <div class="grid-item devices media">
+                    <div class="grid-item <?=implode(' ', array_map(function ($catgeory) { return 'product-' . $catgeory->slug; }, array_filter(get_the_category($product->ID), function ($category) { return $category->slug !== 'product'; })))?>">
                         <article class="portfolio-tile portfolio-simple">
                             <a class="portfolio-thumb" href="<?=get_the_permalink($product->ID)?>">
                                 <?=get_the_post_thumbnail($product->ID)?>
