@@ -30,11 +30,13 @@
 								<?php the_title(); ?>
 							</h1>
 
+                            <hr>
+
 						</div><!-- Section END -->
 
 						<!-- Section Start -->
 						<section class="fw-section">
-							<div class="container">
+							<div class="container text-block">
 								<?php the_content(); ?>
 							</div>
 						</section><!-- Section END -->
@@ -119,7 +121,7 @@
 					<!-- Widget Start -->
 					<section class="widget widget_search">
 						<form autocomplete="off" class="search-box" method="get">
-							<input name="s" placeholder="Search" type="text" value="">
+							<input name="s" placeholder="搜索" type="text" value="">
 							<button type="submit"><i class="material-icons search"></i></button>
 						</form>
 					</section><!-- Widget END -->
@@ -129,7 +131,9 @@
                         <h2 class="widget-title">
                             新闻分类
                         </h2>
-                        <?php wp_list_categories(); ?>
+                        <ul>
+                            <?php wp_list_categories(array('title_li' => null, 'exclude' => get_category_by_slug('uncategorized')->term_id)); ?>
+                        </ul>
                     </section><!-- Widget END -->
 
                     <!-- Widget Start -->

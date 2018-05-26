@@ -994,6 +994,14 @@ small, .small {
   font-weight: 300 !important;
 }
 
+.text-block {
+  font-size: 18px;
+}
+
+.text-block h1, .text-block h2, .text-block h3 {
+  margin-bottom: 0.5em;
+}
+
 code {
   padding: 2px 4px !important;
 }

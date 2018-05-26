@@ -208,7 +208,7 @@
 			<div class="container">
 				<h2 class="block-title text-dark text-center">
 					数据一瞥
-					<small class="h4">仅仅3年，来我们达成的成就和规模</small>
+					<small class="h4">仅仅3年来，我们达成的成就和规模</small>
 				</h2>
 
 				<div class="row">

@@ -140,7 +140,7 @@
 
 							<li>
 								<small>
-                                    和上海临芯、中芯聚源、华登国际、澜起科技、华大半导体等产业顶级投资机构具有良好的合作关系
+                                    和产业顶级投资机构具有良好的合作关系
                                 </small>
 							</li>
 
@@ -163,7 +163,11 @@
 
 		<section class="fw-section padding-top-3x">
 			<div class="container">
-				<div class="row">
+                <h2 class="block-title text-center">
+                    集成电路（IC）行业背景
+                </h2>
+
+                <div class="row">
 					<div class="col-sm-6">
 						<figure class="single-image wp-caption">
 							<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/industry-tianshi.png">
@@ -183,7 +187,7 @@
 
 						<div class="text-block">
 							<h3>
-                                行业背景-天时
+                                天时
                             </h3>
 
 							<p>
@@ -216,7 +220,7 @@
 
 						<div class="text-block">
 							<h3>
-                                行业背景-地利
+                                地利
 							</h3>
 
 							<p>
@@ -267,7 +271,7 @@
 
                         <div class="text-block">
                             <h3>
-                                行业背景-人和
+                                人和
                             </h3>
 
                             <p>

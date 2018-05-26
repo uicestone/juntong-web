@@ -38,7 +38,7 @@
 
                                         <div class="col-lg-3 col-lg-offset-1 col-sm-4 hidden-xs">
                                             <img alt="" class="single-image attachment-medium size-medium"
-                                                 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-project-tab-<?=$index+1?>-300x300.png">
+                                                 src="">
                                         </div>
                                     </div>
                                 </div>
