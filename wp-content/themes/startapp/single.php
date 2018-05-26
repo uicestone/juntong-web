@@ -129,10 +129,10 @@
                     <!-- Widget Start -->
                     <section class="widget widget_categories">
                         <h2 class="widget-title">
-                            新闻分类
+                            文章分类
                         </h2>
                         <ul>
-                            <?php wp_list_categories(array('title_li' => null, 'exclude' => get_category_by_slug('uncategorized')->term_id)); ?>
+                            <?php wp_list_categories(array('title_li' => null, 'exclude' => array(get_category_by_slug('uncategorized')->term_id,get_category_by_slug('home-banner')->term_id))); ?>
                         </ul>
                     </section><!-- Widget END -->
 

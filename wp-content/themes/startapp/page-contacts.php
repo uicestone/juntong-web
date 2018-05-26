@@ -121,6 +121,15 @@
 							</h6>
 						</div>
 					</div>
+                    <div class="col-sm-4">
+                        <div class="text-block">
+                            <h4>
+                                微信公众号
+                            </h4>
+
+                            <img src="<?=get_stylesheet_directory_uri()?>/assets/img/qrcode.jpg" width="100px">
+                        </div>
+                    </div>
 				</div>
 			</div>
 		</section>

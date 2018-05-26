@@ -116,7 +116,7 @@
 			<div class="footer-row second-row">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col-sm-3">
 							<section class="widget widget_startapp_subscribe">
 								<h3 class="widget-title">
 									关注微信公众号
@@ -125,19 +125,18 @@
                                 </p>
 
                                 <div class="social-bar sb-solid-bg sb-rounded sb-dark-skin text-left">
-                                    <a class="social-btn waves-effect waves-light" data-placement="top" data-toggle="tooltip"
-                                       href="#" title="微信公众号"><i class="fa fa-wechat"></i></a>
+                                    <img src="<?=get_stylesheet_directory_uri()?>/assets/img/qrcode.jpg" width="100px">
                                 </div>
 							</section>
 						</div>
 
-						<div class="col-sm-6">
+						<div class="col-sm-9">
 							<section class="widget widget_startapp_image_carousel">
 								<h3 class="widget-title">
 									合作机构
 								</h3>
 
-								<p class="widget-description">
+								<p class="widget-description" style="height:87px;">
 								</p>
 
 								<div class="widget-carousel-navs">

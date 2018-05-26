@@ -84,7 +84,10 @@
 						</nav>
 
 						<div class="social-bar sb-solid-bg sb-rounded sb-dark-skin text-left">
-							<a class="social-btn" href="#"><i class="fa fa-wechat"></i></a>
+							<a class="social-btn" href="#">
+                                <i class="fa fa-wechat"></i>
+                                <img class="qrcode" src="<?=get_stylesheet_directory_uri()?>/assets/img/qrcode.jpg" width="100px">
+                            </a>
 						</div>
 					</div>
 				</div>
