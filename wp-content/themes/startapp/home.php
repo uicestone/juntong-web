@@ -64,7 +64,7 @@
                                         data-fontsize="['48','48','48','36']"
                                         data-height="['73','none','112','none']"
                                         data-hoffset="['0','0','0','0']"
-                                        data-lineheight="['36','36','36','27']"
+                                        data-lineheight="42px"
                                         data-responsive="off"
                                         data-responsive_offset="on"
                                         data-splitin="none"
@@ -80,7 +80,7 @@
                                         data-y="['300','310','320','50']"
                                         data-textalign="center"
                                         id="slide-<?=$banner->ID?>-layer-2"
-                                        style="z-index: 5; min-width: 606px; max-width: 73px; white-space: normal; font-size: 24px; line-height: 36px; font-weight: 300; color: rgba(255, 255, 255, 1.00);text-align:center;">
+                                        style="color: white; font-weight: 300;">
                                     <?=get_the_title($banner->ID)?>
 								</div>
 

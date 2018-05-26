@@ -5285,7 +5285,7 @@ portfolio-posts.masonry-grid .grid-item {
 }
 
 .topbar-menu > ul {
-  display: block;
+  display: inline-block;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -6109,8 +6109,8 @@ portfolio-posts.masonry-grid .grid-item {
     transition: all 0.5s;
   }
   .topbar .inner {
-    padding-top: 12px;
-    padding-bottom: 20px;
+    /*padding-top: 12px;*/
+    /*padding-bottom: 20px;*/
   }
   .topbar .inner > .column {
     display: block;
@@ -6120,7 +6120,7 @@ portfolio-posts.masonry-grid .grid-item {
     text-align: left;
   }
   .topbar .social-bar {
-    display: block;
+    /*display: block;*/
     margin-top: 0;
   }
   .topbar .social-bar .social-btn {
@@ -6156,7 +6156,7 @@ portfolio-posts.masonry-grid .grid-item {
     margin: 0 16px 0 0 !important;
   }
   .topbar-menu > ul > li.menu-item-has-children {
-    display: block;
+    display: inline-block;
     width: 100%;
     margin: 5px 0 6px !important;
   }
