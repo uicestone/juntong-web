@@ -120,7 +120,7 @@
 				<div class="col-lg-3 col-md-4 col-sm-4 padding-bottom-2x">
 					<!-- Widget Start -->
 					<section class="widget widget_search">
-						<form autocomplete="off" class="search-box" method="get">
+						<form action="<?=site_url()?>" autocomplete="off" class="search-box" method="get">
 							<input name="s" placeholder="搜索" type="text" value="">
 							<button type="submit"><i class="material-icons search"></i></button>
 						</form>
@@ -142,7 +142,7 @@
                             最近文章
                         </h2>
 
-                        <?php foreach (get_posts(array('posts_per_page' => 3)) as $recent_post): ?>
+                        <?php foreach (get_posts(array('category_name' => 'news', 'posts_per_page' => 3)) as $recent_post): ?>
                         <div class="post-item">
                             <a class="post-item-thumb" href="<?=get_the_permalink($recent_post->ID)?>">
                                 <?=get_the_post_thumbnail($recent_post->ID, 'small')?>

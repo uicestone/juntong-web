@@ -10,7 +10,7 @@
 									<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/logo-light.png"></a>
 
 								<p>
-                                    上海君桐股权投资管理有限公司（简称“君桐资本”）于2015年5月成立，是一家专注于电子信息等高新技术产业（以半导体集成电路领域为主）的私募股权投资服务机构。已在基金业协会完成私募基金管理人备案，目前完成逾10个产品的发行及设立，直接管理规模逾10亿元。
+                                    上海君桐股权投资管理有限公司（简称“君桐资本”）于2015年5月成立，是一家专注于电子信息等高新技术产业（以半导体集成电路领域为主）的私募股权投资服务机构。已在基金业协会完成私募基金管理人备案，目前完成逾12个产品的发行及设立，直接管理规模逾10亿元。
                                 </p>
 							</section><!-- Widget END -->
 						</div>
@@ -25,19 +25,19 @@
 								<div class="menu-footer-menu-1-container">
 									<ul class="menu">
 										<li class="menu-item">
-											<a href="http://www.amac.org.cn/" target="_blank">基金业协会</a>
+											<a href="http://www.amac.org.cn/" target="_blank">中国基金业协会</a>
 										</li>
 
                                         <li class="menu-item">
-                                            <a href="http://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000031277.html" target="_blank">公示信息</a>
+                                            <a href="http://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000031277.html" target="_blank">中基协公示信息</a>
                                         </li>
 
                                         <li class="menu-item">
-											<a href="http://www.csrc.gov.cn/pub/newsite/" target="_blank">证监会</a>
+											<a href="http://www.csrc.gov.cn/pub/newsite/" target="_blank">中国证监会</a>
 										</li>
 
 										<li class="menu-item">
-											<a href="http://www.cbrc.gov.cn/chinese/newIndex.html" target="_blank">银保监会</a>
+											<a href="http://www.cbrc.gov.cn/chinese/newIndex.html" target="_blank">中国银保监会</a>
 										</li>
 									</ul>
 								</div>
@@ -53,7 +53,7 @@
 									最近文章
 								</h3>
 
-                                <?php foreach (get_posts(array('posts_per_page' => 2)) as $recent_post): ?>
+                                <?php foreach (get_posts(array('category_name' => 'news', 'posts_per_page' => 2)) as $recent_post): ?>
 								<div class="post-item">
 									<a class="post-item-thumb" href="<?=get_the_permalink($recent_post->ID)?>">
 										<?=get_the_post_thumbnail($recent_post->ID, 'small')?>

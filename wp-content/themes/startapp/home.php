@@ -77,31 +77,13 @@
                                         data-whitespace="normal"
                                         data-width="['100%','100%','100%','100%']"
                                         data-x="['center','center','center','center']"
-                                        data-y="['280','290','300','50']"
+                                        data-y="['280','280','270','50']"
                                         data-textalign="center"
                                         id="slide-<?=$banner->ID?>-layer-2"
                                         style="color: white; font-weight: 300;">
                                     <?=get_the_title($banner->ID)?>
 								</div>
 
-								<!-- LAYER NR. 3 -->
-								<div
-										class="tp-caption rev-btn"
-										data-start="2250"
-										data-style_hover="c:rgba(63, 107, 190, 1.00);bg:rgba(255, 255, 255, 1.00);br:3px 3px 3px 3px;"
-										data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeIn;"
-										data-transform_idle="o:1;"
-										data-transform_in="y:20px;opacity:0;s:800;e:Power4.easeOut;"
-										data-transform_out="y:-20px;opacity:0;s:300;e:Power2.easeInOut;"
-										data-voffset="['50','40','30,'100']"
-										data-whitespace="nowrap"
-										data-width="none"
-										data-x="['center','center','center','center']"
-										data-y="['bottom','bottom','bottom','bottom']"
-										id="slide-<?=$banner->ID?>-layer-3"
-										style="z-index: 7; white-space: nowrap; font-size: 18px; line-height: 18px; font-weight: 600; color: rgba(255, 255, 255, 1.00);background-color:rgba(255, 255, 255, 0.25);padding:15px 12px 15px 12px;border-color:rgba(0, 0, 0, 1.00);border-radius:4px 4px 4px 4px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
-									查看详情
-								</div>
 							</li>
                             <?php endforeach; ?>
 						</ul>
@@ -121,18 +103,20 @@
 							<span class="icon-box-backdrop" style="background-color: #fff;"></span>
 
 							<div class="icon-box-icon">
-								<img alt="" class="attachment-full size-full" height="144"
+                                <a href="<?=get_the_permalink($service->ID)?>">
+                                    <img alt="" class="attachment-full size-full" height="144"
 									 src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-icon-<?=$index+1?>.png" width="144">
+                                </a>
 							</div>
 
 							<h3 class="icon-box-title">
-								<?=get_the_title($service->ID)?>
+                                <?=get_the_title($service->ID)?>
 							</h3>
 
 							<div class="icon-box-description">
                                 <div class="opacity-50 text-light text-left" style="padding: 0 10px"><?=get_the_excerpt($service->ID)?></div>
 							</div>
-						</div>
+                        </div>
 					</div>
                     <?php endforeach; ?>
 				</div>
@@ -238,11 +222,11 @@
 					<div class="col-sm-4">
 						<div class="animated-digit-box skin-primary">
 							<div class="animated-digit">
-								<span class="digit">50</span><span class="unit">+</span>
+								<span class="digit">3</span>
 							</div>
 
 							<p class="description">
-								合作机构
+								已退出项目次数
 							</p>
 						</div>
 					</div>

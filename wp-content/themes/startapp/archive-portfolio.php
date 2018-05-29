@@ -467,8 +467,8 @@
 					<div class="col-sm-6">
 						<div class="vc_wp_search wpb_content_element">
 							<div class="widget widget_search">
-								<form autocomplete="off" class="search-box">
-									<input name="s" placeholder="Search" type="text" value="">
+								<form action="<?=site_url()?>" autocomplete="off" class="search-box">
+									<input name="s" placeholder="搜索" type="text" value="">
 									<button type="submit"><i class="material-icons search"></i></button>
 								</form>
 							</div>

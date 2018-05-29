@@ -5,7 +5,7 @@
 			<div class="inner">
 				<div class="column">
 					<h1>
-						新闻
+						搜索结果
 					</h1>
 				</div>
 
@@ -20,7 +20,7 @@
 						<i class="material-icons keyboard_arrow_right"></i>
 
 						<span property="itemListElement" typeof="ListItem">
-		          		<span property="name">新闻</span>
+		          		<span property="name">搜索结果</span>
 		          	</span>
 					</div>
 				</div>

@@ -42,8 +42,8 @@
 		<div class="inner">
 			<span class="close-btn"><i class="material-icons clear"></i></span>
 
-			<form method="get" class="search-box" autocomplete="off">
-				<input type="text" name="s" placeholder="搜索" value="">
+			<form action="<?=site_url()?>" method="get" class="search-box" autocomplete="off">
+				<input name="s" type="text" placeholder="搜索" value="">
 				<button type="submit"><i class="material-icons search"></i></button>
 			</form>
 		</div>
@@ -69,17 +69,8 @@
 						<nav class="topbar-menu">
 							<ul class="menu">
 								<li class="menu-item">
-									<a href="<?=site_url()?>/philosophy/">关于</a>
+									<a href="<?=site_url()?>/careers/">加入我们</a>
 								</li>
-
-								<li class="menu-item">
-									<a href="<?=site_url()?>/careers/">加入</a>
-								</li>
-
-								<li class="menu-item">
-									<a href="<?=site_url()?>/contact/">联络</a>
-								</li>
-
 							</ul>
 
                             <div class="social-bar sb-solid-bg sb-rounded sb-dark-skin text-left">
