@@ -8356,6 +8356,8 @@ portfolio-posts.masonry-grid .grid-item {
   display: inline-block;
   margin: auto;
   vertical-align: middle;
+  height: 100px;
+  object-fit: contain;
 }
 
 .portfolio-tile .portfolio-info {

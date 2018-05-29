@@ -77,7 +77,7 @@
                                         data-whitespace="normal"
                                         data-width="['100%','100%','100%','100%']"
                                         data-x="['center','center','center','center']"
-                                        data-y="['300','310','320','50']"
+                                        data-y="['280','290','300','50']"
                                         data-textalign="center"
                                         id="slide-<?=$banner->ID?>-layer-2"
                                         style="color: white; font-weight: 300;">
@@ -130,7 +130,7 @@
 							</h3>
 
 							<div class="icon-box-description">
-                                <p><span class="opacity-50 text-light"><?=strip_tags(get_the_excerpt($service->ID))?></span></p>
+                                <div class="opacity-50 text-light text-left" style="padding: 0 10px"><?=get_the_excerpt($service->ID)?></div>
 							</div>
 						</div>
 					</div>
@@ -208,7 +208,6 @@
 			<div class="container">
 				<h2 class="block-title text-dark text-center">
 					数据一瞥
-					<small class="h4">仅仅3年来，我们达成的成就和规模</small>
 				</h2>
 
 				<div class="row">
