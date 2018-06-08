@@ -170,7 +170,7 @@
                 <div class="row">
 					<div class="col-sm-6">
 						<figure class="single-image wp-caption">
-							<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/industry-tianshi.png">
+							<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/industry-tianshi-2.png">
 							<figcaption class="wp-caption-text">
 
 							</figcaption>
@@ -239,7 +239,7 @@
 
 					<div class="col-sm-6">
 						<figure class="single-image wp-caption">
-							<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/industry-dili.jpg">
+							<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/industry-dili-2.jpg">
 							<figcaption class="wp-caption-text">
                                 中国是全球最大的半导体市场，2017年进口额为2600亿美元。
                             </figcaption>
@@ -254,7 +254,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <figure class="single-image wp-caption">
-                            <img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/industry-renhe.png">
+                            <img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/industry-renhe-2.png">
                             <figcaption class="wp-caption-text">
 
                             </figcaption>
