@@ -29,6 +29,7 @@ add_action('wp', function() {
     wp_register_script('jquery.themepunch.tools', get_stylesheet_directory_uri() . '/assets/js/vendor/revo/jquery.themepunch.tools.min.js', array('jquery'), '1.6.9', true);
     wp_register_script('jquery.themepunch.revolution', get_stylesheet_directory_uri() . '/assets/js/vendor/revo/jquery.themepunch.revolution.min.js', array('jquery'), '5.3.1.6', true);
 	wp_register_script('startapp-theme', get_stylesheet_directory_uri() . '/assets/js/startapp-theme.js', array(), false, true);
+    wp_register_script('baidu-map', 'http://api.map.baidu.com/api?v=2.0&ak=' . get_option('baidu_map_key'), array(), false, true);
 });
 
 add_action('init', function () {
@@ -92,5 +93,6 @@ add_action('wp_enqueue_scripts', function(){
     wp_enqueue_script('jquery.magnific-popup');
     wp_enqueue_script('jquery.themepunch.tools');
     wp_enqueue_script('jquery.themepunch.revolution');
+    wp_enqueue_script('baidu-map');
     wp_enqueue_script('startapp-theme');
 });

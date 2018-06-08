@@ -581,61 +581,16 @@
 
         countDownFunc( $('.countdown') );
 
-        // Google Maps API
-        var $googleMap = $('.google-map');
-        if ($googleMap.length > 0 && typeof $.fn.gmap3 === 'function') {
-            $googleMap.each(function () {
-                var mapHeight = $(this).data('height') || 500,
-                    address = $(this).data('address') || '',
-                    zoom = $(this).data('zoom') || 14,
-                    controls = $(this).data('disable-controls'),
-                    scrollwheel = $(this).data('scrollwheel'),
-                    marker = $(this).data('marker') || '',
-                    markerTitle = $(this).data('marker-title') || false,
-                    styles = $(this).data('styles') || '';
-                $(this).height(mapHeight);
-                $(this).gmap3({
-                    marker: {
-                        address: address,
-                        data: markerTitle,
-                        options: {
-                            icon: marker
-                        },
-                        events: {
-                            mouseover: function (marker, event, context) {
-                                if (typeof markerTitle !== 'undefined' || false !== markerTitle) {
-                                    var map = $(this).gmap3("get"),
-                                        infowindow = $(this).gmap3({get: {name: "infowindow"}});
-                                    if (infowindow) {
-                                        infowindow.open(map, marker);
-                                        infowindow.setContent(context.data);
-                                    } else {
-                                        $(this).gmap3({
-                                            infowindow: {
-                                                anchor: marker,
-                                                options: {content: context.data}
-                                            }
-                                        });
-                                    }
-                                }
-                            },
-                            mouseout: function () {
-                                var infowindow = $(this).gmap3({get: {name: "infowindow"}});
-                                if (infowindow) {
-                                    infowindow.close();
-                                }
-                            }
-                        }
-                    },
-                    map: {
-                        options: {
-                            zoom: zoom,
-                            disableDefaultUI: controls,
-                            scrollwheel: scrollwheel,
-                            styles: styles
-                        }
-                    }
-                });
+        // Baidu Map API
+        var $baiduMap = $('.baidu-map');
+        if ($baiduMap.length > 0 && window.BMap !== undefined) {
+            $baiduMap.each(function () {
+                var map = new BMap.Map(this.id);
+                var point = new BMap.Point($(this).data('lat'), $(this).data('long'));
+                map.centerAndZoom(point, $(this).data('zoom'));
+                map.addControl(new BMap.NavigationControl());
+                var marker = new BMap.Marker(point);
+                map.addOverlay(marker);
             });
         }
 

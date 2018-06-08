@@ -71,13 +71,10 @@
                                     </p>
                                 </div>
                             </div>
-
-                            <div class="google-map"
-                                 data-address="Unit 2202, Plaza 66 1266 Nanjing West Road, Shanghai 200040"
-                                 data-disable-controls="true" data-height="230" data-marker-title="StartApp"
-                                 data-scrollwheel="false" data-zoom="14">
-                            </div>
                         </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div id="baidu-map" class="baidu-map" data-zoom="15" data-lat="121.593771" data-long="31.211778" style="height: 186px"></div>
                     </div>
                 </div>
                 <div class="row padding-top-3x padding-bottom-3x">
@@ -153,32 +150,7 @@
 							<small class="h4">给我们留言</small>
 						</h2>
 
-						<form>
-							<p>
-								<textarea cols="40" name="message" placeholder="留言内容" rows="4"></textarea>
-							</p>
-
-							<div class="row">
-								<div class="col-md-3 col-sm-6">
-									<input name="name" placeholder="您的姓名" size="40" type="text" value="">
-								</div>
-
-								<div class="col-md-3 col-sm-6 padding-bottom-1x">
-									<input name="phone" placeholder="您的电话" size="40" type="text"
-										   value="">
-								</div>
-
-								<div class="col-md-3 col-sm-6 padding-bottom-1x">
-									<input name="email" placeholder="您的邮箱" size="40" type="email" value="">
-								</div>
-
-								<div class="col-md-3 col-sm-6 padding-bottom-1x">
-									<button class="btn btn-block btn-transparent btn-primary"
-											style="margin-top: 0; outline: none;" type="submit">发送消息 <i
-												class="material-icons send"></i></button>
-								</div>
-							</div>
-						</form>
+						<?=wpautop(do_shortcode('[contact-form-7 id="176" title="联系表单"]'))?>
 					</div>
 				</div>
 			</div>
