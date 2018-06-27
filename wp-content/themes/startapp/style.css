@@ -13734,7 +13734,8 @@ input[type='submit'].btn-3d.btn-light:active {
 
 .animated-digit-box .animated-digit {
   font-size: 72px;
-  font-weight: 300;
+  font-family: "Microsoft JhengHei UI";
+  font-weight: bold;
   line-height: 1;
 }
 
