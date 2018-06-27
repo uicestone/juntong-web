@@ -7559,6 +7559,20 @@ portfolio-posts.masonry-grid .grid-item {
   border-bottom-color: rgba(255, 255, 255, 0.15);
 }
 
+.site-footer .business-partners ul li {
+  float: left;
+}
+
+.site-footer .business-partners ul li::before {
+  display: none;
+}
+
+.site-footer .business-partners ul li img {
+  height: 48px;
+  width: auto;
+  filter: invert(100%) grayscale(100%) brightness(2);
+}
+
 .site-footer .copyright {
   position: relative;
   padding: 13px 0;

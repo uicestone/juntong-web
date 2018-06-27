@@ -131,25 +131,14 @@
 						</div>
 
 						<div class="col-sm-9">
-							<section class="widget widget_startapp_image_carousel">
+							<section class="widget">
 								<h3 class="widget-title">
 									合作机构
 								</h3>
 
-								<p class="widget-description" style="height:87px;">
-								</p>
+								<p class="widget-description" style="height:2px;"></p>
 
-								<div class="widget-carousel-navs">
-									<button class="slick-prev slick-arrow" type="button"></button>
-									<button class="slick-next slick-arrow" type="button"></button>
-								</div>
-
-								<div class="widget-inner"
-									 data-slick='{"slidesToShow":4,"arrows":true,"autoplay":true,"autoplaySpeed":4000}'>
-									<!--<div class="carousel-item">
-										<img alt="" src="<?=get_stylesheet_directory_uri()?>/assets/img/fin-client-footer-1.png">
-									</div>-->
-								</div>
+								<div class="widget-inner business-partners" style="height:80px;"><?=get_page_by_path('business-partners')->post_content?></div>
 							</section>
 						</div>
 					</div>
