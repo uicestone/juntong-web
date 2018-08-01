@@ -198,7 +198,7 @@
 					<div class="col-sm-4">
 						<div class="animated-digit-box skin-primary">
 							<div class="animated-digit">
-								<span class="digit">12</span>
+								<span class="digit">13</span>
 							</div>
 
 							<p class="description">
@@ -210,7 +210,7 @@
 					<div class="col-sm-4">
 						<div class="animated-digit-box skin-primary">
 							<div class="animated-digit">
-								<span class="digit">10</span><span class="unit">亿</span>
+								<span class="digit">12</span><span class="unit">亿</span>
 							</div>
 
 							<p class="description">
