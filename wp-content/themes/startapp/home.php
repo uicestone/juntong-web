@@ -214,7 +214,7 @@
 							</div>
 
 							<p class="description">
-								管理的资金规模
+                                累计投资金额
 							</p>
 						</div>
 					</div>
