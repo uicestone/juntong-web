@@ -132,13 +132,13 @@
 
 						<div class="col-sm-9">
 							<section class="widget">
-								<h3 class="widget-title">
+								<h3 class="widget-title" style="margin-bottom:8px">
 									合作机构
 								</h3>
 
-								<p class="widget-description" style="height:2px;"></p>
+                                <!--<p class="widget-description" style="height:2px;"></p>-->
 
-								<div class="widget-inner business-partners" style="height:80px;"><?=get_page_by_path('business-partners')->post_content?></div>
+								<div class="widget-inner business-partners" style="height:110px;"><?=get_page_by_path('business-partners')->post_content?></div>
 							</section>
 						</div>
 					</div>
