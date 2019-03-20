@@ -198,7 +198,7 @@
 					<div class="col-sm-4">
 						<div class="animated-digit-box skin-primary">
 							<div class="animated-digit">
-								<span class="digit">13</span>
+								<span class="digit">14</span>
 							</div>
 
 							<p class="description">
@@ -222,7 +222,7 @@
 					<div class="col-sm-4">
 						<div class="animated-digit-box skin-primary">
 							<div class="animated-digit">
-								<span class="digit">3</span>
+								<span class="digit">4</span>
 							</div>
 
 							<p class="description">

@@ -557,7 +557,7 @@
             var counterElement = $(this);
             counterElement.find('.digit').counterUp({
               delay: 10,
-              time: 1100
+              time: 800
             });
           });
         }
