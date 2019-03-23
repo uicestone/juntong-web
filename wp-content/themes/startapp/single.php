@@ -51,14 +51,14 @@
 								</div>
 							</footer>
 
-							<div class="post-share-buttons">
+							<!-- <div class="post-share-buttons">
 								<div class="column">
 									<a class="startapp-share-wechat" href="#"><i class="fa fa-wechat"></i> 分享到微信</a>
 								</div>
                                 <div class="column">
                                     <a class="startapp-share-weibo" href="#"><i class="fa fa-weibo"></i> 分享到微博</a>
                                 </div>
-                            </div>
+                            </div> -->
 
 							<!-- Widget Start -->
 							<!--<section class="post-author">
@@ -89,18 +89,18 @@
 							</section>--><!-- Widget END -->
 
 							<!-- Widget Start -->
-							<section class="related-posts">
+							<!-- <section class="related-posts">
 								<h4 class="text-gray margin-bottom-2x">
 									相关新闻
 								</h4>
 
 								<div class="related-post-entry">
 									<header class="post-header">
-										<!--<div class="column">
+										<div class="column">
 											<a class="post-date" href="#">October 29, 2016</a>by
 											<a href="#">8guild</a>&nbsp;in
 											<a href="#" rel="category tag">Investment</a>
-										</div>-->
+										</div>
 
 										<div class="column"></div>
 									</header>
@@ -110,7 +110,7 @@
 									</h3>
 								</div>
 
-							</section><!-- Widget END -->
+							</section> --><!-- Widget END -->
 						</div><!-- Post Footer END -->
 
 					</article><!-- Post Section END -->
