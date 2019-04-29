@@ -195,7 +195,7 @@
 				</h2>
 
 				<div class="row">
-					<div class="col-sm-4">
+					<div class="col-sm-3">
 						<div class="animated-digit-box skin-primary">
 							<div class="animated-digit">
 								<span class="digit">14</span>
@@ -207,7 +207,7 @@
 						</div>
 					</div>
 
-					<div class="col-sm-4">
+					<div class="col-sm-3">
 						<div class="animated-digit-box skin-primary">
 							<div class="animated-digit">
 								<span class="digit">12</span><span class="unit">亿</span>
@@ -219,7 +219,7 @@
 						</div>
 					</div>
 
-					<div class="col-sm-4">
+					<div class="col-sm-3">
 						<div class="animated-digit-box skin-primary">
 							<div class="animated-digit">
 								<span class="digit">4</span>
@@ -230,6 +230,18 @@
 							</p>
 						</div>
 					</div>
+
+                    <div class="col-sm-3">
+                        <div class="animated-digit-box skin-primary">
+                            <div class="animated-digit">
+                                <span class="digit">1</span>
+                            </div>
+
+                            <p class="description">
+                                IPO数量
+                            </p>
+                        </div>
+                    </div>
 				</div>
 
 				<!--<div class="row">
