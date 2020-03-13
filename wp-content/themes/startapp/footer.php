@@ -84,7 +84,7 @@
 									</div>
 
 									<div class="contact-info">
-										<span>上海市浦东新区</span><span>春晓路439号14号楼</span>
+										<span>上海市浦东新区</span><span>春晓路439号3号楼3楼</span>
 									</div>
 								</div>
 
