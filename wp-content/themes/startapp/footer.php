@@ -151,7 +151,7 @@
 						<div class="col-sm-6">
 							<p class="copyright-text">
 								君桐资本 2018 版权所有
-                                <a href="http://www.miibeian.gov.cn/">沪ICP备15029885号-1</a>
+                                <a href="https://beian.miit.gov.cn/#/Integrated/recordQuery">沪ICP备15029885号-1</a>
 							</p>
 						</div>
 
